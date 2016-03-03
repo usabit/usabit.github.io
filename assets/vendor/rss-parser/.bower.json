@@ -1,0 +1,30 @@
+{
+  "name": "rss-parser",
+  "description": "",
+  "version": "2.2.4",
+  "main": "dist/rss-parser.js",
+  "authors": [
+    "Bobby Brennan"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bobby-brennan/rss-parser",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.2.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.2.4",
+    "commit": "152ff9aac239cf15f0716694cbf1ea21e80c3d67"
+  },
+  "_source": "git://github.com/bobby-brennan/rss-parser.git",
+  "_target": "^2.2.4",
+  "_originalSource": "rss-parser"
+}
