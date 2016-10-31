@@ -1,0 +1,81 @@
+section.portfolio {
+  h2 {
+    center(650px)
+    color alpha(black, .6)
+  }
+  
+  .portfolio-list {
+    
+    display flex
+    align-items center
+    justify-content center
+
+    list-style none
+    padding 0
+    margin 0
+
+    .portfolio-item {
+      margin 0 20px
+      text-align center
+      
+      a {
+        color alpha(black, .6)
+        text-decoration none
+        font-weight 300
+        
+        &:hover,
+        &.active {
+          color #1a9ded
+        }
+      }
+    }
+  }
+  
+  .portfolio-display {
+    padding 40px 0
+    margin 50px 0
+    list-style none
+    background-color alpha(black, .07)
+    
+    li {
+      .wrapper{
+        display flex
+        
+        img {
+          max-width: 100%;
+        }
+        
+        .text-wrap {
+          flex 1
+          
+          h1 {
+            margin 0
+            font-weight 700
+          }
+          
+          p {
+            font-size 1.125rem
+            line-height 1.5
+          }
+          
+          ul {
+            list-style none
+            li {
+              line-height 1.9
+              
+              &.blue { 
+                color #1a9ded 
+              }
+              &.red { 
+                color #d95147 
+              }
+              &.purple { 
+                color #884ba0 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

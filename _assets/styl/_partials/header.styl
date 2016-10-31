@@ -1,0 +1,90 @@
+header.site-header {
+  background-color alpha(black, .4)
+  border-bottom 2px solid alpha(white, .2)
+  position fixed
+  top 0
+  left 0
+  right 0
+  padding 20px
+  
+  .wrapper {
+    display flex
+    justify-content space-between
+    align-items center
+  }
+
+  .site-title {
+    display inline-flex
+    align-items flex-start
+    img {
+      width 30px
+      margin-right 10px
+    }
+    svg#usabit-logotipo {
+      width 80px
+      margin-top 3px
+      path {
+        fill white
+      }
+    }
+  }
+  
+  .site-nav {
+    .menu-icon {
+      display inline-block
+      size(20px)
+      img, svg {
+        max-width 100%
+      }
+      
+      +above('tablet'){
+        display none
+      }
+    }
+    
+    .trigger {
+      display flex
+      align-items center
+      
+      a.page-link {
+        position relative
+        color white
+        padding 5px 18px
+        text-decoration none
+
+        &:after {
+          content ''
+          position absolute
+          left 15px
+          right 15px
+          bottom 3px
+          height 2px
+          background-color transparent
+        }
+        
+        &:hover,
+        &.active {
+          &:after {
+            bottom -3px
+            transition all 200ms
+            background-color #5cb2eb
+          }
+        }
+      }
+    }
+  }
+
+  &.homepage {
+    padding 50px 20px
+    .site-title {
+      img {
+        width 60px
+        margin-right 18px
+      }
+      svg#usabit-logotipo {
+        width 120px
+      }
+    }
+  }
+}
+

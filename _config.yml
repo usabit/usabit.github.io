@@ -7,17 +7,23 @@
 
 # Site settings
 title: Usabit Digital
-email: contato@usabit.com
+email: contato@usabit.com.br
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Somos um time de desenvolvimento digital unido, integrado e aberto para o mundo.
+  Criamos produtos digitais simples e fáceis de usar.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://usabit.com.br" # the base hostname & protocol for your site
-# twitter_username: jekyllrb
-# github_username:  jekyll
+twitter_username: jekyllrb
+github_username:  usabit
 
 # Build settings
 markdown: kramdown
 
-exclude: ['package.json', 'src', 'node_modules']
+exclude: [
+  'node_modules', 
+  '.gulpfile.js',
+  'package.json',
+  '_sass',
+  '.sass-cache',
+  'bower.json'
+]

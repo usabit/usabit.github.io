@@ -1,77 +1,95 @@
-var gulp        = require('gulp'),
-    plumber     = require('gulp-plumber'),
-    browserSync = require('browser-sync'),
-    stylus      = require('gulp-stylus'),
-    uglify      = require('gulp-uglify'),
-    concat      = require('gulp-concat'),
-    jeet        = require('jeet'),
-    rupture     = require('rupture'),
-    koutoSwiss  = require('kouto-swiss'),
-    prefixer    = require('autoprefixer-stylus'),
-    imagemin    = require('gulp-imagemin'),
-    cp          = require('child_process');
+var gulp = require('gulp');
+var plumber = require('gulp-plumber');
+var connect = require('gulp-connect');
+var stylus = require('gulp-stylus');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var jeet = require('jeet');
+var rupture = require('rupture');
+var nib = require('nib');
+var prefixer = require('autoprefixer-stylus');
+var sourcemaps = require('gulp-sourcemaps');
+var imagemin = require('gulp-imagemin');
+var cp = require('child_process');
+var bower = require('gulp-bower'); // roda bower install por padrão ou algum outro comando do bower pelo gulp    
+var wiredep = require('wiredep').stream; // aplica os arquivos do bower diretamente na index.html do sistema
+var del = require('del');
+var sequence = require('run-sequence');
+var notify = require('gulp-notify');
 
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
-
-/**
- * Refaz o site e atualiza a página
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-/**
- * Espera até que o jekyll-build seja executado e então levanta o
- * servidor utilizando o _site como pasta raiz
- */
-gulp.task('browser-sync', ['jekyll-build'], function() {
-    browserSync({
-        server: {
-            baseDir: '_site'
-        }
-    });
-});
-
-gulp.task('stylus', function(){
-        gulp.src('src/styl/main.styl')
-        .pipe(plumber())
+gulp.task('stylus', function() {
+    return gulp.src('_assets/styl/main.styl')
+        .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
+        .pipe(sourcemaps.init())
         .pipe(stylus({
-            use:[nib(), prefixer(), jeet(), rupture()],
+            use: [nib(), prefixer(), jeet(), rupture()],
             compress: true
         }))
-        .pipe(gulp.dest('_site/assets/css/'))
-        .pipe(browserSync.reload({stream:true}))
+        //write('.') para jogar o mapa do css na mesma pasta em que vai ser colocado o css gerado
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/css'))
+        .pipe(connect.reload());
 });
 
-gulp.task('js', function(){
-    return gulp.src('src/js/**/*.js')
+gulp.task('html', function() {
+    gulp.src('_site/**/*.html')
+        .pipe(connect.reload());
+});
+
+gulp.task('js', function() {
+    return gulp.src('_assets/js/**/*.js')
         .pipe(plumber())
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'))
+        .on('error', notify.onError({ Title: 'JSHint', message: 'Errors on javascript.' }))
+        .pipe(connect.reload());
 });
 
 gulp.task('imagemin', function() {
-    return gulp.src('src/img/**/*')
+    return gulp.src('_assets/img/**/*')
         .pipe(plumber())
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('assets/img/'));
 });
 
-gulp.task('watch', function () {
-    gulp.watch('src/styl/**/*.styl', ['stylus']);
-    gulp.watch('src/js/**/*.js', ['js']);
-     gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
-    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+gulp.task('watch', function() {
+    gulp.watch('_assets/styl/**/*.styl', ['stylus']);
+    gulp.watch('_assets/js/**/*.js', ['js']);
+    gulp.watch('_assets/img/**/*.{jpg,png,gif}', ['imagemin']);
+    gulp.watch('_site/**/*.html', ['html']);
 });
 
-gulp.task('default', ['js', 'stylus', 'imagemin', 'browser-sync', 'watch']);
+gulp.task('clean', function(cb) {
+    return del('_site/');
+});
+
+gulp.task('bower', function() {
+    // roda bower install no root
+    return bower();
+});
+
+gulp.task('wiredep', function() {
+    return gulp.src(['_includes/footer.html', '_includes/head.html'])
+        // .pipe(wiredep({
+        //   ignorePath: '../_includes'
+        // }))
+        .pipe(wiredep({ ignorePath: '../_site' }))
+        .pipe(gulp.dest('_includes/'));
+});
+
+gulp.task('sequence', function(callback) {
+    sequence(
+        'bower', ['js', 'stylus', 'imagemin'],
+        'wiredep',
+        'watch',
+        callback
+    );
+});
+
+gulp.task('default', ['sequence'], function() {
+    connect.server({
+        root: '_site',
+        livereload: true
+    });
+});

@@ -4,19 +4,57 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  {% include homepage/banner.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <section class="portfolio">
+    <div class="wrapper">
+      <h2 class="center mtb-60">Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar.</h2>
+    </div>
+
+    <ul class="portfolio-list mtb-60">
+        <!-- {% include img/home-portfolio-sites.svg %} -->
+        <li class="portfolio-item">
+          <a href="#"> Sites </a>
+        </li>
+
+        <li class="portfolio-item">
+          <a href="#"> Apps </a>
+        </li>
+
+        <li class="portfolio-item">
+          <a href="#"> Desenvolvimento <br> de Produtos </a>
+        </li>
+
+        <li class="portfolio-item">
+          <a href="#"> Marketing e SEO </a>
+        </li>
+
+        <li class="portfolio-item">
+          <a href="#"> Gestão e <br> Infra-estrutura </a>
+        </li>
+
+    </ul>
+
+    <ul class="portfolio-display">
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <div class="wrapper">
+          <img src="assets/img/home-portfoliodisplay-infra.png" width="541" height="393" alt="" class="mr-40">
+          <div class="text-wrap">
+            <h1>Infra-estrutura na nuvem</h1>
+            <p>Nosso novo serviço de suporte para pequenas empresas foi  desenhado para te ajudar a abandonar cabos, servidores e técnicos de informática problemáticos. Queremos te apresentar as novas soluções para problemas antigos. Saiba como:</p>
+            <ul>
+              <li class="blue">Armazenar arquivos de forma segura sem pagar caro por isso</li>
+              <li class="red">Registrar dados de forma inteligente - e diminuir o gasto de tinta</li>
+              <li class="purple">Gerenciar tarefas e equipe online</li>
+            </ul>
+            <p>Confira um pequeno texto para aprender a detectar se você está pagando o justo pela infra da sua empresa:</p>
+            <a href="#">Meu técnico está me enrolando?</a>
+          </div>
+        </div>
       </li>
-    {% endfor %}
-  </ul>
+    </ul>
+  </section>
+
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
