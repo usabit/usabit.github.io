@@ -74,7 +74,8 @@ gulp.task('wiredep', function() {
         // .pipe(wiredep({
         //   ignorePath: '../_includes'
         // }))
-        .pipe(wiredep({ ignorePath: '../_site' }))
+        // .pipe(wiredep({ ignorePath: '../_site' }))
+        .pipe(wiredep({ ignorePath: '..' }))
         .pipe(gulp.dest('_includes/'));
 });
 
