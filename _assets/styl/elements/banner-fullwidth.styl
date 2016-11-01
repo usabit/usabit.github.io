@@ -24,9 +24,15 @@ section.banner-fullwidth {
       p {
         margin 0
         line-height 1.5
-        width 450px
+        max-width 450px
         color white
         text-shadow 1px 1px alpha(black, .3)
+        
+        +below('mobile'){
+          br {
+            display none
+          }          
+        }
       }
     }
   }
