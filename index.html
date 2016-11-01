@@ -1,61 +1,74 @@
 ---
 layout: default
 ---
-
 <div class="home">
-
-  {% include homepage/banner.html %}
-
-  <section class="portfolio">
-    <div class="wrapper">
-      <h2 class="center mtb-60">Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar.</h2>
-    </div>
-
-    <ul class="portfolio-list mtb-60">
-        <!-- {% include img/home-portfolio-sites.svg %} -->
-        <li class="portfolio-item">
-          <a href="#"> Sites </a>
-        </li>
-
-        <li class="portfolio-item">
-          <a href="#"> Apps </a>
-        </li>
-
-        <li class="portfolio-item">
-          <a href="#"> Desenvolvimento <br> de Produtos </a>
-        </li>
-
-        <li class="portfolio-item">
-          <a href="#"> Marketing e SEO </a>
-        </li>
-
-        <li class="portfolio-item">
-          <a href="#"> Gestão e <br> Infra-estrutura </a>
-        </li>
-
-    </ul>
-
-    <ul class="portfolio-display">
-      <li>
+    {% include homepage/banner.html %}
+    <section class="portfolio">
         <div class="wrapper">
-          <img src="assets/img/home-portfoliodisplay-infra.png" width="541" height="393" alt="" class="mr-40">
-          <div class="text-wrap">
-            <h1>Infra-estrutura na nuvem</h1>
-            <p>Nosso novo serviço de suporte para pequenas empresas foi  desenhado para te ajudar a abandonar cabos, servidores e técnicos de informática problemáticos. Queremos te apresentar as novas soluções para problemas antigos. Saiba como:</p>
-            <ul>
-              <li class="blue">Armazenar arquivos de forma segura sem pagar caro por isso</li>
-              <li class="red">Registrar dados de forma inteligente - e diminuir o gasto de tinta</li>
-              <li class="purple">Gerenciar tarefas e equipe online</li>
-            </ul>
-            <p>Confira um pequeno texto para aprender a detectar se você está pagando o justo pela infra da sua empresa:</p>
-            <a href="#">Meu técnico está me enrolando?</a>
-          </div>
+            <h2 class="center mtb-60">Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar.</h2>
         </div>
-      </li>
-    </ul>
-  </section>
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+        <ul class="portfolio-list mtb-60">
+            <!-- {% include img/home-portfolio-sites.svg %} -->
+            <li class="portfolio-item">
+                <a href="#">
+                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-sites.png" alt=""></div>
+                    <span class="text-wrap">Sites</span>
+                </a>
+            </li>
+            <li class="portfolio-item">
+                <a href="#">
+                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-apps.png" alt=""></div>
+                    <span class="text-wrap">Apps</span>
+                </a>
+            </li>
+            <li class="portfolio-item">
+                <a href="#">
+                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-desenvolvimento.png" alt=""></div>
+                    <span class="text-wrap">Desenvolvimento <br> de Produtos</span>
+                </a>
+            </li>
+            <li class="portfolio-item">
+                <a href="#">
+                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-marketing.png" alt=""></div>
+                    <span class="text-wrap">Marketing e SEO</span>
+                </a>
+            </li>
+            <li class="portfolio-item">
+                <a href="#">
+                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-infra.png" alt=""></div>
+                    <span class="text-wrap">Gestão e <br> Infra-estrutura</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="portfolio-display">
+            <li>
+                <div class="wrapper">
+                    <div class="img-wrap">
+                        <img src="assets/img/home-portfoliodisplay-infra.png">
+                    </div>
+                    <div class="text-wrap">
+                        <h1>Infra-estrutura na nuvem</h1>
+                        <p>Nosso novo serviço de suporte para pequenas empresas foi desenhado para te ajudar a abandonar cabos, servidores e técnicos de informática problemáticos. Queremos te apresentar as novas soluções para problemas antigos. Saiba como:</p>
+                        <ul class="ml-30">
+                            <li class="blue">Armazenar arquivos de forma segura sem pagar caro por isso</li>
+                            <li class="red">Registrar dados de forma inteligente - e diminuir o gasto de tinta</li>
+                            <li class="purple">Gerenciar tarefas e equipe online</li>
+                        </ul>
+                        <p class="mb-5">Confira um pequeno texto para aprender a detectar se você está pagando o justo pela infra da sua empresa:</p>
+                        <a href="#">Meu técnico está me enrolando?</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="clientes-display mtb-60">
+        <div class="wrapper">
+            <img src="assets/img/home-clientes-gf.png" alt="">
+            <img src="assets/img/home-clientes-sanes.png" alt="">
+            <img src="assets/img/home-clientes-th.png" alt="">
+            <img src="assets/img/home-clientes-twelve.png" alt="">
+            <img src="assets/img/home-clientes-qx3.png" alt="">
+            <img src="assets/img/home-clientes-rxbandeirantes.png" alt="">
+        </div>
+    </section>
 </div>

@@ -1,14 +1,34 @@
 // font-size base 16
 
+p {
+  margin 20px 0
+}
+
 // Headers
 h1 {
   font-size 2.375rem
   font-weight 300
+  
+  +below('tablet'){
+    font-size 2rem
+  }
 }
 
 h2 {
   font-size 1.875rem
   font-weight 300
+  
+  +below('tablet'){
+    font-size 1.5rem
+  }
+}
+
+h3 {
+  font-size 1.375rem
+  font-weight 300
+  +below('tablet'){
+    font-size 1.1rem
+  }
 }
 
 // *********************** //

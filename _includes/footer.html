@@ -1,42 +1,29 @@
 <footer class="site-footer">
+    <div class="wrapper">
+        <div class="map-embed">
+            <iframe src="{{site.google_map}}" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="text-wrap">
+            <h2 class="footer-heading mb-20">{{ site.title }}</h2>
+            <p class="mtb-10">{{site.address_line1}}</p>
+            {% if site.address_line2 %} <p class="mtb-10">{{site.address_line2}}</p> {% endif %}
+            <p class="mtb-10">{{site.city}}</p>
+            <p class="mtb-10">{{site.country}}</p>
+        </div>
 
-  <div class="wrapper">
+        <span class="flex-spacer"></span>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+            {% for social_link in site.social-links %}
+            <li>
+                {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
+            </li>
+            {% endfor %}
+        </ul>        
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
     </div>
-
-  </div>
-
 </footer>
-
 
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>

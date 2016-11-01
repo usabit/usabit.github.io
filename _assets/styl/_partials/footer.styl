@@ -1,0 +1,63 @@
+footer.site-footer {
+  margin-bottom 30px
+  .wrapper {
+    display flex
+    align-items center
+    
+    border-top 1px solid alpha(black, .3)
+    
+    +below('tablet'){
+      // flex-direction column
+      // align-items center
+      flex-wrap wrap
+    }
+  }
+  
+  .map-embed {
+    width 400px
+    height 250px
+
+    margin-right 20px
+    
+    position relative
+
+    +below('tablet'){
+      margin-right 0
+      margin-top 20px
+      width 100%
+      height 400px
+      order 1
+      
+      &:after {
+        content 'Click para ativar o mapa'
+        display flex
+        align-items flex-end
+        color azulUsabit
+        text-shadow 1px 1px alpha(white, .3)
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        padding 30px 60px
+        background-color alpha(azulUsabit, .2)
+      }
+    }
+    
+    &.active:after {
+      content none
+    }
+
+  }
+  
+  iframe {
+    width 100%
+    height 100%
+  }
+  
+  .text-wrap {
+    +below('tablet'){
+      margin 20px 0
+    }
+  }
+}

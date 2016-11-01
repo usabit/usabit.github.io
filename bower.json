@@ -20,10 +20,9 @@
     "font-awesome": "^4.7.0"
   },
   "overrides": {
-    "fontawesome": {
+    "font-awesome": {
       "main": [
-        "./scss/font-awesome.scss",
-        "./fonts/*"
+          "css/font-awesome.css"
       ]
     }
   }

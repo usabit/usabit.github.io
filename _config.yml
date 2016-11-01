@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Usabit Digital
+title: Usabit
 email: contato@usabit.com.br
 description: > # this means to ignore newlines until "baseurl:"
   Somos um time de desenvolvimento digital unido, integrado e aberto para o mundo.
@@ -15,6 +15,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://usabit.com.br" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  usabit
+
+# Footer Information
+address_line1: Av. Pastor Martin Lutherking Junior, 126
+address_line2: Shopping Nova América
+city: Rio de Janeiro
+country: Brasil
+google_map: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d759.2838215234633!2d-43.27029330841114!3d-22.87935686808418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf31c91cd0302bb07!2sShopping+Nova+Am%C3%A9rica!5e0!3m2!1spt-BR!2sbr!4v1478018926639
 
 # Build settings
 markdown: kramdown
@@ -27,3 +34,27 @@ exclude: [
   '.sass-cache',
   'bower.json'
 ]
+
+social-links: [
+  {
+    fontawesome_icon: 'fa-facebook',
+    link: 'http://fb.com/usabitdigital'
+  },
+  {
+    fontawesome_icon: 'fa-instagram',
+    link: 'https://www.instagram.com/usabit_/'
+  },
+  {
+    fontawesome_icon: 'fa-linkedin',
+    link: 'https://www.linkedin.com/company/usabit'
+  }
+]
+
+
+
+
+
+
+
+
+
