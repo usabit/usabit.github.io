@@ -2,6 +2,33 @@ a {
   font-size 1.125rem
   color #1a9ded
   text-decoration none
+  display inline-block
+}
+
+a.contato {
+  font-weight 300
+  font-size 1.125rem
+  padding-left 40px
+  position relative
+
+  &:before {
+    font-family FontAwesome
+    content "\f003"
+    position absolute
+    left 0
+    top 50%
+    transform translateY(-50%)
+    border 1px solid red
+    border-radius 50%
+    padding 6px
+  }
+
+  &.black {
+    color black
+    &:before {
+      border-color alpha(black, .9)
+    }
+  }
 }
 
 .btn {

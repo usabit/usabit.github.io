@@ -5,7 +5,6 @@ section.portfolio {
   }
   
   .portfolio-list {
-    
     display flex
     align-items stretch
     justify-content center
@@ -61,7 +60,14 @@ section.portfolio {
     list-style none
     background-color alpha(black, .07)
     
-    li {
+    li.portfolio-display-item {
+      
+      display none
+      
+      &.active {
+        display block
+      }
+
       .wrapper{
         display flex
         
@@ -70,15 +76,21 @@ section.portfolio {
           align-items center
         }
 
-        .img-wrap {
+        > .img-wrap {
           flex 40
           margin-right 30px
+          text-align right
 
           +below('tablet'){
             margin-right 0
             margin-bottom 30px
             max-width 500px
           }          
+          
+          &.vcenter {
+            display flex
+            align-items center
+          }
 
           img {
             max-width 100%
@@ -111,6 +123,41 @@ section.portfolio {
               }
               &.purple { 
                 color #884ba0 
+              }
+            }
+          }
+          
+          ul.lista-icon {
+            padding 30px 0
+            li {
+              display flex
+              align-items center
+              margin-bottom 10px
+              &:last-child {
+                margin-bottom 0
+              }
+              
+              .img-wrap {
+                margin-right 10px
+                line-height 1
+                img {
+                  max-width 100%
+                  margin 0
+                }
+              }
+              
+              .text-wrap {
+                flex 1
+                
+                p {
+                  margin 0
+                  font-size 1rem
+                  
+                  &.client {}
+                  &.description {
+                    color alpha(black, .5)
+                  }
+                }
               }
             }
           }

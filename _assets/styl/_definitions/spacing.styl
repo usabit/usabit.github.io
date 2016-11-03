@@ -1,4 +1,4 @@
-sizes = 5 10 15 20 25 30 35 40 45 50 55 60
+sizes = 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80
 for num in sizes
   .m-{num}
     margin: unit(num, px)
@@ -16,6 +16,17 @@ for num in sizes
   .mlr-{num}
     margin-left: unit(num, px)
     margin-right: unit(num, px)
+
+  .n-m-{num}
+    margin: unit(num * -1, px)
+  .n-mb-{num}
+    margin-bottom: unit(num * -1, px)
+  .n-mt-{num}
+    margin-top: unit(num * -1, px)
+  .n-ml-{num}
+    margin-left: unit(num * -1, px)
+  .n-mr-{num}
+    margin-right: unit(num * -1, px)
   
   .p-{num}
     padding: unit(num, px)
