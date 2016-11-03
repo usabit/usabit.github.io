@@ -27,6 +27,19 @@ for num in sizes
     margin-left: unit(num * -1, px)
   .n-mr-{num}
     margin-right: unit(num * -1, px)
+    
+  +below('mobile')
+    .mobile-n-m-{num}
+      margin: unit(num * -1, px)
+    .mobile-n-mb-{num}
+      margin-bottom: unit(num * -1, px)
+    .mobile-n-mt-{num}
+      margin-top: unit(num * -1, px)
+    .mobile-n-ml-{num}
+      margin-left: unit(num * -1, px)
+    .mobile-n-mr-{num}
+      margin-right: unit(num * -1, px)
+
   
   .p-{num}
     padding: unit(num, px)

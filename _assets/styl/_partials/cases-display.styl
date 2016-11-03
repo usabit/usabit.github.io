@@ -1,0 +1,48 @@
+.cases-display-list {
+  li.cases-display-item {
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+    overflow hidden
+    
+    .wrapper {
+      text-align center
+    }
+    
+    .text-wrapper {
+      display inline-flex
+      flex-direction column
+      position relative
+      margin 0 auto
+      color white
+      
+      align-items center
+      padding 90px 20px 40px
+      
+      img.case-icon {
+        max-width 100%
+      }
+
+      img.case-img-helper {
+        position absolute
+        bottom 0
+        &.left {
+          right 100%
+        }
+        &.right {
+          left 100%
+        }
+      }
+      
+      .case-title {
+        margin 20px 0 5px
+      }
+      .case-slogan {
+        margin 10px 0
+      }
+      .case-disclaimer {
+        margin-bottom 50px
+      }
+    }
+  }
+}

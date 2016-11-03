@@ -1,0 +1,30 @@
+header.page-header {
+  padding 190px 0
+  background-size cover
+  background-position center center
+  background-repeat no-repeat
+  
+  h1.page-title {
+    color azulUsabit
+  }
+  
+  p.page-description {
+    font-size 1.375rem
+    color white
+    text-shadow 1px 1px alpha(black, .3)
+    font-weight 300
+    line-height 1.5
+    +below('mobile'){
+      br {
+        display none
+      }
+    }
+  }
+  
+  svg#svg-arrow-down {
+    width 90px
+    > * {
+      fill azulUsabit
+    }
+  }
+}
