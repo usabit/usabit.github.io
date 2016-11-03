@@ -2,7 +2,7 @@ $(function(){
   $('.portfolio-item a').on('click', function(event){
     event.preventDefault();
 
-    $('.portfolio-item').removeClass('active');
+    $('.portfolio-item a').removeClass('active');
     $('.portfolio-display-item').removeClass('active');
 
     $(this).addClass('active');
