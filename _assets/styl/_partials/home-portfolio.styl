@@ -15,7 +15,7 @@ section.portfolio {
     margin 0
     
     +below('mobile'){
-      flex-wrap nowrap
+      display none
     }
 
     .portfolio-item {
@@ -91,109 +91,106 @@ section.portfolio {
     }
   }
   
-  .portfolio-display {
+  ul.portfolio-display {
+    display flex
+    flex-direction  column
+    background-color alpha(black, .05)
     padding 40px 0
-    margin 50px 0
-    list-style none
-    background-color alpha(black, .07)
+    margin 40px 0
     
+    +below('mobile'){
+      padding 0
+    }
+
     li.portfolio-display-item {
-      
+
       display none
-      
-      &.active {
-        display block
-      }
-
-      .wrapper{
+      +below('mobile'){
         display flex
+        border-bottom 2px solid white
+        width 100%
+        position relative
+      }
+      &.active {
+        display flex
+      }
         
-        +below('tablet'){
-          flex-direction column
-          align-items center
-        }
-
-        > .img-wrap {
-          flex 40
-          margin-right 30px
-          text-align right
-
-          +below('tablet'){
-            margin-right 0
-            margin-bottom 30px
-            max-width 500px
-          }          
-          
-          &.vcenter {
-            display flex
-            align-items center
-          }
-
-          img {
-            max-width 100%
-          }
+      > .img-wrap {
+        width 40%
+        margin-right 40px
+        display flex
+        align-items center
+        justify-content flex-end
+        
+        +below('mobile'){
+          position relative
+          overflow hidden
+          margin-right 0
         }
         
-        .text-wrap {
-          flex 60
-          
-          h1 {
-            margin 0
-            font-weight 700
-          }
-          
-          p {
-            font-size 1.125rem
-            line-height 1.5
-          }
-          
-          ul {
-            list-style none
-            li {
-              line-height 1.9
-              
-              &.blue { 
-                color #1a9ded 
-              }
-              &.red { 
-                color #d95147 
-              }
-              &.purple { 
-                color #884ba0 
-              }
+        img {
+          max-width 100%
+          +below('mobile'){
+            max-width initial
+            margin 0 !important
+            position absolute
+            right 0
+            top 0
+            
+            &.sites {
+              margin-top -90px !important
+            }
+            &.apps {
+              width 120%
+              margin-top 20px !important
+            }
+            &.mkt {
+              width 150%
+              margin-right -20% !important
+              margin-top 10px !important
+            }
+            &.infra {
+              width 100%
+              margin-top 15px !important
             }
           }
-          
-          ul.lista-icon {
-            padding 30px 0
-            li {
-              display flex
-              align-items center
-              margin-bottom 10px
-              &:last-child {
-                margin-bottom 0
-              }
-              
-              .img-wrap {
-                margin-right 10px
-                line-height 1
-                img {
-                  max-width 100%
-                  margin 0
-                }
-              }
-              
-              .text-wrap {
-                flex 1
+        }
+      }
+      
+      > .text-wrap {
+        flex 1
+        padding 40px 15px
+        h1 {
+          font-weight 700
+          +below('mobile') {
+            font-size 1.3rem
+          }
+        }
+        p {
+          font-size 1.125rem
+          line-height 1.5
+        }
+        
+        ul.clientes-lista-icon {
+          li {
+            display flex
+            align-items center
+            margin 15px 0
+            
+            > .img-wrap {
+              margin-right 15px
+            }
+            > .text-wrap {
+              p {
+                margin 0
                 
-                p {
-                  margin 0
+                &.client {
                   font-size 1rem
-                  
-                  &.client {}
-                  &.description {
-                    color alpha(black, .5)
-                  }
+                }
+                
+                &.description {
+                  font-size 1rem
+                  color alpha(black, .4)
                 }
               }
             }
