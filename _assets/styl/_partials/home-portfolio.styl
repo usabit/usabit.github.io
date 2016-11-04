@@ -135,23 +135,27 @@ section.portfolio {
             margin 0 !important
             position absolute
             right 0
-            top 0
+            top 50%
+            transform translateY(-50%)
             
             &.sites {
-              margin-top -90px !important
+              margin-top 20px !important
             }
             &.apps {
               width 120%
+              top 0
+              transform initial
               margin-top 20px !important
             }
             &.mkt {
               width 150%
               margin-right -20% !important
-              margin-top 10px !important
+              // margin-top 10px !important
             }
             &.infra {
-              width 100%
-              margin-top 15px !important
+              margin initial !important
+              width initial !important
+              max-width 130%
             }
           }
         }
