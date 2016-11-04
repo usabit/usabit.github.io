@@ -42,6 +42,32 @@
       }
       .case-disclaimer {
         margin-bottom 50px
+        font-size 1.125rem
+        color alpha(azulUsabit, .8)
+        text-shadow 1px 1px alpha(black, .8)
+      }
+      .case-links {
+        display flex
+        min-width 300px
+        margin 30px 0
+        justify-content space-around
+        
+        li a {
+          font-size 1rem
+          display flex
+          align-items center
+          color white
+          font-weight 300
+          
+          &:hover {
+            color azulUsabit
+            transition 200ms
+          }
+
+          i.fa {
+            margin-right 7px
+          }
+        }
       }
     }
   }

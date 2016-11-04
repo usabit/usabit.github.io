@@ -11,6 +11,16 @@ section.banner-fullwidth {
       background-position center center
       margin 0
       padding 0
+      position relative
+      z-index 1
+      
+      &:after {
+        background-image linear-gradient(to top, alpha(black, .7), transparent)
+        content ''
+        position absolute
+        trbl 0
+        z-index -1
+      }
       
       .wrapper {
         height 585px
