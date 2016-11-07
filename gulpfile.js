@@ -61,7 +61,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb) {
-    return del('_site/');
+    return del(['_site/', 'assets/', 'bower_components/']);
 });
 
 gulp.task('bower', function() {
@@ -81,7 +81,8 @@ gulp.task('wiredep', function() {
 
 gulp.task('sequence', function(callback) {
     sequence(
-        'bower', ['js', 'stylus', 'imagemin'],
+        'bower', 
+        ['js', 'stylus', 'imagemin'],
         'wiredep',
         'watch',
         callback

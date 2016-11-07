@@ -1,0 +1,49 @@
+section.contato {
+  border goldenrod
+  
+  display flex
+  
+  +below(900px){
+    flex-direction column
+    align-items center
+  }
+  
+  .fb-page {
+    min-width 400px
+    max-width 90%
+  }
+  
+  .contact-method {
+    flex 1
+
+    h1 {
+      color azulUsabit
+      +below(900px){
+        text-align center
+      }
+    }
+    &:first-child {
+      margin-right 40px
+      +below(900px){
+        margin-right 0
+        margin-bottom 40px
+      }
+    }
+    
+    .social-media-list {
+      flex-direction column
+      .social-media-link {
+        margin 14px 0
+        font-size 1.5rem
+        font-weight 300
+        span.fa-stack {
+          font-size 1.1em
+        }
+        &:first-child {
+          margin-top 0
+        }
+      }
+    }
+
+  }
+}

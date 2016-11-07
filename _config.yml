@@ -38,15 +38,18 @@ exclude: [
 social-links: [
   {
     fontawesome_icon: 'fa-facebook',
-    link: 'http://fb.com/usabitdigital'
+    link: 'http://fb.com/usabitdigital',
+    description: '/usabitdigital'
   },
   {
     fontawesome_icon: 'fa-instagram',
-    link: 'https://www.instagram.com/usabit_/'
+    link: 'https://www.instagram.com/usabit_/',
+    description: '@usabit_'
   },
   {
     fontawesome_icon: 'fa-linkedin',
-    link: 'https://www.linkedin.com/company/usabit'
+    link: 'https://www.linkedin.com/company/usabit',
+    description: '/company/usabit'
   }
 ]
 
