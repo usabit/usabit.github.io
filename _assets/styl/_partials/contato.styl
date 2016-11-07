@@ -5,14 +5,12 @@ section.contato {
     flex-direction column
     align-items center
   }
-  
-  .fb-page {
-    min-width 400px
-    max-width 90%
-  }
-  
+    
   .contact-method {
     flex 1
+    display flex
+    flex-direction column
+    align-items stretch
 
     h1 {
       color azulUsabit
@@ -23,8 +21,18 @@ section.contato {
     &:first-child {
       margin-right 40px
       +below(900px){
+        min-width 350px
         margin-right 0
         margin-bottom 40px
+      }
+    }
+    
+    .fb-page {
+      +below(900px){
+        align-self center
+        width 99%
+        display flex
+        justify-content center
       }
     }
     
