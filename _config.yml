@@ -28,7 +28,7 @@ markdown: kramdown
 
 exclude: [
   'node_modules', 
-  '.gulpfile.js',
+  'gulpfile.js',
   'package.json',
   '_sass',
   '.sass-cache',
