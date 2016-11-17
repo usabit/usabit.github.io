@@ -32,7 +32,8 @@ exclude: [
   'package.json',
   '_sass',
   '.sass-cache',
-  'bower.json'
+  'bower.json',
+  'bower_components'
 ]
 
 social-links: [

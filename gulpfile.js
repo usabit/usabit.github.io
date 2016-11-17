@@ -10,12 +10,12 @@ var nib = require('nib');
 var prefixer = require('autoprefixer-stylus');
 var sourcemaps = require('gulp-sourcemaps');
 var imagemin = require('gulp-imagemin');
-var cp = require('child_process');
 var bower = require('gulp-bower'); // roda bower install por padrão ou algum outro comando do bower pelo gulp    
 var wiredep = require('wiredep').stream; // aplica os arquivos do bower diretamente na index.html do sistema
 var del = require('del');
 var sequence = require('run-sequence');
 var notify = require('gulp-notify');
+var mainBowerFiles = require('gulp-main-bower-files');
 
 gulp.task('stylus', function() {
     return gulp.src('_assets/styl/main.styl')
@@ -64,9 +64,29 @@ gulp.task('clean', function(cb) {
     return del(['_site/', 'assets/', 'bower_components/']);
 });
 
-gulp.task('bower', function() {
+gulp.task('bower-install', function() {
     // roda bower install no root
     return bower();
+});
+
+gulp.task('bower', ['bower-install'], function() {
+    return gulp.src('./bower.json')
+        .pipe(mainBowerFiles({
+            'overrides': {
+                'font-awesome': {
+                    'main': [
+                      'css/font-awesome.css',
+                      'fonts/fontawesome-webfont.eot',
+                      'fonts/fontawesome-webfont.woff',
+                      'fonts/fontawesome-webfont.woff2',
+                      'fonts/fontawesome-webfont.otf',
+                      'fonts/fontawesome-webfont.ttf',
+                      'fonts/fontawesome-webfont.svg'
+                    ]
+                }
+            }
+        }))
+        .pipe(gulp.dest('assets/libs'));
 });
 
 gulp.task('wiredep', function() {
