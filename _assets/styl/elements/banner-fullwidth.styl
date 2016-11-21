@@ -2,24 +2,51 @@ section.banner-fullwidth {
   width 100%
   position relative
   
-  .banner-controllers {
-    position absolute
-    color white
-    bottom 25px
-    left 50%
-    transform translate3d(-50%, 50%, 0)
-    z-index 99
-    
+  .owl-nav {
     display flex
+    align-items center
+    justify-content space-between
     
-    li {
-      margin 0 10px
-      cursor pointer
+    .owl-prev,
+    .owl-next {
+      z-index 999
+      position absolute
+      top 50%
+      left 20px
+      transform translateY(-50%)
+      color white
+      font-size 25px
+      text-shadow 1px 1px alpha(black, .7)
     }
+    .owl-next {
+      right 20px
+      left initial
+    }
+  }
+  
+  .owl-dots {
+    display flex
+    align-items center
+    justify-content center
+    left 0
+    right 0
     
-    ul.banner-representation {
-      display flex
-      margin 0 10px
+    position absolute
+    bottom 25px
+    transform translateY(-50%)
+    .owl-dot {
+      margin 0 7px
+      span {
+        display inline-block
+        size(12px)
+        border-radius 50%
+        border 1px solid white
+        box-shadow 1px 1px alpha(black, .7)
+      }
+      
+      &.active span {
+        background-color white
+      }
     }
   }
   

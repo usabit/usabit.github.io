@@ -83,6 +83,12 @@ gulp.task('bower', ['bower-install'], function() {
                       'fonts/fontawesome-webfont.ttf',
                       'fonts/fontawesome-webfont.svg'
                     ]
+                },
+                'owl.carousel': {
+                    'main': [
+                        "dist/owl.carousel.js",
+                        "dist/assets/owl.carousel.css"
+                    ]
                 }
             }
         }))
