@@ -138,8 +138,16 @@ section.portfolio {
         width 40%
         margin-right 40px
         display flex
-        align-items center
-        justify-content flex-end
+        align-items flex-end
+        justify-content center
+        flex-direction column
+        
+        p {
+          text-align right
+          +below('mobile'){
+            display none
+          }
+        }
         
         +below('mobile'){
           position relative
@@ -149,34 +157,7 @@ section.portfolio {
         
         img {
           max-width 100%
-          +below('mobile'){
-            max-width initial
-            margin 0 !important
-            position absolute
-            right 0
-            top 50%
-            transform translateY(-50%)
-            
-            &.sites {
-              margin-top 20px !important
-            }
-            &.apps {
-              width 120%
-              top 0
-              transform initial
-              margin-top 20px !important
-            }
-            &.mkt {
-              width 150%
-              margin-right -20% !important
-              // margin-top 10px !important
-            }
-            &.infra {
-              margin initial !important
-              width initial !important
-              max-width 130%
-            }
-          }
+          margin 5px
         }
       }
       

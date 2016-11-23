@@ -28,11 +28,11 @@ gulp.task('stylus', function() {
         //write('.') para jogar o mapa do css na mesma pasta em que vai ser colocado o css gerado
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/css'))
-        .pipe(connect.reload());
+    ;
 });
 
-gulp.task('html', function() {
-    gulp.src('_site/**/*.html')
+gulp.task('reload', function() {
+    gulp.src(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js'])
         .pipe(connect.reload());
 });
 
@@ -43,7 +43,7 @@ gulp.task('js', function() {
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'))
         .on('error', notify.onError({ Title: 'JSHint', message: 'Errors on javascript.' }))
-        .pipe(connect.reload());
+    ;
 });
 
 gulp.task('imagemin', function() {
@@ -57,7 +57,7 @@ gulp.task('watch', function() {
     gulp.watch('_assets/styl/**/*.styl', ['stylus']);
     gulp.watch('_assets/js/**/*.js', ['js']);
     gulp.watch('_assets/img/**/*.{jpg,png,gif}', ['imagemin']);
-    gulp.watch('_site/**/*.html', ['html']);
+    gulp.watch(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js'], ['reload']);
 });
 
 gulp.task('clean', function(cb) {
