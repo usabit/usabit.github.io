@@ -15,10 +15,23 @@
 
       <div class="trigger">
         <a class="page-link {% if page.url == '/' %}active{% endif %}" href="/">Início</a>
-        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "navigation") %}
         {% for my_page in sorted_pages %}
           {% if my_page.title %}
             <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+            {% if my_page.order == 1 %}
+              <div class="page-link group" href="#">
+                <span>Nossos Produtos</span>
+                <nav>
+                  {% assign sorted_products = (site.pages | where: "group" , "product" | sort:"order") %}
+                  {% for my_product in sorted_products %}
+                    <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{{ my_product.url | prepend: site.baseurl }}">{{ my_product.title }}</a>
+                  {% endfor %}
+                </nav>
+              </div>
+            {% endif %}
+
           {% endif %}
         {% endfor %}
       </div>

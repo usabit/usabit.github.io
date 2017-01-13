@@ -84,7 +84,7 @@ header.site-header {
         display none
       }
       
-      a.page-link {
+      .page-link {
         position relative
         color white
         padding 5px 18px
@@ -109,6 +109,33 @@ header.site-header {
             background-color #5cb2eb
           }
         }
+        
+        nav {
+          display none
+          position absolute
+          top 100%
+          left 50%
+          transform translateX(-50%)
+          align-items center
+          flex-direction column
+          background-image linear-gradient(top, alpha(black, .6), alpha(black, .8) 40%)
+          padding 15px 5px 10px 5px
+
+          a {
+            white-space nowrap
+            font-size .85rem !important
+            margin 4px 0
+          }
+        }
+        
+        &.group {
+          position relative
+          &:hover {
+            nav {
+              display flex
+            }
+          }
+        }
       }
     }
   }
@@ -116,7 +143,7 @@ header.site-header {
   &.homepage {
     +above('small-tablet'){
       padding 50px 0
-      .trigger a.page-link {
+      .trigger .page-link {
         font-size 18px
       }
       .site-title {
