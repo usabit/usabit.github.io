@@ -1,0 +1,34 @@
+.list-with-background {
+    display flex
+    flex-direction column
+    align-items center
+    background-size cover
+    background-repeat no-repeat
+    background-position center center
+
+    h1 {
+        color white
+        text-shadow 1px 1px 1px alpha(black, .7)
+    }
+    
+    .panel {
+        background-color white
+        box-shadow 2px 1px alpha(black, .3)
+        max-width 500px
+        color alpha(black, .5)
+        display flex
+        align-items center
+        justify-content flex-start
+        
+        i.fa {
+            font-size 35px
+            margin 30px
+        }
+
+        p {
+            margin 15px
+            margin-left 0
+            line-height 1.4
+        }
+    }
+}
