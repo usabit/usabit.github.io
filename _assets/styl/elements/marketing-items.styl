@@ -1,0 +1,88 @@
+.marketing-items {
+    .marketing-item {
+
+        .content {
+            display flex
+        }
+
+        .text-wrapper {
+            flex 55
+            width 55%
+            display flex
+            flex-direction column
+            justify-content center
+            padding-right 20px
+
+            h3 {
+                color azulUsabit
+                font-weight bold
+            }
+            
+            p {
+                line-height 1.4
+            }
+
+            div.cta {
+                border-left 2px dotted azulUsabit
+                color goldenrod
+                
+                a {
+                    color inherit
+                    font-size .8rem
+                }
+            }
+        }
+        .img-wrapper {
+            flex 45
+            width 45%
+            
+            display flex
+            flex-direction column
+            align-items center
+            
+            > * {
+                max-width 100%
+            }
+            
+            .video-wrapper {
+                width 100%
+                padding-bottom 56.25%
+                position relative
+                
+                iframe {
+                    position absolute
+                    trbl 0
+                }
+            }
+            
+            .legenda {
+                font-size .7rem
+                line-height 1.4
+                align-self flex-start
+            }
+        }
+        
+        &:nth-child(even){
+            +above('mobile'){
+                .text-wrapper {
+                    order 1
+                    h3, p, a {
+                        text-align right
+                    }
+                    
+                    div.cta {
+                        border-left 0
+                        border-right 2px dotted azulUsabit
+                        text-align right
+                    }
+                }
+            }            
+        }
+
+        +below('mobile'){
+            .img-wrapper {
+                display none
+            }
+        }
+    }
+}
