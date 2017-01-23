@@ -7,6 +7,7 @@ header.page-header {
   
   h1.page-title {
     color azulUsabit
+    max-width 450px
   }
   
   p.page-description {
@@ -27,6 +28,13 @@ header.page-header {
     width 90px
     > * {
       fill azulUsabit
+    }
+  }
+  
+  &.texto-escuro {
+    p.page-description {
+      color alpha(black, .7)
+      text-shadow 1px 1px alpha(white, .3)
     }
   }
 }
