@@ -1,0 +1,82 @@
+// <label class="input-group text-center full-width">
+//     <input type="text" name="email" value="" onkeyup="this.setAttribute('value', this.value);">
+//     <span>E-mail</span>
+// </label>
+
+
+.input-group {
+    display block
+    position relative
+    background-color white
+    padding 5px
+    border-radius 2px
+    align-self flex-start
+    cursor text
+    margin 10px 0
+
+    span {
+        color alpha(black, .4)
+        position absolute
+        top 2px
+        transition 200ms
+        font-style italic
+        transform translate3d(10px, 50%, 0)
+        text-transform capitalize
+    }
+    
+    input:not([value=""]) + span,
+    input:focus + span {
+        transform translate3d(0, 0, 0)
+        font-size .7rem
+    }
+    
+    input:focus + span,
+    textarea:focus + span {
+        color corPrincipal + 30%
+    }
+    
+    textarea + span {
+        top 0
+        left 0
+    }
+    
+    textarea {
+        display block
+        margin 0
+        margin-top 22px
+        resize none
+        width 100%
+        height 70px
+        outline 0
+        border 0
+        padding 5px
+    }
+    
+    input {
+        display block
+        margin-top 12px
+        font-size 1rem
+        border 0
+        outline 0
+    }
+    
+    &.full-width {
+        width 100%
+        
+        input {
+            width 100%
+        }
+    }
+    
+    &.text-center {
+        span {
+            width 100%
+            text-align center
+            left 0
+            transform translate3d(0, 50%, 0)
+        }
+        input {
+            text-align center
+        }
+    }
+}

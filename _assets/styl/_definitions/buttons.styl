@@ -12,6 +12,8 @@ a.cta {
   font-size 1.1rem
   align-self flex-start
   border-radius 50px
+  min-width 140px
+  text-align center
   
   &:hover {
     opacity .9
@@ -30,15 +32,19 @@ a.contato {
   position relative
 
   &:before {
+    size(34px)
+    display flex
+    align-items center
+    justify-content center
     font-family FontAwesome
     content "\f003"
+    text-indent 1px
     position absolute
     left 0
     top 50%
     transform translateY(-50%)
     border 1px solid red
     border-radius 50%
-    padding 6px
   }
 
   &.black {
