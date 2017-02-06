@@ -16,11 +16,14 @@ section.portfolio {
 
     .portfolio-item {
       margin 20px
+      margin-bottom 0
       text-align center
       display flex
       align-items center
       flex-direction column
       font-weight 300
+      position relative
+      padding-bottom 30px
       
       +below('mobile'){
         justify-content center
@@ -63,6 +66,7 @@ section.portfolio {
         text-decoration none
         font-weight inherit
         align-self stretch
+        position relative
 
         display flex
         flex-direction column
@@ -98,24 +102,37 @@ section.portfolio {
           border-bottom 1px solid transparent
           margin 0 3px 7px 3px
         }
-
-        &:hover,
-        &.active {
+      }
+      
+      &:hover,
+      &.active {
+        a {
           color #1a9ded
-          +below('mobile'){
-            border-bottom 1px solid @color
-          }
+        }
+
+        &:after {
+          content ''
+          size(0, 0)
+          position absolute
+          bottom 0
+          left 50%
+          transform translateX(-50%)
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          
+          border-bottom: 25px solid alpha(black, .1);
         }
       }
-    }
+
+    }    
   }
 
   ul.portfolio-display {
     display flex
     flex-direction  column
-    background-color alpha(black, .05)
+    background-color alpha(black, .1)
     padding 40px 0
-    margin 40px 0
+    margin-bottom 40px
     
     +below('mobile'){
       padding 0
@@ -158,6 +175,19 @@ section.portfolio {
         img {
           max-width 100%
           margin 5px
+        }
+        
+        .above-mobile {
+          display none
+          +above('small-tablet'){
+            display block
+          }
+        }
+        .mobile-only {
+          display none
+          +below('mobile'){
+            display block
+          }
         }
       }
       
