@@ -81,6 +81,7 @@ hide_arrow: 1
 
 </div>
 
+<form id="infraEstrutura" method="post">
 <div class="formulario-wrapper azul mtb-60">
     <div class="wrapper">
         <table class="formulario azul">
@@ -93,12 +94,42 @@ hide_arrow: 1
                     </td>
                 </tr>
                 <tr>
+                    <td>Quem é você?</td>
+                    <td>
+                        <p class="mobile-only">Quem é você?</p>
+
+                        <div class="flex">
+                            <input type="text" name="nome">
+                            <span class="hint">Nome</span>                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="flex">
+                            <input type="text" name="email">
+                            <span class="hint">E-Mail</span>                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qual nome de sua empresa?</td>
+                    <td>
+                        <p class="mobile-only">Qual nome de sua empresa?</p>
+
+                        <div class="flex">
+                            <input type="text" name="empresa_nome">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>Qual seu ramo de atuação?</td>
                     <td>
                         <p class="mobile-only">Qual seu ramo de atuação?</p>
 
                         <div class="flex">
-                            <input type="text">
+                            <input type="text" name="empresa_atividade">
                             <span class="hint">Nos ajuda a entender que tipo <br> de arquivos você trafega</span>                            
                         </div>
                     </td>
@@ -109,7 +140,7 @@ hide_arrow: 1
                         <p class="mobile-only">Endereço físico (CEP)</p>
 
                         <div class="flex">
-                            <input type="text" class="cep" value="21310-310">
+                            <input type="text" class="cep" name="empresa_cep">
                             <span class="hint">Vamos descobrir os melhores <br> serviços de internet da sua região</span>                            
                         </div>
                     </td>
@@ -122,25 +153,25 @@ hide_arrow: 1
                             <div class="input-group-infra">
                                 <label>
                                     <span>Funcionários</span>
-                                    <input type="text" name="" value="">
+                                    <input type="text" name="empresa_funcionarios" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
                                     <span>Computadores</span>
-                                    <input type="text" name="" value="">
+                                    <input type="text" name="empresa_computadores" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
                                     <span>Impressoras</span>
-                                    <input type="text" name="" value="">
+                                    <input type="text" name="empresa_impressoras" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
                                     <span>Outros</span>
-                                    <input type="text" name="" value="">
+                                    <input type="text" name="empresa_outros" value="">
                                 </label>
                             </div>
                         </div>
@@ -153,7 +184,7 @@ hide_arrow: 1
                         <p class="mobile-only">Já possui uma configuração <br> de rede?</p>
 
                         <div class="flex">
-                            <input type="text">
+                            <input type="text" name="empresa_redeconfigurada">
                             <span class="hint">Vamos descobrir os melhores <br> serviços de internet da sua região</span>                            
                         </div>
                     </td>
@@ -164,7 +195,7 @@ hide_arrow: 1
                         <p class="mobile-only">Qual seu site?</p>
 
                         <div class="flex">
-                            <input type="text">
+                            <input type="text" name="empresa_site">
                             <span class="hint">É necessário para <br> configurar o servidor</span>                            
                         </div>
                     </td>
@@ -172,13 +203,14 @@ hide_arrow: 1
                 <tr>
                     <td></td>
                     <td>
-                        <a href="#" class="cta blue">Enviar</a>
+                        <a href="#" id="formInfraSend" class="cta blue">Enviar</a>
                     </td>
                 </tr>
             </tbody>
         </table>    
     </div>    
 </div>
+</form>
 
 <div class="wrapper">
     <ul class="experts-list">
