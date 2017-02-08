@@ -57,59 +57,99 @@ hide_arrow: 1
     </div>
 </section>
 
-<form action="" id="oportunidade" class="oportunidade ptb-60 mtb-60">
+<form id="oportunidade" class="oportunidade ptb-60 mtb-60">
     <div class="wrapper">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h2 class="bold mb-20">Vem jogar?</h2>
                 <ul class="oportunidades mt-30">
-                    <li><a href="#">Oportunidade 1</a></li>
-                    <li><a href="#">Oportunidade 2</a></li>
-                    <li><a href="#">Oportunidade 3</a></li>
-                    <li><a href="#">Oportunidade 4</a></li>
+                    <li><a href="#">Desenvolvedor PHP</a></li>
+                    <li>
+                        <a href="#">Desenvolvedor Front-end</a>
+                        <p>(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)</p>
+                    </li>
+                    <li><a href="#">Analista de Redes Sociais</a></li>
+                    <li><a href="#">Designer</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9">
-                <h2 class="bold mb-20">Ou deixe seu contato:</h2>
-                <div class="row">
-                    <div class="col-xs-12 col-md-8">
-                        <label class="input-group full-width">
-                            <input type="text" name="nome" value="" onkeyup="this.setAttribute('value', this.value);">
-                            <span>Nome</span>
-                        </label>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <label class="input-group full-width">
-                            <input type="text" name="celular" value="" onkeyup="this.setAttribute('value', this.value);">
-                            <span>celular</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <label class="input-group full-width">
-                            <input type="text" name="email" value="" onkeyup="this.setAttribute('value', this.value);">
-                            <span>E-mail</span>
-                        </label>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <label class="input-group full-width">
-                            <input type="text" name="linkedin" value="" onkeyup="this.setAttribute('value', this.value);">
-                            <span>Linkedin (ou outro link)</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row form-sucesso mtb-40">
                     <div class="col-xs-12">
-                        <label class="input-group full-width">
-                            <textarea name="mensagem"></textarea>
-                            <span>Mensagem</span>
-                        </label>
+                        <h1 class="text-center">Mensagem enviada com <span class="success">sucesso</span>!</h1>
+                        <p class="text-center">Vamos analizar seus dados e entraremos em contato com você.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row form-display">
                     <div class="col-xs-12">
-                        <a href="#" id="formOportunidadeSend" class="cta blue mt-10 prl-20">Enviar</a>
+                        <h2 class="bold mb-20">Ou deixe seu contato:</h2>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">
+                                <label class="input-group full-width">
+                                    <input type="text" name="nome" value="" onkeyup="this.setAttribute('value', this.value);">
+                                    <span>Nome</span>
+                                    <div class="error">
+                                        <span class="error-message"></span>
+                                        <i class="error-icon fa fa-exclamation"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <label class="input-group full-width">
+                                    <input type="text" name="celular" value="" onkeyup="this.setAttribute('value', this.value);">
+                                    <span>celular</span>
+
+                                    <div class="error">
+                                        <span class="error-message"></span>
+                                        <i class="error-icon fa fa-exclamation"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <label class="input-group full-width">
+                                    <input type="text" name="email" value="" onkeyup="this.setAttribute('value', this.value);">
+                                    <span>E-mail</span>
+
+                                    <div class="error">
+                                        <span class="error-message"></span>
+                                        <i class="error-icon fa fa-exclamation"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <label class="input-group full-width">
+                                    <input type="text" name="linkedin" value="" onkeyup="this.setAttribute('value', this.value);">
+                                    <span>Linkedin (ou outro link)</span>
+                                    <div class="error">
+                                        <span class="error-message"></span>
+                                        <i class="error-icon fa fa-exclamation"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input-group full-width">
+                                    <textarea name="mensagem"></textarea>
+                                    <span>Mensagem</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row form-erro">
+                            <div class="col-xs-12">
+                                <h3 class="danger mt-20 mb-10">Algo deu errado</h3>
+                                <p class="mt-10">Tente novamente mais tarde</p>                        
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a href="#" id="formOportunidadeSend" class="cta blue mt-10 prl-20">
+                                    Enviar
+                                    {% include img/svg-loading.html size="25px" %}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

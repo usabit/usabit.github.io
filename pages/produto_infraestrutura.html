@@ -81,7 +81,7 @@ hide_arrow: 1
 
 </div>
 
-<form id="infraEstrutura" method="post">
+<form id="infraEstrutura" class="form-display" method="post">
 <div class="formulario-wrapper azul mtb-60">
     <div class="wrapper">
         <table class="formulario azul">
@@ -100,7 +100,7 @@ hide_arrow: 1
 
                         <div class="flex">
                             <input type="text" name="nome">
-                            <span class="hint">Nome</span>                            
+                            <span class="hint">Nome</span>
                         </div>
                     </td>
                 </tr>
@@ -108,7 +108,7 @@ hide_arrow: 1
                     <td></td>
                     <td>
                         <div class="flex">
-                            <input type="text" name="email">
+                            <input type="email" name="email">
                             <span class="hint">E-Mail</span>                            
                         </div>
                     </td>
@@ -200,10 +200,24 @@ hide_arrow: 1
                         </div>
                     </td>
                 </tr>
+                <tr class="form-erro">
+                    <td></td>
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 class="danger mt-20 mb-10">Algo deu errado</h3>
+                                <p class="mt-10 n-mb-20">Tente novamente mais tarde</p>                        
+                            </div>
+                        </div>
+                    </td>
+                </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <a href="#" id="formInfraSend" class="cta blue">Enviar</a>
+                        <a href="#" id="formInfraSend" class="cta blue mt-10 prl-20">
+                            Enviar
+                            {% include img/svg-loading.html size="25px" %}
+                        </a>
                     </td>
                 </tr>
             </tbody>
@@ -211,6 +225,13 @@ hide_arrow: 1
     </div>    
 </div>
 </form>
+
+<div class="form-sucesso azul ptb-60 mtb-60">
+    <div class="wrapper">
+        <h1 class="text-center">Mensagem enviada com <span class="success">sucesso</span>!</h1>
+        <p class="text-center">Vamos analizar seus dados e entraremos em contato com você.</p>
+    </div>
+</div>
 
 <div class="wrapper">
     <ul class="experts-list">

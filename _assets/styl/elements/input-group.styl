@@ -1,8 +1,11 @@
-// <label class="input-group text-center full-width">
-//     <input type="text" name="email" value="" onkeyup="this.setAttribute('value', this.value);">
-//     <span>E-mail</span>
+// <label class="input-group full-width text-center">
+//     <input type="text" name="nome" value="" onkeyup="this.setAttribute('value', this.value);">
+//     <span>Nome</span>
+//     <div class="error">
+//         <span class="error-message">teste</span>
+//         <i class="error-icon fa fa-exclamation"></i>
+//     </div>
 // </label>
-
 
 .input-group {
     display block
@@ -14,7 +17,7 @@
     cursor text
     margin 10px 0
 
-    span {
+    > span {
         color alpha(black, .4)
         position absolute
         top 2px
@@ -69,7 +72,7 @@
     }
     
     &.text-center {
-        span {
+        > span {
             width 100%
             text-align center
             left 0
@@ -77,6 +80,27 @@
         }
         input {
             text-align center
+        }
+    }
+    
+    .error {
+        display none
+        color alpha(red - 40%, .8)
+        border alpha(red - 20%, .8)
+        position absolute
+        trbl 0
+        flex-direction row
+        align-items center
+        justify-content flex-end
+        font-style italic
+        
+        .error-icon {
+            font-size 18px
+            margin 0 10px
+        }
+        .error-message {
+            text-align right
+            font-size 12px
         }
     }
 }

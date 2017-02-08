@@ -4,6 +4,17 @@ secondAzul = #63b0ed
 .formulario-wrapper {
     &.azul {
         background-image linear-gradient(left, firstAzul 50%, secondAzul 50%)
+        
+        .erro {
+            display block
+            width 100%
+            line-height 1.3
+            color red + 30%
+            
+            input {
+                border 2px solid red
+            }
+        }
     }
 }
 
@@ -13,6 +24,9 @@ table.formulario {
 
     h1, h2, h3, h4, h5 {
         color white
+        &.danger {
+            color #A03233
+        }
     }
     
     .hint {
