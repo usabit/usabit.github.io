@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var API_URL = 'http://localhost:3000';
+    var API_URL = 'https://usabit-api.herokuapp.com';
 
     function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
