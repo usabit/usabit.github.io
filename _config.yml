@@ -44,6 +44,65 @@ exclude: [
   'bower_components'
 ]
 
+cases: [
+  { 
+    id: 'aliga',
+    title: 'A Liga',
+    slogan: 'Todo jogo vale',
+    linkhref: 'appaliga.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'left bottom'
+  },
+  { 
+    id: 'rxbandeirantes',
+    title: 'RX Bandeirantes',
+    slogan: 'Clínica Radiológica',
+    linkhref: 'rxbandeirantes.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'right'
+  },
+  { 
+    id: 'eurovip',
+    title: 'EuroVip',
+    slogan: 'Transporte e Turismo',
+    linkhref: 'euroviptransportes.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'left'
+  },
+  { 
+    id: 'matanativa',
+    title: 'Mata Nativa',
+    slogan: 'Pousada',
+    linkhref: 'pousadamatanativa.tur.br',
+    linkclass: 'fa-link',
+    deviceclass: 'right'
+  },
+  { 
+    id: 'paula-moraes',
+    title: 'Dra. Paula Moraes',
+    slogan: 'Dentista',
+    linkhref: 'paulamoraes.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'left'
+  },
+  { 
+    id: 'sanes',
+    title: 'Sanes',
+    slogan: 'Indústria alimentícia',
+    linkhref: 'sanesbr.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'right'
+  },
+  { 
+    id: 'techhealthy',
+    title: 'TechHealthy',
+    slogan: 'Agência virtual',
+    linkhref: 'techhealthy.com.br',
+    linkclass: 'fa-link',
+    deviceclass: 'left'
+  }
+]
+
 social-links: [
   {
     fontawesome_icon: 'fa-facebook',

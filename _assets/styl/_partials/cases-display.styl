@@ -25,12 +25,19 @@
 
       img.case-img-helper {
         position absolute
-        bottom 0
+        top 50%
+        transform translateY(-50%)
+        max-height 420px
         &.left {
-          right 100%
+          right 125%
         }
         &.right {
-          left 100%
+          left 125%
+        }
+        &.bottom {
+          bottom 0
+          transform initial
+          top initial
         }
       }
       
