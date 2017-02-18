@@ -35,7 +35,7 @@ exclude: [
   'Procfile',
   'Rakefile',
   'vendor',
-  'node_modules', 
+  'node_modules',
   'gulpfile.js',
   'package.json',
   '_sass',
@@ -45,7 +45,7 @@ exclude: [
 ]
 
 cases: [
-  { 
+  {
     id: 'aliga',
     title: 'A Liga',
     slogan: 'Todo jogo vale',
@@ -53,7 +53,7 @@ cases: [
     linkclass: 'fa-link',
     deviceclass: 'left bottom'
   },
-  { 
+  {
     id: 'rxbandeirantes',
     title: 'RX Bandeirantes',
     slogan: 'Clínica Radiológica',
@@ -61,7 +61,7 @@ cases: [
     linkclass: 'fa-link',
     deviceclass: 'right'
   },
-  { 
+  {
     id: 'eurovip',
     title: 'EuroVip',
     slogan: 'Transporte e Turismo',
@@ -69,7 +69,7 @@ cases: [
     linkclass: 'fa-link',
     deviceclass: 'left'
   },
-  { 
+  {
     id: 'matanativa',
     title: 'Mata Nativa',
     slogan: 'Pousada',
@@ -77,15 +77,15 @@ cases: [
     linkclass: 'fa-link',
     deviceclass: 'right'
   },
-  { 
+  {
     id: 'paula-moraes',
     title: 'Dra. Paula Moraes',
     slogan: 'Dentista',
-    linkhref: 'paulamoraes.com.br',
+    linkhref: '', #'paulamoraes.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   },
-  { 
+  {
     id: 'sanes',
     title: 'Sanes',
     slogan: 'Indústria alimentícia',
@@ -93,7 +93,7 @@ cases: [
     linkclass: 'fa-link',
     deviceclass: 'right'
   },
-  { 
+  {
     id: 'techhealthy',
     title: 'TechHealthy',
     slogan: 'Agência virtual',
