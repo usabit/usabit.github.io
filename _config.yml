@@ -65,7 +65,7 @@ cases: [
     id: 'eurovip',
     title: 'EuroVip',
     slogan: 'Transporte e Turismo',
-    linkhref: 'euroviptransportes.com.br',
+    linkhref: 'www.euroviptransportes.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   },
@@ -97,7 +97,7 @@ cases: [
     id: 'techhealthy',
     title: 'TechHealthy',
     slogan: 'Agência virtual',
-    linkhref: 'techhealthy.com.br',
+    linkhref: '', #'techhealthy.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   }

@@ -5,7 +5,7 @@ permalink: /cases/
 order: 3
 group: "navigation"
 banner_class: cases
-banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes. 
+banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes.
 banner_img: /assets/img/cases-banner-01.jpg
 ---
 
@@ -13,7 +13,7 @@ banner_img: /assets/img/cases-banner-01.jpg
 
   <div class="text-center mtb-60">
     <h2 class="mb-30">Nossos Projetos</h2>
-    <p class="fixed-width">A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes.</p>    
+    <p class="fixed-width">A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes.</p>
   </div>
 
 </div>
@@ -30,10 +30,12 @@ banner_img: /assets/img/cases-banner-01.jpg
           <h3 class="case-slogan">{{case.slogan}}</h3>
           <ul class="case-links">
             <!-- <li><a href="#" class="download"><i class="fa fa-download"></i>Download</a></li> -->
+            {% if case.linkhref %}
             <li><a href="http://www.{{case.linkhref}}" target="_blank" class="link"><i class="fa {{case.linkclass}}"></i>{{case.linkhref}}</a></li>
+            {% endif %}
           </ul>
           <!-- <p class="case-disclaimer">Em colaboração com a Twelve Sports</p> -->
-        </div>  
+        </div>
       </div>
     </li>
   {% endfor %}
