@@ -65,7 +65,7 @@ cases: [
     id: 'eurovip',
     title: 'EuroVip',
     slogan: 'Transporte e Turismo',
-    linkhref: 'www.euroviptransportes.com.br',
+    linkhref: 'euroviptransportes.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   },
@@ -81,7 +81,7 @@ cases: [
     id: 'paula-moraes',
     title: 'Dra. Paula Moraes',
     slogan: 'Dentista',
-    linkhref: '', #'paulamoraes.com.br',
+    linkhref: null, #'paulamoraes.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   },
@@ -97,7 +97,7 @@ cases: [
     id: 'techhealthy',
     title: 'TechHealthy',
     slogan: 'Agência virtual',
-    linkhref: '', #'techhealthy.com.br',
+    linkhref: null, #'techhealthy.com.br',
     linkclass: 'fa-link',
     deviceclass: 'left'
   }
