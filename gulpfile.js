@@ -46,7 +46,13 @@ gulp.task('js', function() {
     ;
 });
 
-gulp.task('imagemin', function() {
+gulp.task('favicon', function() {
+    return gulp.src('_assets/favicon/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('assets/favicon/'));
+});
+
+gulp.task('imagemin', ['favicon'], function() {
     return gulp.src('_assets/img/**/*')
         .pipe(plumber())
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
