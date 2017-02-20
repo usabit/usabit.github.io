@@ -15,7 +15,6 @@
 
       <div class="trigger">
         <a class="page-link {% if page.url == '/' %}active{% endif %}" href="/">Início</a>
-        <a class="page-link" target="_blank" href="https://medium.com/usabit">Blog</a>
         {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "navigation") %}
         {% for my_page in sorted_pages %}
           {% if my_page.title %}
@@ -32,10 +31,11 @@
                 </nav>
               </div>
             {% endif %}
-
+            {% if my_page.order == 3 %}
+              <a class="page-link" href="https://medium.com/usabit" target="_blank">Blog</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
-        <a class="page-link" href="https://medium.com/usabit" target="_blank">Blog</a>
       </div>
     </nav>
 
