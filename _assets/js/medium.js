@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
 
+  // Verifica se estou na home do site
+  if (document.location.pathname === '/') {
     ////////////
     // MEDIUM //
     ////////////
@@ -24,10 +26,10 @@ jQuery(document).ready(function() {
                 console.log(post);
                 var postDate = new Date(post.date);
                 console.log(postDate);
-                context = { 
-                    postImg: 'https://cdn-images-1.medium.com/max/1000/' + post.img, 
-                    postTitle: post.title, postSubtitle: post.subtitle, 
-                    postDate: postDate.getDate() + ' ' + meses[postDate.getMonth()] + ', ' + postDate.getFullYear(), 
+                context = {
+                    postImg: 'https://cdn-images-1.medium.com/max/1000/' + post.img,
+                    postTitle: post.title, postSubtitle: post.subtitle,
+                    postDate: postDate.getDate() + ' ' + meses[postDate.getMonth()] + ', ' + postDate.getFullYear(),
                     postLink: 'https://medium.com/hotel-coaching/' + post.link,
                     postAuthor: post.author
                 };
@@ -44,5 +46,6 @@ jQuery(document).ready(function() {
         .always(function() {
             $('.medium-loading').hide();
         });
+  }
 
 }); //end of "document ready" event
