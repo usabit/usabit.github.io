@@ -3,26 +3,26 @@
         <!-- <div class="map-embed">
             <iframe src="{{site.google_map}}" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div> -->
-        
+
         <div class="text-wrap">
             <h2 class="footer-heading mb-20">{{ site.title }}</h2>
             <p class="mtb-10">{{site.address_line1}}</p>
             {% if site.address_line2 %} <p class="mtb-10">{{site.address_line2}}</p> {% endif %}
-            <p class="mtb-10">{{site.city}}</p>
-            <p class="mtb-10">{{site.country}}</p>
+            <p class="mtb-10">{{site.address_line3}}</p>
+            <p class="mtb-10">{{site.phone_number}}</p>
         </div>
 
         <span class="flex-spacer"></span>
 
         <ul class="social-media-list">
             <li style="margin-right: 10px"><a href="{{site.baseurl}}/oportunidades">Entre pro nosso time</a></li>
-            
+
             {% for social_link in site.social-links %}
             <li>
                 {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
             </li>
             {% endfor %}
-        </ul>        
+        </ul>
 
     </div>
 </footer>
@@ -32,7 +32,7 @@
     {% raw %}
     <a href="{{postLink}}" target="_blank" class="post">
         <div class="img-wrap mb-10" style="background-image: url({{postImg}})"></div>
-        <div class="text-wrap">                
+        <div class="text-wrap">
             <h4 class="post-title">{{postTitle}}</h4>
             <!-- <p class="post-subtitle">{{postSubtitle}}</p> -->
             <p class="post-writer">{{postAuthor}} | {{postDate}}</p>
