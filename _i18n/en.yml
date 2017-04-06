@@ -1,0 +1,61 @@
+global:
+  links:
+    precisadeumsite: "Need a website? Contact us!"
+    precisadeumapp: "Need an app? Contact us!"
+    precisadeajudacompresencaonline: "Need help with your online presence? Contact us."
+    conhecanossassolucoes: "Conheça nossas soluções"
+    conhecanossoblog: "Conheça nosso Blog"
+pages:
+  index:
+    banner:
+      banner1:
+        title: "Leaving it for tomorrow <br> is not an option anymore."
+        brief: "We help companies update themselves, following the technological advance and overcoming their limitations on the digital environment."
+      banner2:
+        title: "Technology can't be a barrier for your startup development."
+        brief: "We add our UX design, front and back-end knowledge to the small teams ones to design successful products."
+      banner3:
+        title: "Focus your investments to gain online admirers."
+        brief: "We take care of the technology for your <br> company to go further. And marketing too."
+      banner4:
+        title: "Acompanhe o mundo da tecnologia com a Usabit."
+        brief: "Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo."
+    10anos: "For over 10 years, we've been perfecting the web and creating digital products that are simple and easy to use."
+    servicesIcons:
+      sites: "Websites"
+      apps: "Apps"
+      marketing: "Marketing and SEO"
+      marketingMobile: "Marketing"
+      gestao: "Management and Infrastructure"
+      gestaoMobile: "Management"
+    servicesBanners:
+      sites:
+        title: "Websites <span class='hide-mobile'> that work. </span>"
+        paragrath: "We've been helping companies <span class='hide-mobile'> of all sizes and areas to demystify digital presence, </span> developing websites that <span class='hide-mobile'>, as tools,</span> fulfill their purpose on any <span class='hide-mobile'>device or </span> screen size. "
+        imageSubtitle: "Medical Exams Online Appointment feature"
+        cases:
+          caseRx: "Rx Bandeirantes"
+          caseRxSubtitle: "Medical Exams Online Appointment"
+          caseSanes: "Sanes"
+          caseSanesSubtitle: "Products Display"
+      apps:
+        title: "Apps <span class='hide-mobile'> for productivity </span>"
+        paragrath: "Transform your business through the features attributed to smartphones.<span class='hide-mobile'> Control processes, collect informations, register and send data in real time and make operations more efficient everyday.</span>"
+        imageSubtitle: "Automation of tasks through smartphones. "
+        cases:
+          caseMeuCorretor: "Meu Corretor"
+          caseMeuCorretorSubtitle: "Car insurance"
+      marketing:
+        title: "Marketing <span class='hide-mobile'>and online audience</span>"
+        paragrath: "<span class='hide-mobile'>Social Media is the perfect opportunity to build a close relation with the public.</span> Count on us to promote your brand and consolidate customers."
+        cases:
+          caseBeluga: "Rede Beluga"
+          caseBelugaSubtitle: "Restaurant Franchise"
+      gestao:
+        title: "Infrastructure <span class='hide-mobile'> on the cloud</span>"
+        paragrath: "<span class='hide-mobile'>Our new support service for small business was designed to help you abandon cables, servers and problematic computer technicians.</span> We want to present new solutions to old problems. <span class='hide-mobile'> Find out how to: </span>"
+        list:
+          item1: "Storage files safely and with low costs"
+          item2: "Register data in the smartest way possible - and reduce ink costs"
+          item3: "Manage tasks and team online"
+    novidadesdonossoblog: "News from our Blog"
