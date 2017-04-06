@@ -229,3 +229,28 @@ pages:
     rafaelbrief: Responsible for new business and connexions of Usabit and ahead of the creative planning of the company's products. In the past, was part of important projects for big companies like Itaú Bank, Globo TV, Tim and Brasil Brokers Real Estate.
     rodrigoposition: Partner, Technology
     rodrigobrief: Focus in development and technological coordination, specialist in projects and software management. He is ahead of interfaces, mobile and apps development. Both have been working together for over 10 years in digital projects.
+  work: 
+    estimulamos: Estimulamos a participação da equipe e valorizamos suas ideias
+    quandobuscamos: Quando buscamos um novo membro para o nosso time, estamos interessados em algo muito além do conhecimento técnico. Buscamos sua particularidade, sua vivência e seu background. É por isso que aqui todo mundo tem voz.
+    acreditamos: Acreditamos que nossos projetos só são diferentes por que são fruto da soma do conhecimento cultural de muitas cabeças. Além disso, sabemos que a troca de conhecimento nos engrandece e faz com que as pessoas descubram o que têm de melhor. E não interagimos apenas em eventos. Fazemos isso todos os dias.
+    localizacao: Rio de Janeiro <br> Shopping Nova América
+    desenhamos: Desenhamos produtos juntos
+    cadausabitante: Cada Usabitante (sabemos que esse trocadilho é horrível) tem suas funções e responsabilidades definidas como em qualquer lugar. Mas aqui o trabalho é cooperativo e permite que cada um some com seu olhar crírico.
+    semregras: Não temos muitas regras ou padrões. Parece negativo, mas entendemos que cada um tem seu método e é esse costume que o torna mais produtivo. Nos entendemos assim.
+    homeoffice: Fazemos home office
+    atecnologia: A tecnologia está no ar e um escritório não nos prende. Isso nos permite trabalhar de um café, na praia ou de casa. Qualquer lugar que estimule o prazer é uma parte da Usabit. Acordar sem vontade de encarar o caos do trânsito carioca não é um problema para nós. É uma solução.
+    vemjogar: Vem jogar?
+    vaga1: Desenvolvedor PHP
+    vaga2: Desenvolvedor Front-end
+    vaga2brief: "(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)"
+    vaga3: Analista de Redes Sociais
+    vaga4: Designer
+    msgenviada: Mensagem enviada com <span class="success">sucesso</span>!
+    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
+    deixeseucontato: "Ou deixe seu contato:"
+    nome: Name
+    celular: Phone
+    mensagem: Message
+    deuerrado: Algo deu errado
+    tentenovamente: Tente novamente mais tarde
+    enviar: Send

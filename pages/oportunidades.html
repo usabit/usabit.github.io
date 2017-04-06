@@ -1,8 +1,9 @@
 ---
 layout: page
 namespace: trabalheconosco
-title: Trabalhe Conosco
+title: mainmenu.trabalheconosco
 permalink: /oportunidades/
+permalink_en: /oportunidades/
 banner_img: /assets/img/oportunidades-banner.jpg
 banner_class: oportunidade
 hide_arrow: 1
@@ -11,12 +12,12 @@ hide_arrow: 1
 <section class="wrapper">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
-            <h2 class="accent-foreground">Estimulamos a participação da equipe e valorizamos suas ideias</h2>
-            <p>Quando buscamos um novo membro para o nosso time, estamos interessados em algo muito além do conhecimento técnico. Buscamos sua particularidade, sua vivência e seu background. É por isso que aqui todo mundo tem voz.</p>
-            <p>Acreditamos que nossos projetos só são diferentes por que são fruto da soma do conhecimento cultural de muitas cabeças. Além disso, sabemos que a troca de conhecimento nos engrandece e faz com que as pessoas descubram o que têm de melhor. E não interagimos apenas em eventos. Fazemos isso todos os dias.</p>
+            <h2 class="accent-foreground">{% t pages.work.estimulamos %}</h2>
+            <p>{% t pages.work.quandobuscamos %}</p>
+            <p>{% t pages.work.acreditamos %}</p>
         </div>
         <div class="col-xs-12 col-sm-6 oportunidade-imagemlocalizacao">
-            <p>Rio de Janeiro <br> Shopping Nova América</p>
+            <p>{% t pages.work.localizacao %}</p>
             <!-- <img class="img-responsive full-width" src="http://placehold.it/400x200" alt=""> -->
         </div>
     </div>
@@ -27,15 +28,15 @@ hide_arrow: 1
         <div class="col-xs-9">
             <div class="row mt-60">
                 <div class="col-xs-12">
-                    <h3 class="accent-foreground">Desenhamos produtos juntos</h3>
+                    <h3 class="accent-foreground">{% t pages.work.desenhamos %}</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <p>Cada Usabitante (sabemos que esse trocadilho é horrível) tem suas funções e responsabilidades definidas como em qualquer lugar. Mas aqui o trabalho é cooperativo e permite que cada um some com seu olhar crírico.</p>
+                    <p>{% t pages.work.cadausabitante %}</p>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <p>Não temos muitas regras ou padrões. Parece negativo, mas entendemos que cada um tem seu método e é esse costume que o torna mais produtivo. Nos entendemos assim.</p>
+                    <p>{% t pages.work.semregras %}</p>
                 </div>
             </div>
 <!--             <div class="row">
@@ -46,12 +47,12 @@ hide_arrow: 1
             </div>
  -->            <div class="row mt-60">
                 <div class="col-xs-12">
-                    <h3 class="accent-foreground">Fazemos home office</h3>
+                    <h3 class="accent-foreground">{% t pages.work.homeoffice %}</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <p>A tecnologia está no ar e um escritório não nos prende. Isso nos permite trabalhar de um café, na praia ou de casa. Qualquer lugar que estimule o prazer é uma parte da Usabit. Acordar sem vontade de encarar o caos do trânsito carioca não é um problema para nós. É uma solução.</p>
+                    <p>{% t pages.work.atecnologia %}</p>
                 </div>
             </div>
         </div>
@@ -62,32 +63,32 @@ hide_arrow: 1
     <div class="wrapper">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-3">
-                <h2 class="bold mb-20">Vem jogar?</h2>
+                <h2 class="bold mb-20">{% t pages.work.vemjogar %}</h2>
                 <ul class="oportunidades mt-30">
-                    <li><a href="#">Desenvolvedor PHP</a></li>
+                    <li><a href="#">{% t pages.work.vaga1 %}</a></li>
                     <li>
-                        <a href="#">Desenvolvedor Front-end</a>
-                        <p>(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)</p>
+                        <a href="#">{% t pages.work.vaga2 %}</a>
+                        <p>{% t pages.work.vaga2brief %}</p>
                     </li>
-                    <li><a href="#">Analista de Redes Sociais</a></li>
-                    <li><a href="#">Designer</a></li>
+                    <li><a href="#">{% t pages.work.vaga3 %}</a></li>
+                    <li><a href="#">{% t pages.work.vaga4 %}</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9">
                 <div class="row form-sucesso mtb-40">
                     <div class="col-xs-12">
-                        <h1 class="text-center">Mensagem enviada com <span class="success">sucesso</span>!</h1>
-                        <p class="text-center">Vamos analizar seus dados e entraremos em contato com você.</p>
+                        <h1 class="text-center">{% t pages.work.msgenviada %}</h1>
+                        <p class="text-center">{% t pages.work.vamosanalizar %}</p>
                     </div>
                 </div>
                 <div class="row form-display">
                     <div class="col-xs-12">
-                        <h2 class="bold mb-20">Ou deixe seu contato:</h2>
+                        <h2 class="bold mb-20">{% t pages.work.deixeseucontato %}</h2>
                         <div class="row">
                             <div class="col-xs-12 col-md-8">
                                 <label class="input-group full-width">
                                     <input type="text" name="nome" value="" onkeyup="this.setAttribute('value', this.value);">
-                                    <span>Nome</span>
+                                    <span>{% t pages.work.nome %}</span>
                                     <div class="error">
                                         <span class="error-message"></span>
                                         <i class="error-icon fa fa-exclamation"></i>
@@ -97,7 +98,7 @@ hide_arrow: 1
                             <div class="col-xs-12 col-md-4">
                                 <label class="input-group full-width">
                                     <input type="text" name="celular" value="" onkeyup="this.setAttribute('value', this.value);">
-                                    <span>celular</span>
+                                    <span>{% t pages.work.celular %}</span>
 
                                     <div class="error">
                                         <span class="error-message"></span>
@@ -121,7 +122,7 @@ hide_arrow: 1
                             <div class="col-xs-12 col-md-6">
                                 <label class="input-group full-width">
                                     <input type="text" name="linkedin" value="" onkeyup="this.setAttribute('value', this.value);">
-                                    <span>Linkedin (ou outro link)</span>
+                                    <span>Linkedin</span>
                                     <div class="error">
                                         <span class="error-message"></span>
                                         <i class="error-icon fa fa-exclamation"></i>
@@ -133,20 +134,20 @@ hide_arrow: 1
                             <div class="col-xs-12">
                                 <label class="input-group full-width">
                                     <textarea name="mensagem"></textarea>
-                                    <span>Mensagem</span>
+                                    <span>{% t pages.work.mensagem %}</span>
                                 </label>
                             </div>
                         </div>
                         <div class="row form-erro">
                             <div class="col-xs-12">
-                                <h3 class="danger mt-20 mb-10">Algo deu errado</h3>
-                                <p class="mt-10">Tente novamente mais tarde</p>                        
+                                <h3 class="danger mt-20 mb-10">{% t pages.work.deuerrado %}</h3>
+                                <p class="mt-10">{% t pages.work.tentenovamente %}</p>                        
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <a href="#" id="formOportunidadeSend" class="cta blue mt-10 prl-20">
-                                    Enviar
+                                    {% t pages.work.enviar %}
                                     {% include img/svg-loading.html size="25px" fill="#fff" %}
                                 </a>
                             </div>
