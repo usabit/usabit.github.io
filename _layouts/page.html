@@ -7,13 +7,13 @@ layout: default
         <div class="wrapper">
 
           {% if page.banner_title_text %}
-            <h1 class="page-title">{{ page.banner_title_text }}</h1> 
+            <h1 class="page-title">{% t page.banner_title_text %}</h1> 
           {% else %}
-            <h1 class="page-title">{{ page.title }}</h1> 
+            <h1 class="page-title">{% t page.title %}</h1> 
           {% endif %}
 
           {% if page.banner_text %}
-            <p class="page-description">{{ page.banner_text }}</p>
+            <p class="page-description">{% t page.banner_text %}</p>
           {% else %}
             <p class="mtb-30"></p>
           {% endif %}

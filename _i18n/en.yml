@@ -5,6 +5,20 @@ global:
     precisadeajudacompresencaonline: "Need help with your online presence? Contact us."
     conhecanossassolucoes: "Conheça nossas soluções"
     conhecanossoblog: "Conheça nosso Blog"
+footer:
+  address_line1: Av. Pastor Martin Lutherking Junior, 126 - Sala 221
+  address_line2: Shopping Nova América - Rio de Janeiro - Brasil
+  entreprotime: Entre pro nosso time
+mainmenu:
+  inicio: Home
+  nos: About Us
+  nossosprodutos: Our Products
+  uxdesignfrontend: UX Design + Front End
+  marketingdigital: Digital Marketing
+  infraestrutura: Infrastructure
+  cases: Cases
+  blog: Blog
+  contato: Contact Us
 pages:
   index:
     banner:
@@ -59,3 +73,159 @@ pages:
           item2: "Register data in the smartest way possible - and reduce ink costs"
           item3: "Manage tasks and team online"
     novidadesdonossoblog: "News from our Blog"
+  cases:
+    banner_text: Know a little bit of what we do through <br> our most recent cases and projects.
+    chamada: 
+      title: Our Projects
+      text: The Usabit team work with dedication and care to create the best projects to our clients.
+    listacases: [
+      {
+        id: 'aliga',
+        title: 'A Liga',
+        slogan: '"Todo jogo vale"',
+        linkhref: 'appaliga.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left bottom'
+      },
+      {
+        id: 'rxbandeirantes',
+        title: 'RX Bandeirantes',
+        slogan: 'Radiology Clinic',
+        linkhref: 'rxbandeirantes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'eurovip',
+        title: 'EuroVip',
+        slogan: 'Transportation and tourism',
+        linkhref: 'euroviptransportes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      },
+      {
+        id: 'matanativa',
+        title: 'Mata Nativa',
+        slogan: 'Bed and Breakfast',
+        linkhref: 'pousadamatanativa.tur.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'paula-moraes',
+        title: 'Dra. Paula Moraes',
+        slogan: 'Dentist',
+        linkhref: null, #'paulamoraes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      },
+      {
+        id: 'sanes',
+        title: 'Sanes',
+        slogan: 'Food Industry',
+        linkhref: 'sanesbr.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'techhealthy',
+        title: 'TechHealthy',
+        slogan: 'Virtual Agency',
+        linkhref: null, #'techhealthy.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      }
+    ]
+  contato:
+    banner_text: Shall we continue this talk?
+    podefalar: Go ahead and talk.
+    vamosseramigos: Let's be friends?
+    portelefone: Or by phone
+    escritorio: Office
+  infra:
+    banner_text: Everything you need to make the everyday of your office easier is an infrastructure reliable and affordable.
+    banner_title_text: Infrastructure, e-mails and servers on the cloud
+    chamada:
+      title: We split your company in <strong>two parts</strong>
+    estruturaonline: Online Structure
+    avaliamos: We evaluate the real structure needs for your company to work
+    configuramos: We set up e-mails, servers and website with a lot of transparency
+    armazenamento: With cloud storage, you won't waste space with physical servers
+    seuescritorio: Your office won't be field with cables and cabinets. The "now" of the technology is wireless
+    estruturafisica: Physical Structure
+    avaliamoscomputadores: We evaluate your computers and the type of information you work with
+    dimensionamos: We dimension the size of internet bandwidth needed for your operation
+    distribuimos: We distribute the internet signal and the network through your office with no cables whatsoever
+    jaque: Since most of the problems are caused by lack of knowledge, we'll train your staff!
+    vamoscomecar: Shall we start?
+    essasrespostas: This answers will help us find the best solution for your company.
+    quemevoce: Who are you?
+    nome: Name
+    email: E-Mail
+    nomesuaempresa: What's the name of your company?
+    ramoatuacao: What is of field of activity?
+    nosajude: Help us figure out the types of files you deal with
+    enderecofisico: Physical Address (CEP)
+    vamosdescobrir: We'll find the best internet <br> services in your area
+    quantosfuncionarios: Quantos funcionários, <br> computadores e dispositivos
+    quantosfuncionarios: How many employees, <br> computers and gadgets
+    funcionarios: Employees
+    computadores: Computers
+    impressoras: Printers
+    outros: Others
+    fluxo: The flow of informations changes according to this
+    jaconfigurado: Do you already have a <br> network configuration?
+    seusite: What's your website?
+    sitenecessario: It's necessary to <br> set up the server 
+    algodeuerrado: Algo deu Errado
+    tentemaistarde: Tente novamente mais tarde
+    enviar: Send
+    mensagemenviada: Mensagem enviada com <span class="success">sucesso</span>!
+    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
+    vocepodeprecisar: "You can also need Usabit for:"
+    htmlcssjs: HTML, CSS <br> and JavaScript
+    cms: CMS / WordPress <br> and e-Commerce
+    android: Android and <br> iOS Design
+  marketing: 
+    banner_text: Concentre seus investimentos para conquistar admiradores online.
+    banner_title_text: Digital Marketing <br> SEO and social media
+    chamada:
+      title: "Count on Usabit to:"
+    darvoz: Listen and give voice to your clients
+    espacoecletico: The internet is an eclectic and liberal space. It's where we gain space and authority to expose our thoughts, opinions and mostly dissatisfactions. Here you need to invest in transparency and quality care. 
+    casoantigobrastemp: "Caso antigo da Brastemp: cliente insatisfeito usando a força das redes sociais"
+    engajar: Engage and encourage interactions with your brand, products and philosophy.
+    acrescentarconteudo: Add relevant content to people's lives and be remembered daily.
+    marcarpresenca: Being present and found everywhere
+    caminhos: Be sure that every path leads to you and be your client's first choice. We monitor data, accesses, navigation streams and mentions about your business.
+    facaagora: DO IT NOW!
+    monitorarconcorrentes: Monitoring competitors closer and being always one step ahead
+    estaratento: Being alert to to innovation and changing your market is crucial to standing out. That's why we also take care of that for you. 
+    conectese: connect with usabit today
+  ux:
+    somosumaequipe: We are an integrated team that <br> brings to life perfect interfaces. 
+    nossaformula: Our key to success is defining the screen goals and knowing the user close enough. To achieve the best results, we bet on performance and function, finest technology, metrics and beauty.
+    focodesempenho: Design with focus in performance and business
+    desempenhosimples: We focus in performance and simplicity. We don't worry about blings, crazy screen transitions or psychedelic elements. We're digital interface designers.
+    dominamostecnologia: We dominate technology and project our development with simplicity and efficiency.
+    adotamostecnologias: We adopt the ideal development technology, always putting the cost x benefit in first place.
+    trabalhamosjuntos: We work together with the client and it's team, combining knowledge and extracting the best for the project.
+    nossametodologia: Our agile methods includes prototyping, validating and following the tasks in real time.
+    designdeinterfaces: Design of interfaces to achieve digital results.
+    somosexpertem: "We're experts to help you with:"
+    expert1: HTML, CSS <br> and JavaScript
+    expert2: CMS / WordPress <br> and e-Commerce
+    expert3: Android and <br> iOS Design
+    conectese: CONNECT WITH USABIT TODAY
+  about:
+    banner_text: We simplify technology and develop products there are easy to use.
+    oqueprecisa: What do you need to achieve your goals?
+    automatizarprocessos: Automate Processes
+    tirardopapel: Take your business <br> out of the paper
+    melhorardesempenho: Improve your <br> online performance 
+    alcancarmais: Reach <br> more clients
+    lideres: Leaders
+    rafaelposition: Partner, Design
+    rafaelbrief: Responsible for new business and connexions of Usabit and ahead of the creative planning of the company's products. In the past, was part of important projects for big companies like Itaú Bank, Globo TV, Tim and Brasil Brokers Real Estate.
+    rodrigoposition: Partner, Technology
+    rodrigobrief: Focus in development and technological coordination, specialist in projects and software management. He is ahead of interfaces, mobile and apps development. Both have been working together for over 10 years in digital projects.

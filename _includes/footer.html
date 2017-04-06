@@ -6,15 +6,15 @@
 
         <div class="text-wrap">
             <h2 class="footer-heading mb-20">{{ site.title }}</h2>
-            <p class="mtb-10">{{site.address_line1}}</p>
-            {% if site.address_line2 %} <p class="mtb-10">{{site.address_line2}}</p> {% endif %}
+            <p class="mtb-10">{% t footer.address_line1 %}</p>
+            <p class="mtb-10">{% t footer.address_line2 %}</p>
             <p class="mtb-10">{{site.phone_number}}</p>
         </div>
 
         <span class="flex-spacer"></span>
 
         <ul class="social-media-list">
-            <li style="margin-right: 10px"><a href="{{site.baseurl}}/oportunidades">Entre pro nosso time</a></li>
+            <li style="margin-right: 10px"><a href="{{site.baseurl}}/oportunidades">{% t footer.entreprotime %}</a></li>
 
             {% for social_link in site.social-links %}
             <li>

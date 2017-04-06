@@ -1,19 +1,21 @@
 ---
 layout: page
-title: Marketing Digital
+namespace: marketing
+title: mainmenu.marketingdigital
 permalink: /produtos/marketing-digital/
+permalink_en: /products/digital-marketing/
 order: 2
 group: "product"
 banner_class: texto-escuro
 banner_img: /assets/img/banner-mkt.jpg
-banner_title_text: Marketing Digital <br> SEO e Redes Sociais
-banner_text: Concentre seus investimentos para conquistar admiradores online.
+banner_title_text: pages.marketing.banner_title_text
+banner_text: pages.marketing.banner_text
 hide_arrow: 1
 ---
 
 <div class="divider-marker n-mt-60">
     <div class="wrapper">
-        <h2 class="white mtb-60">Conte com a Usabit para:</h2>
+        <h2 class="white mtb-60">{% t pages.marketing.chamada.title %}</h2>
     </div>
 </div>
 
@@ -23,15 +25,15 @@ hide_arrow: 1
         <div class="wrapper">
             <div class="content">
                 <div class="text-wrapper">
-                    <h3>Dar voz e ouvir seus clientes</h3>
-                    <p class="mt-50">A internet é um espaco eclético e liberal. É onde ganhamos espaço e autoridade para expor pensamentos, opiniões e principalmente insatisfações. Aqui você precisa investir em transparência e atendimento de qualidade.</p>
+                    <h3>{% t pages.marketing.darvoz %}</h3>
+                    <p class="mt-50">{% t pages.marketing.espacoecletico %}</p>
                     <!-- <div class="cta p-15"><a href="#">Leia mais sobre como preservar a imagem da sua empresa</a></div> -->
                 </div>
                 <div class="img-wrapper">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/riOvEe0wqUQ?rel=0" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <small class="legenda mt-5">Caso antigo da Brastemp: cliente insatisfeito usando a força das redes sociais</small>
+                    <small class="legenda mt-5">{% t pages.marketing.casoantigobrastemp %}</small>
                 </div>
             </div>
         </div>
@@ -41,12 +43,12 @@ hide_arrow: 1
         <div class="wrapper">
             <div class="content">
                 <div class="text-wrapper">
-                    <h3>Engajar e incentivar a interação com sua marca, produtos e filosofia</h3>
-                    <p>Acrescente conteúdos relevantes à vida das pessoas e seja lembrado diariamente. Promova seus produtos e cative clientes através de promoções online.</p>
+                    <h3>{% t pages.marketing.engajar %}</h3>
+                    <p>{% t pages.marketing.acrescentarconteudo %}</p>
                     <!-- <div class="cta p-15"><a href="#">Veja como manter seus clientes sempre bem informados</a></div> -->
                 </div>
                 <div class="img-wrapper">
-                    <img src="{{site.baseurl}}/assets/img/marketing-engajamento.jpg">
+                    <img src="{{'/assets/img/marketing-engajamento.jpg' | prepend: site.baseurl_root }}">
                 </div>
             </div>
         </div>
@@ -56,12 +58,12 @@ hide_arrow: 1
         <div class="wrapper">
             <div class="content">
                 <div class="text-wrapper">
-                    <h3>Marcar presença e ser encontrado por todos os caminhos</h3>
-                    <p>Tenha certeza que todos os caminhos levam a você e seja a primeira opção dos seus clientes. Monitoramos dados, acessos, fluxos de navegação e menções referentes ao seu negócio.</p>
-                    <a class="cta p-15" href="{{ '/contato' | prepend:site.baseurl }}">FAÇA ISSO AGORA!</a>
+                    <h3>{% t pages.marketing.marcarpresenca %}</h3>
+                    <p>{% t pages.marketing.caminhos %}</p>
+                    <a class="cta p-15" href="{{ '/contato' | prepend:site.baseurl }}">{% t pages.marketing.facaagora %}</a>
                 </div>
                 <div class="img-wrapper">
-                    <img src="{{site.baseurl}}/assets/img/marketing-presenca.png">
+                    <img src="{{'/assets/img/marketing-presenca.png' | prepend: site.baseurl_root }}">
                 </div>
             </div>
         </div>
@@ -71,12 +73,12 @@ hide_arrow: 1
         <div class="wrapper">
             <div class="content">
                 <div class="text-wrapper">
-                    <h3>Monitorar concorrentes de perto e estar sempre na frente</h3>
-                    <p>Estar atento à inovação e transformação do seu mercado é crucial para se destacar. É por isso que nós também cuidamos disso para você. </p>
+                    <h3>{% t pages.marketing.monitorarconcorrentes %}</h3>
+                    <p>{% t pages.marketing.estaratento %}</p>
                     <!-- <div class="cta p-15"><a href="#">Leia 7 motivos para observar de perto seus concorrentes</a></div> -->
                 </div>
                 <div class="img-wrapper">
-                    <img src="{{site.baseurl}}/assets/img/marketing-monitoramento.png">
+                    <img src="{{'/assets/img/marketing-monitoramento.png' | prepend: site.baseurl_root }}">
                 </div>
             </div>
         </div>
@@ -86,7 +88,7 @@ hide_arrow: 1
 
 <div class="divider-marker">
     <div class="wrapper">
-        <a href="{{ '/contato' | prepend:site.baseurl }}" class="center uppercase mtb-50">conecte-se com a usabit hoje</a>
+        <a href="{{ '/contato' | prepend:site.baseurl }}" class="center uppercase mtb-50">{% t pages.marketing.conectese %}</a>
     </div>
 </div>
 
