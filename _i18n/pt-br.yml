@@ -1,0 +1,267 @@
+global:
+  links:
+    precisadeumsite: "Precisa de um site? Fale conosco!"
+    precisadeumapp: "Precisa de um App? Fale conosco!"
+    precisadeajudacompresencaonline: "Precisa de ajuda com presença online? Fale conosco!"
+    conhecanossassolucoes: "Conheça nossas soluções"
+    conhecanossoblog: "Conheça nosso Blog"
+footer:
+  address_line1: Av. Pastor Martin Lutherking Junior, 126 - Sala 221
+  address_line2: Shopping Nova América - Rio de Janeiro - Brasil
+  entreprotime: Entre pro nosso time
+mainmenu:
+  inicio: Início
+  nos: Nós
+  nossosprodutos: Nossos Produtos
+  uxdesignfrontend: UX Design + Front End
+  marketingdigital: Marketing Digital
+  infraestrutura: Infra-estrutura
+  cases: Cases
+  blog: Blog
+  contato: Contato
+  trabalheconosco: Trabalhe Conosco 
+pages:
+  index:
+    banner:
+      banner1:
+        title: "Deixar para amanhã não <br> é mais uma opção."
+        brief: "Nós ajudamos empresas a se atualizarem, acompanhando o avanço da tecnologia e superando suas limitações no ambiente digital."
+      banner2:
+        title: "Tecnologia não pode ser uma barreira para o avanço da sua startup."
+        brief: "Nós somamos nosso conhecimento de UX, front e back-end ao de pequenas equipes para desenhar produtos de sucesso."
+      banner3:
+        title: "Concentre seus investimentos <br> para conquistar admiradores online"
+        brief: "Nós cuidamos da tecnologia para a sua <br> empresa ir mais longe. E do marketing também."
+      banner4:
+        title: "Acompanhe o mundo da tecnologia com a Usabit."
+        brief: "Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo."
+    10anos: "Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar."
+    servicesIcons:
+      sites: "Sites"
+      apps: "Apps"
+      marketing: "Marketing e SEO"
+      marketingMobile: "Marketing"
+      gestao: "Gestão e <br> Infra-estrutura"
+      gestaoMobile: "Gestão"
+    servicesBanners:
+      sites:
+        title: "Sites <span class='hide-mobile'> que funcionam </span>"
+        paragrath: "Nós temos ajudado empresas <span class='hide-mobile'> de diversos portes e áreas de atuação a desmistificar a presença digital,</span> desenvolvendo sites que <span class='hide-mobile'>, como ferramentas,</span> cumprem sua função em qualquer <span class='hide-mobile'> dispositivo ou </span> tamanho de tela."
+        imageSubtitle: "Funcionalidade de agendamento de exames online"
+        cases:
+          caseRx: "Rx Bandeirantes"
+          caseRxSubtitle: "Marcação de Exames Online"
+          caseSanes: "Sanes"
+          caseSanesSubtitle: "Vitrine de Produtos"
+      apps:
+        title: "Aplicativos <span class='hide-mobile'> para produtividade </span>"
+        paragrath: "Transforme seu negócio através de funcionalidades atribuídas a smartphones.<span class='hide-mobile'> Controle processos, colete informações, registre e envie dados em tempo real e torne sua operação mais eficiente a cada dia.</span>"
+        imageSubtitle: "Automatização de tarefas pelo smartphone"
+        cases:
+          caseMeuCorretor: "Meu Corretor"
+          caseMeuCorretorSubtitle: "Corretora de Seguros"
+      marketing:
+        title: "Marketing <span class='hide-mobile'>e Audiência Online</span>"
+        paragrath: "<span class='hide-mobile'>Redes sociais são a oportunidade perfeita para construir um relacionamento próximo com o público.</span> Conte com a Usabit para promover sua marca e consolidar clientes."
+        cases:
+          caseBeluga: "Rede Beluga"
+          caseBelugaSubtitle: "Rede de Restaurantes"
+      gestao:
+        title: "Infra-estrutura <span class='hide-mobile'> na nuvem</span>"
+        paragrath: "<span class='hide-mobile'>Nosso novo serviço de suporte para pequenas empresas foi desenhado para te ajudar a abandonar cabos, servidores e técnicos de informática problemáticos.</span> Queremos te apresentar novas soluções para problemas antigos. <span class='hide-mobile'> Saiba como: </span>"
+        list:
+          item1: "Armazenar arquivos de forma segura sem pagar caro por isso"
+          item2: "Registrar dados de forma inteligente - e diminuir o gasto de tinta"
+          item3: "Gerenciar tarefas e equipe online"
+    novidadesdonossoblog: "Novidades do Nosso Blog"
+  cases:
+    banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes.
+    chamada: 
+      title: Nossos Projetos
+      text: A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes.
+    listacases: [
+      {
+        id: 'aliga',
+        title: 'A Liga',
+        slogan: 'Todo jogo vale',
+        linkhref: 'appaliga.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left bottom'
+      },
+      {
+        id: 'rxbandeirantes',
+        title: 'RX Bandeirantes',
+        slogan: 'Clínica Radiológica',
+        linkhref: 'rxbandeirantes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'eurovip',
+        title: 'EuroVip',
+        slogan: 'Transporte e Turismo',
+        linkhref: 'euroviptransportes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      },
+      {
+        id: 'matanativa',
+        title: 'Mata Nativa',
+        slogan: 'Pousada',
+        linkhref: 'pousadamatanativa.tur.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'paula-moraes',
+        title: 'Dra. Paula Moraes',
+        slogan: 'Dentista',
+        linkhref: null, #'paulamoraes.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      },
+      {
+        id: 'sanes',
+        title: 'Sanes',
+        slogan: 'Indústria alimentícia',
+        linkhref: 'sanesbr.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'right'
+      },
+      {
+        id: 'techhealthy',
+        title: 'TechHealthy',
+        slogan: 'Agência virtual',
+        linkhref: null, #'techhealthy.com.br',
+        linkclass: 'fa-link',
+        deviceclass: 'left'
+      }
+    ]
+  contato:
+    banner_text: Vamos continuar esse assunto?
+    podefalar: Pode falar agora.
+    vamosseramigos: Vamos ser amigos?
+    portelefone: Ou por telefone
+    escritorio: Escritório
+  infra:
+    banner_text: Tudo que você precisa para facilitar o dia-a-dia de seu escritório é uma infra-estrutura barata e confiável.
+    banner_title_text: Infra-estrutura, e-mails e servidores na nuvem
+    chamada:
+      title: Nós dividimos sua empresa <strong>em duas partes</strong>
+    estruturaonline: Estrutura Online
+    avaliamos: Nós avaliamos as reais necessidades de infra para sua empresa funcionar
+    configuramos: Configuramos seus e-mails, servidores e site com muita transparência
+    armazenamento: Com o armazenamento na nuvem, você não perde espaço com servidores físicos
+    seuescritorio: Seu escritório não fica cheio de cabos e armários. O presente da tecnologia é Wireless
+    estruturafisica: Estrutura Física
+    avaliamoscomputadores: Nós avaliamos seus computadores e o tipo de informação que você trabalha
+    dimensionamos: Dimensionamos o tamanho da banda de internet necessária para sua operação
+    distribuimos: Distribuimos o sinal de internet e a rede pelo escritório sem cabos
+    jaque: Já que maioria dos problemas são causados pela falta de conhecimento, treinaremos seus funcionários!
+    vamoscomecar: Vamos começar?
+    essasrespostas: Estas respostas vão nos ajudar a encontrar a melhor solução para sua empresa.
+    quemevoce: Quem é você?
+    nome: Nome
+    email: E-Mail
+    nomesuaempresa: Qual nome de sua empresa?
+    ramoatuacao: Qual seu ramo de atuação?
+    nosajude: Nos ajude a entender que tipo <br> de arquivos você trafega
+    enderecofisico: Endereço físico (CEP)
+    vamosdescobrir: Vamos descobrir os melhores <br> serviços de internet da sua região
+    quantosfuncionarios: Quantos funcionários, <br> computadores e dispositivos
+    funcionarios: Funcionários
+    computadores: Computadores
+    impressoras: Impressoras
+    outros: Outros
+    fluxo: O fluxo de informações e conexões varia de acordo com isso
+    jaconfigurado: Já possui uma configuração <br> de rede?
+    seusite: Qual seu site?
+    sitenecessario: É necessário para <br> configurar o servidor
+    algodeuerrado: Algo deu Errado
+    tentemaistarde: Tente novamente mais tarde
+    enviar: Enviar
+    mensagemenviada: Mensagem enviada com <span class="success">sucesso</span>!
+    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
+    vocepodeprecisar: "Você também pode precisar da Usabit para:"
+    htmlcssjs: HTML, CSS <br> e JavaScript
+    cms: CMS / WordPress <br> e e-Commerce
+    android: Android e <br> iOS Design
+  marketing: 
+    banner_text: Concentre seus investimentos para conquistar admiradores online.
+    banner_title_text: Marketing Digital <br> SEO e Redes Sociais
+    chamada:
+      title: "Conte com a Usabit para:"
+    darvoz: Dar voz e ouvir seus clientes
+    espacoecletico: A internet é um espaco eclético e liberal. É onde ganhamos espaço e autoridade para expor pensamentos, opiniões e principalmente insatisfações. Aqui você precisa investir em transparência e atendimento de qualidade.
+    casoantigobrastemp: "Caso antigo da Brastemp: cliente insatisfeito usando a força das redes sociais"
+    engajar: Engajar e incentivar a interação com sua marca, produtos e filosofia
+    acrescentarconteudo: Acrescente conteúdos relevantes à vida das pessoas e seja lembrado diariamente. Promova seus produtos e cative clientes através de promoções online.
+    marcarpresenca: Marcar presença e ser encontrado por todos os caminhos
+    caminhos: Tenha certeza que todos os caminhos levam a você e seja a primeira opção dos seus clientes. Monitoramos dados, acessos, fluxos de navegação e menções referentes ao seu negócio.
+    facaagora: FAÇA ISSO AGORA!
+    monitorarconcorrentes: Monitorar concorrentes de perto e estar sempre na frente
+    estaratento: Estar atento à inovação e transformação do seu mercado é crucial para se destacar. É por isso que nós também cuidamos disso para você. 
+    conectese: conecte-se com a usabit hoje
+  ux:
+    somosumaequipe: Somos uma equipe integrada <br> que dá vida a interfaces perfeitas
+    nossaformula: Nossa fórmula de sucesso é definir os objetivos da tela e conhecer o usuário de perto. Para atingir os melhores resultados, apostamos em desempenho e função, tecnologia de ponta, métricas e beleza.
+    focodesempenho: Design com foco em desempenho e negócios
+    desempenhosimples: Focamos no desempenho e simplicidade. Não nos preocupamos com piruetas, transições de tela mirabolantes ou elementos psicodélicos. Somos designers de interfaces digitais.
+    dominamostecnologia: Dominamos a tecnologia e projetamos nosso desenvolvimento com simplicidade e efeiciência.
+    adotamostecnologias: Adotamos a tecnologia de desenvolvimento ideal, sempre colocando o custo x benefício em primeiro lugar.
+    trabalhamosjuntos: Trabalhamos junto com o cliente e sua equipe, somando conhecimentos e extraindo o melhor para o projeto.
+    nossametodologia: Nossa metodologia Ágil inclui prototipação, validação e acompanhamento de tarefas em tempo real.
+    designdeinterfaces: Design de interfaces para atingir resultados digitais.
+    somosexpertem: "Somos experts para te ajudar em:"
+    expert1: HTML, CSS <br> e JavaScript
+    expert2: CMS / WordPress <br> e e-Commerce
+    expert3: Android e <br> iOS Design
+    conectese: conecte-se com a usabit hoje
+  about:
+    banner_text: Simplificamos a tecnologia e desenvolvemos produtos fáceis de usar.
+    oqueprecisa: O que você precisa para atingir seus objetivos?
+    automatizarprocessos: Automatizar processos <br> através de software
+    tirardopapel: Tirar negócios <br> do papel
+    melhorardesempenho: Melhorar seu <br> desempenho online
+    alcancarmais: Alcançar <br> mais clientes
+    lideres: Líderes
+    rafaelposition: Sócio, Design
+    rafaelbrief: Responsável por novos negócios e conexões da Usabit e à frente do planejamento criativo dos produtos da empresa. No passado, atuou em projetos importantes para grandes empresas brasileiras como Itaú, Globo, Tim e Brasil Brokers.
+    rodrigoposition: Sócio, Tecnologia
+    rodrigobrief: Foco no desenvolvimento e coordenação tecnológica, especialista em projetos e gestão de software. Está à frente do desenvolvimento de interfaces, mobile e apps. Trabalham juntos em projetos digitais  há mais de 10 anos.
+  work: 
+    estimulamos: Estimulamos a participação da equipe e valorizamos suas ideias
+    quandobuscamos: Quando buscamos um novo membro para o nosso time, estamos interessados em algo muito além do conhecimento técnico. Buscamos sua particularidade, sua vivência e seu background. É por isso que aqui todo mundo tem voz.
+    acreditamos: Acreditamos que nossos projetos só são diferentes por que são fruto da soma do conhecimento cultural de muitas cabeças. Além disso, sabemos que a troca de conhecimento nos engrandece e faz com que as pessoas descubram o que têm de melhor. E não interagimos apenas em eventos. Fazemos isso todos os dias.
+    localizacao: Rio de Janeiro <br> Shopping Nova América
+    desenhamos: Desenhamos produtos juntos
+    cadausabitante: Cada Usabitante (sabemos que esse trocadilho é horrível) tem suas funções e responsabilidades definidas como em qualquer lugar. Mas aqui o trabalho é cooperativo e permite que cada um some com seu olhar crírico.
+    semregras: Não temos muitas regras ou padrões. Parece negativo, mas entendemos que cada um tem seu método e é esse costume que o torna mais produtivo. Nos entendemos assim.
+    homeoffice: Fazemos home office
+    atecnologia: A tecnologia está no ar e um escritório não nos prende. Isso nos permite trabalhar de um café, na praia ou de casa. Qualquer lugar que estimule o prazer é uma parte da Usabit. Acordar sem vontade de encarar o caos do trânsito carioca não é um problema para nós. É uma solução.
+    vemjogar: Vem jogar?
+    vaga1: Desenvolvedor PHP
+    vaga2: Desenvolvedor Front-end
+    vaga2brief: "(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)"
+    vaga3: Analista de Redes Sociais
+    vaga4: Designer
+    msgenviada: Mensagem enviada com <span class="success">sucesso</span>!
+    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
+    deixeseucontato: "Ou deixe seu contato:"
+    nome: Nome
+    celular: celular
+    mensagem: Mensagem
+    deuerrado: Algo deu errado
+    tentenovamente: Tente novamente mais tarde
+    enviar: Enviar
+
+
+
+
+
+
+
+
+
+
+

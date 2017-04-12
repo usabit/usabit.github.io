@@ -1,32 +1,32 @@
 <section class="banner-fullwidth">
 
     <ul id="banner-fullwidth" class="banner owl-carousel owl-theme">
-        <li style="background-image: url('/assets/img/home-banner-01.jpg')">
+        <li style="background-image: url({{'/assets/img/home-banner-01.jpg' | prepend: site.baseurl_root }})">
             <div class="wrapper">
-                <h1 class="m-0 mb-30">Deixar para amanhã não <br> é mais uma opção.</h1>
-                <p class="m-0 light fm">Nós ajudamos empresas a se atualizarem, acompanhando o avanço da tecnologia e superando suas limitações no ambiente digital.</p>
+                <h1 class="m-0 mb-30">{% t pages.index.banner.banner1.title %}</h1>
+                <p class="m-0 light fm">{% t pages.index.banner.banner1.brief %}</p>
                 <!-- <a class="btn" href="#">Conheça nossas soluções</a> -->
             </div>
         </li>
-        <li style="background-image: url('/assets/img/home-banner-02.jpg')">
+        <li style="background-image: url({{'/assets/img/home-banner-02.jpg' | prepend: site.baseurl_root }})">
             <div class="wrapper">
-                <h1 class="m-0 mb-30">Tecnologia não pode ser uma barreira para o avanço da sua startup.</h1>
-                <p class="m-0 light fm">Nós somamos nosso conhecimento de UX, front e back-end ao de pequenas equipes para desenhar produtos de sucesso.</p>
+                <h1 class="m-0 mb-30">{% t pages.index.banner.banner2.title %}</h1>
+                <p class="m-0 light fm">{% t pages.index.banner.banner2.brief %}</p>
                 <!-- <a class="btn" href="#">Conheça nossas soluções</a> -->
             </div>
         </li>
-        <li class="noshadow" style="background-image: url('/assets/img/home-banner-03.jpg')">
+        <li class="noshadow" style="background-image: url({{'/assets/img/home-banner-03.jpg' | prepend: site.baseurl_root }})">
             <div class="wrapper">
-                <h1 class="inverted m-0 mb-30">Concentre seus investimentos <br> para conquistar admiradores online</h1>
-                <p class="inverted m-0 light fm">Nós cuidamos da tecnologia para a sua <br> empresa ir mais longe. E do marketing também.</p>
+                <h1 class="inverted m-0 mb-30">{% t pages.index.banner.banner3.title %}</h1>
+                <p class="inverted m-0 light fm">{% t pages.index.banner.banner3.brief %}</p>
                 <!-- <a class="btn" href="#">Conheça nossas soluções</a> -->
             </div>
         </li>
-        <li style="background-image: url('/assets/img/home-banner-medium.jpg')">
+        <li style="background-image: url({{'/assets/img/home-banner-medium.jpg' | prepend: site.baseurl_root }})">
             <div class="wrapper">
-                <h1 class="m-0 mb-30">Acompanhe o mundo da tecnologia com a Usabit.</h1>
-                <p class="m-0 light fm">Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo.</p>
-                <a class="btn mt-25" href="https://medium.com/usabit" target="_blank">Conheça nosso Blog</a>
+                <h1 class="m-0 mb-30">{% t pages.index.banner.banner4.title %}</h1>
+                <p class="m-0 light fm">{% t pages.index.banner.banner4.brief %}</p>
+                <a class="btn mt-25" href="https://medium.com/usabit" target="_blank">{% t global.links.conhecanossoblog %}</a>
             </div>
         </li>
     </ul>

@@ -1,7 +1,9 @@
 ---
 layout: page
-title: UX Design + Front End
+namespace: ux
+title: mainmenu.uxdesignfrontend
 permalink: /produtos/ux-design/
+permalink_en: /products/ux-design/
 order: 1
 group: "product"
 banner_img: /assets/img/banner-ux.jpg
@@ -12,61 +14,61 @@ hide_arrow: 1
     <div class="wrapper">
         <div class="text-wrapper">
             {% include dna.html %}
-            <h3>Somos uma equipe integrada <br> que dá vida a interfaces perfeitas</h3>
-            <p>Nossa fórmula de sucesso é definir os objetivos da tela e conhecer o usuário de perto. Para atingir os melhores resultados, apostamos em desempenho e função, tecnologia de ponta, métricas e beleza.</p>
+            <h3>{% t pages.ux.somosumaequipe %}</h3>
+            <p>{% t pages.ux.nossaformula %}</p>
         </div>
         <div class="img-wrapper">
-            <img src="{{site.baseurl}}/assets/img/ux-brief-devices.png">
+            <img src="{{ '/assets/img/ux-brief-devices.png' | prepend: site.baseurl_root }}">
         </div>
     </div>
 </div>
 
 <div class="divider-marker golden-bg mt-60 center">
     <div class="wrapper">
-        <h2 class="white mt-60">Design com foco em desempenho e negócios</h2>
-        <p class="white mb-60 mt-20 custom-paragrath">Focamos no desempenho e simplicidade. Não nos preocupamos com piruetas, transições de tela mirabolantes ou elementos psicodélicos. Somos designers de interfaces digitais.</p>
+        <h2 class="white mt-60">{% t pages.ux.focodesempenho %}</h2>
+        <p class="white mb-60 mt-20 custom-paragrath">{% t pages.ux.desempenhosimples %}</p>
     </div>
 </div>
-<ul class="list-with-background p-20" style="background-image: url({{site.baseurl}}/assets/img/ux-fundo-lista.jpg);">
+<ul class="list-with-background p-20" style="background-image: url({{ '/assets/img/ux-fundo-lista.jpg' | prepend: site.baseurl_root }});">
     <li class="panel mtb-15">
         <!-- <i class="fa fa-anchor"></i> -->
-        <p>Dominamos a tecnologia e projetamos nosso desenvolvimento com simplicidade e efeiciência.</p>
+        <p>{% t pages.ux.dominamostecnologia %}</p>
     </li>
     <li class="panel mtb-15">
         <!-- <i class="fa fa-anchor"></i> -->
-        <p>Adotamos a tecnologia de desenvolvimento ideal, sempre colocando o custo x benefício em primeiro lugar.</p>
+        <p>{% t pages.ux.adotamostecnologias %}</p>
     </li>
     <li class="panel mtb-15">
         <!-- <i class="fa fa-anchor"></i> -->
-        <p>Trabalhamos junto com o cliente e sua equipe, somando conhecimentos e extraindo o melhor para o projeto.</p>
+        <p>{% t pages.ux.trabalhamosjuntos %}</p>
     </li>
     <li class="panel mtb-15">
         <!-- <i class="fa fa-anchor"></i> -->
-        <p>Nossa metodologia Ágil inclui prototipação, validação e acompanhamento de tarefas em tempo real.</p>
+        <p>{% t pages.ux.nossametodologia %}</p>
     </li>
-    <h1 class="mtb-60">Design de interfaces para atingir resultados digitais.</h1>
+    <h1 class="mtb-60">{% t pages.ux.designdeinterfaces %}</h1>
 </ul>
 
 <div class="wrapper">
 
   <div class="text-center mtb-60">
-    <h2 class="mb-30">Somos experts para te ajudar em:</h2>
+    <h2 class="mb-30">{% t pages.ux.somosexpertem %}</h2>
     <ul class="experts-list">
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-ux.jpg" alt="">
+            <img src="{{ '/assets/img/especialidade-icon-ux.jpg' | prepend: site.baseurl_root }}">
             <p>UX Design</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-html.jpg" alt="">
-            <p>HTML, CSS <br> e JavaScript</p>
+            <img src="{{ '/assets/img/especialidade-icon-html.jpg' | prepend: site.baseurl_root }}">
+            <p>{% t pages.ux.expert1 %}</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-wordpress.jpg" alt="">
-            <p>CMS / WordPress <br> e e-Commerce</p>
+            <img src="{{ '/assets/img/especialidade-icon-wordpress.jpg' | prepend: site.baseurl_root }}">
+            <p>{% t pages.ux.expert2 %}</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-android.jpg" alt="">
-            <p>Android e <br> iOS Design</p>
+            <img src="{{ '/assets/img/especialidade-icon-android.jpg' | prepend: site.baseurl_root }}">
+            <p>{% t pages.ux.expert3 %}</p>
         </li>
     </ul>
   </div>
@@ -74,6 +76,6 @@ hide_arrow: 1
 </div>
 <div class="divider-marker">
     <div class="wrapper">
-        <p class="center uppercase mtb-30">conecte-se com a usabit hoje</p>
+        <p class="center uppercase mtb-30">{% t pages.ux.conectese %}</p>
     </div>
 </div>

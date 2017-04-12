@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">
+    <a class="site-title" href="{% tl home %}">
       <img src="/assets/img/usabit-logo-u.png" alt="">
       {% include img/usabit-logotipo.svg %}
     </a>
@@ -14,19 +14,19 @@
       <div class="responsive-menu"></div>
 
       <div class="trigger">
-        <a class="page-link {% if page.url == '/' %}active{% endif %}" href="/">Início</a>
+        <a class="page-link {% if page.namespace == 'home' %}active{% endif %}" href="{% tl home %}">{% t mainmenu.inicio %}</a>
         {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "navigation") %}
         {% for my_page in sorted_pages %}
           {% if my_page.title %}
-            <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{% tl my_page.namespace %}">{% t my_page.title %}</a>
 
             {% if my_page.order == 1 %}
               <div class="page-link group" href="#">
-                <span>Nossos Produtos</span>
+                <span>{% t mainmenu.nossosprodutos %}</span>
                 <nav>
                   {% assign sorted_products = (site.pages | where: "group" , "product" | sort:"order") %}
                   {% for my_product in sorted_products %}
-                    <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{{ my_product.url | prepend: site.baseurl }}">{{ my_product.title }}</a>
+                    <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{% tl my_product.namespace %}">{% t my_product.title %}</a>
                   {% endfor %}
                 </nav>
               </div>

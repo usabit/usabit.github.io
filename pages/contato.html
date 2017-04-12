@@ -1,17 +1,19 @@
 ---
 layout: page
-title: Contato
+namespace: contato
+title: mainmenu.contato
 permalink: /contato/
+permalink_en: /contactus/
 order: 5
 group: "navigation"
 banner_class: contato
-banner_text: Vamos continuar esse assunto?
+banner_text: pages.contato.banner_text
 banner_img: /assets/img/contato-banner-01.jpg
 ---
 
 <section class="wrapper contato">
     <div class="contact-method">
-        <h1 class="mb-50">Pode falar agora.</h1>
+        <h1 class="mb-50">{% t pages.contato.podefalar %}</h1>
         <div
         class="fb-page"
         data-href="https://www.facebook.com/usabitdigital/"
@@ -28,7 +30,7 @@ banner_img: /assets/img/contato-banner-01.jpg
 
     </div>
     <div class="contact-method">
-        <h1 class="mb-50">Vamos ser amigos?</h1>
+        <h1 class="mb-50">{% t pages.contato.vamosseramigos %}</h1>
 
         <ul class="social-media-list">
             {% for social_link in site.social-links %}
@@ -38,9 +40,9 @@ banner_img: /assets/img/contato-banner-01.jpg
             {% endfor %}
         </ul>
 
-        <h1 class="mtb-50">Ou por telefone</h1>
+        <h1 class="mtb-50">{% t pages.contato.portelefone %}</h1>
         <ul class="phone-list">
-          <li><strong>Escritório</strong> +55 21 4101-2259</li>
+          <li><strong>{% t pages.contato.escritorio %}</strong> +55 21 4101-2259</li>
           <li><strong>Rodrigo Lemos</strong> +55 21 98899-4327</li>
           <li><strong>Rafael Tavares</strong> +55 21 98462-6843</li>
         </ul>

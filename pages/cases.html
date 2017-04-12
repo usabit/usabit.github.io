@@ -1,26 +1,27 @@
 ---
 layout: page
-title: Cases
+namespace: cases
+title: mainmenu.cases
 permalink: /cases/
 order: 3
 group: "navigation"
 banner_class: cases
-banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes.
+banner_text: pages.cases.banner_text
 banner_img: /assets/img/cases-banner-01.jpg
 ---
 
 <div class="wrapper">
 
   <div class="text-center mtb-60">
-    <h2 class="mb-30">Nossos Projetos</h2>
-    <p class="fixed-width">A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes.</p>
+    <h2 class="mb-30">{% t pages.cases.chamada.title %}</h2>
+    <p class="fixed-width">{% t pages.cases.chamada.text %}</p>
   </div>
 
 </div>
 
 <ul class="cases-display-list">
 
-  {% for case in site.cases %}
+  {% for case in site.translations[site.lang]["pages"]["cases"]["listacases"] %}
     <li class="cases-display-item" style="background-image: url('/assets/img/cases/{{case.id}}/background.jpg');">
       <div class="wrapper">
         <div class="text-wrapper">

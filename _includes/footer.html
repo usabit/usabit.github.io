@@ -6,15 +6,15 @@
 
         <div class="text-wrap">
             <h2 class="footer-heading mb-20">{{ site.title }}</h2>
-            <p class="mtb-10">{{site.address_line1}}</p>
-            {% if site.address_line2 %} <p class="mtb-10">{{site.address_line2}}</p> {% endif %}
+            <p class="mtb-10">{% t footer.address_line1 %}</p>
+            <p class="mtb-10">{% t footer.address_line2 %}</p>
             <p class="mtb-10">{{site.phone_number}}</p>
         </div>
 
         <span class="flex-spacer"></span>
 
         <ul class="social-media-list">
-            <li style="margin-right: 10px"><a href="{{site.baseurl}}/oportunidades">Entre pro nosso time</a></li>
+            <li style="margin-right: 10px"><a href="{% tl trabalheconosco %}">{% t footer.entreprotime %}</a></li>
 
             {% for social_link in site.social-links %}
             <li>
@@ -41,9 +41,9 @@
 
 </script>
 
-<script src="/assets/libs/jquery/dist/jquery.js"></script>
-<script src="/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
-<script src="/assets/libs/owl.carousel/dist/owl.carousel.js"></script>
-<script src="/assets/libs/handlebars/handlebars.js"></script>
+<script src="{{'/assets/libs/jquery/dist/jquery.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{'/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{'/assets/libs/owl.carousel/dist/owl.carousel.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{'/assets/libs/handlebars/handlebars.js' | prepend: site.baseurl_root }}"></script>
 
-<script src="/assets/js/main.js"></script>
+<script src="{{'/assets/js/main.js' | prepend: site.baseurl_root }}"></script>

@@ -1,79 +1,81 @@
 ---
 layout: page
-title: Infra-estrutura
+namespace: produtosinfra
+title: mainmenu.infraestrutura
 permalink: /produtos/infra-estrutura/
+permalink_en: /products/infrastructure/
 order: 3
 group: "product"
 banner_class: texto-escuro
-banner_title_text: Infra-estrutura, e-mails e servidores na nuvem
-banner_text: Tudo que você precisa para facilitar o dia-a-dia de seu escritório é uma infra-estrutura barata e confiável.
+banner_title_text: pages.infra.banner_title_text
+banner_text: pages.infra.banner_text
 banner_img: /assets/img/banner-infra.jpg
 hide_arrow: 1
 ---
 
 <div class="divider-marker n-mt-60">
     <div class="wrapper">
-        <h2 class="white mtb-60">Nós dividimos sua empresa <strong>em duas partes</strong></h2>
+        <h2 class="white mtb-60">{% t pages.infra.chamada.title %}</h2>
     </div>
 </div>
 
 <div class="wrapper">
 
-    <h2 class="mt-55 mb-15">Estrutura Online</h2>
+    <h2 class="mt-55 mb-15">{% t pages.infra.estruturaonline %}</h2>
     <ul class="infra-estruturas-list">
         <li>
             <div class="svg-icon infra-estrutura infra">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Nós avaliamos as reais necessidades de infra para sua empresa funcionar</span>
+            <span>{% t pages.infra.avaliamos %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura site">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Configuramos seus e-mails, servidores e site com muita transparência</span>
+            <span>{% t pages.infra.configuramos %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura nuvem">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Com o armazenamento na nuvem, você não perde espaço com servidores físicos</span>
+            <span>{% t pages.infra.armazenamento %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura wireless">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Seu escritório não fica cheio de cabos e armários. O presente da tecnologia é Wireless.</span>
+            <span>{% t pages.infra.seuescritorio %}</span>
         </li>
     </ul>
 
     <div class="clearfix"></div>
 
-    <h2 class="mt-55 mb-15">Estrutura Física</h2>
+    <h2 class="mt-55 mb-15"></h2>
     <ul class="infra-estruturas-list">
         <li>
             <div class="svg-icon infra-estrutura computador">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Nós avaliamos seus computadores e o tipo de informação que você trabalha</span>
+            <span>{% t pages.infra.avaliamoscomputadores %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura internet">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Dimensionamos o tamanho da banda de internet necessária para sua operação</span>
+            <span>{% t pages.infra.dimensionamos %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura sinal-internet">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Distribuimos o sinal de internet e a rede pelo escritório sem cabos</span>
+            <span>{% t pages.infra.distribuimos %}</span>
         </li>
         <li>
             <div class="svg-icon infra-estrutura equipe">
                 {% include img/svg-infra.html %}    
             </div>
-            <span>Já que maioria dos problemas são causados pela falta de conhecimento, treinaremos seus funcionários!</span>
+            <span>{% t pages.infra.jaque %}</span>
         </li>
     </ul>
 
@@ -89,18 +91,18 @@ hide_arrow: 1
                 <tr>
                     <td></td>
                     <td class="ptb-50 plr-30">
-                        <h1>Vamos começar?</h1>
-                        <h3>Estas respostas vão nos ajudar a encontrar a melhor solução para sua empresa.</h3>
+                        <h1>{% t pages.infra.vamoscomecar %}</h1>
+                        <h3>{% t pages.infra.essasrespostas %}</h3>
                     </td>
                 </tr>
                 <tr>
-                    <td>Quem é você?</td>
+                    <td>{% t pages.infra.quemevoce %}</td>
                     <td>
-                        <p class="mobile-only">Quem é você?</p>
+                        <p class="mobile-only">{% t pages.infra.quemevoce %}</p>
 
                         <div class="flex">
                             <input type="text" name="nome">
-                            <span class="hint">Nome</span>
+                            <span class="hint">{% t pages.infra.nome %}</span>
                         </div>
                     </td>
                 </tr>
@@ -109,14 +111,14 @@ hide_arrow: 1
                     <td>
                         <div class="flex">
                             <input type="email" name="email">
-                            <span class="hint">E-Mail</span>                            
+                            <span class="hint">{% t pages.infra.email %}</span>                            
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>Qual nome de sua empresa?</td>
+                    <td>{% t pages.infra.nomesuaempresa %}</td>
                     <td>
-                        <p class="mobile-only">Qual nome de sua empresa?</p>
+                        <p class="mobile-only">{% t pages.infra.nomesuaempresa %}</p>
 
                         <div class="flex">
                             <input type="text" name="empresa_nome">
@@ -124,64 +126,64 @@ hide_arrow: 1
                     </td>
                 </tr>
                 <tr>
-                    <td>Qual seu ramo de atuação?</td>
+                    <td>{% t pages.infra.ramoatuacao %}</td>
                     <td>
-                        <p class="mobile-only">Qual seu ramo de atuação?</p>
+                        <p class="mobile-only">{% t pages.infra.ramoatuacao %}</p>
 
                         <div class="flex">
                             <input type="text" name="empresa_atividade">
-                            <span class="hint">Nos ajuda a entender que tipo <br> de arquivos você trafega</span>                            
+                            <span class="hint">{% t pages.infra.nosajude %}</span>                            
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>Endereço físico (CEP)</td>
+                    <td>{% t pages.infra.enderecofisico %}</td>
                     <td>
-                        <p class="mobile-only">Endereço físico (CEP)</p>
+                        <p class="mobile-only">{% t pages.infra.enderecofisico %}</p>
 
                         <div class="flex">
                             <input type="text" class="cep" name="empresa_cep">
-                            <span class="hint">Vamos descobrir os melhores <br> serviços de internet da sua região</span>
+                            <span class="hint">{% t pages.infra.vamosdescobrir %}</span>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>Quantos funcionários, <br> computadores e dispositivos</td>
+                    <td>{% t pages.infra.quantosfuncionarios %}</td>
                     <td>
-                        <p class="mobile-only">Quantos funcionários, <br> computadores e dispositivos</p>
+                        <p class="mobile-only">{% t pages.infra.quantosfuncionarios %}</p>
                         <div class="flex">
                             <div class="input-group-infra">
                                 <label>
-                                    <span>Funcionários</span>
+                                    <span>{% t pages.infra.funcionarios %}</span>
                                     <input type="text" name="empresa_funcionarios" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
-                                    <span>Computadores</span>
+                                    <span>{% t pages.infra.computadores %}</span>
                                     <input type="text" name="empresa_computadores" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
-                                    <span>Impressoras</span>
+                                    <span>{% t pages.infra.impressoras %}</span>
                                     <input type="text" name="empresa_impressoras" value="">
                                 </label>
                             </div>
                             <div class="input-group-infra">
                                 <label>
-                                    <span>Outros</span>
+                                    <span>{% t pages.infra.outros %}</span>
                                     <input type="text" name="empresa_outros" value="">
                                 </label>
                             </div>
                         </div>
-                        <span class="hint left">O fluxo de informações e conexões varia de acordo com isso</span>
+                        <span class="hint left">{% t pages.infra.fluxo %}</span>
                     </td>
                 </tr>
                 <tr>
-                    <td>Já possui uma configuração <br> de rede?</td>
+                    <td>{% t pages.infra.jaconfigurado %}</td>
                     <td>
-                        <p class="mobile-only">Já possui uma configuração <br> de rede?</p>
+                        <p class="mobile-only">{% t pages.infra.jaconfigurado %}</p>
 
                         <div class="flex">
                             <input type="text" name="empresa_redeconfigurada">
@@ -190,13 +192,13 @@ hide_arrow: 1
                     </td>
                 </tr>
                 <tr>
-                    <td>Qual seu site?</td>
+                    <td>{% t pages.infra.seusite %}</td>
                     <td>
-                        <p class="mobile-only">Qual seu site?</p>
+                        <p class="mobile-only">{% t pages.infra.seusite %}</p>
 
                         <div class="flex">
                             <input type="text" name="empresa_site">
-                            <span class="hint">É necessário para <br> configurar o servidor</span>                            
+                            <span class="hint">{% t pages.infra.sitenecessario %}</span>                            
                         </div>
                     </td>
                 </tr>
@@ -205,8 +207,8 @@ hide_arrow: 1
                     <td>
                         <div class="row">
                             <div class="col-xs-12">
-                                <h3 class="danger mt-20 mb-10">Algo deu errado</h3>
-                                <p class="mt-10 n-mb-20">Tente novamente mais tarde</p>                        
+                                <h3 class="danger mt-20 mb-10">{% t pages.infra.algodeuerrado %}</h3>
+                                <p class="mt-10 n-mb-20">{% t pages.infra.tentemaistarde %}</p>                        
                             </div>
                         </div>
                     </td>
@@ -215,7 +217,7 @@ hide_arrow: 1
                     <td></td>
                     <td>
                         <a href="#" id="formInfraSend" class="cta blue mt-10 prl-20">
-                            Enviar
+                            {% t pages.infra.enviar %}
                             {% include img/svg-loading.html size="25px" fill="#fff" %}
                         </a>
                     </td>
@@ -228,29 +230,29 @@ hide_arrow: 1
 
 <div class="form-sucesso azul ptb-60 mtb-60">
     <div class="wrapper">
-        <h1 class="text-center">Mensagem enviada com <span class="success">sucesso</span>!</h1>
-        <p class="text-center">Vamos analizar seus dados e entraremos em contato com você.</p>
+        <h1 class="text-center">{% t pages.infra.mensagemenviada %}</h1>
+        <p class="text-center">{% t pages.infra.vamosanalizar %}</p>
     </div>
 </div>
 
 <div class="wrapper">
     <ul class="experts-list">
-        <h2>Você também pode precisar da Usabit para:</h2>
+        <h2>{% t pages.infra.vocepodeprecisar %}</h2>
         <li>
             <img src="{{site.baseurl}}/assets/img/especialidade-icon-ux.jpg" alt="">
             <p>UX Design</p>
         </li>
         <li>
             <img src="{{site.baseurl}}/assets/img/especialidade-icon-html.jpg" alt="">
-            <p>HTML, CSS <br> e JavaScript</p>
+            <p>{% t pages.infra.htmlcssjs %}</p>
         </li>
         <li>
             <img src="{{site.baseurl}}/assets/img/especialidade-icon-wordpress.jpg" alt="">
-            <p>CMS / WordPress <br> e e-Commerce</p>
+            <p>{% t pages.infra.cms %}</p>
         </li>
         <li>
             <img src="{{site.baseurl}}/assets/img/especialidade-icon-android.jpg" alt="">
-            <p>Android e <br> iOS Design</p>
+            <p>{% t pages.infra.android %}</p>
         </li>
     </ul>
 
