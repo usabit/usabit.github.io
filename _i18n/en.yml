@@ -3,12 +3,12 @@ global:
     precisadeumsite: "Need a website? Contact us!"
     precisadeumapp: "Need an app? Contact us!"
     precisadeajudacompresencaonline: "Need help with your online presence? Contact us."
-    conhecanossassolucoes: "Conheça nossas soluções"
-    conhecanossoblog: "Conheça nosso Blog"
+    conhecanossassolucoes: "Know our solutions"
+    conhecanossoblog: "Know our Blog"
 footer:
   address_line1: Av. Pastor Martin Lutherking Junior, 126 - Sala 221
   address_line2: Shopping Nova América - Rio de Janeiro - Brasil
-  entreprotime: Entre pro nosso time
+  entreprotime: Join our team
 mainmenu:
   inicio: Home
   nos: About Us
@@ -19,6 +19,7 @@ mainmenu:
   cases: Cases
   blog: Blog
   contato: Contact Us
+  trabalheconosco: Work with us
 pages:
   index:
     banner:
@@ -32,8 +33,8 @@ pages:
         title: "Focus your investments to gain online admirers."
         brief: "We take care of the technology for your <br> company to go further. And marketing too."
       banner4:
-        title: "Acompanhe o mundo da tecnologia com a Usabit."
-        brief: "Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo."
+        title: "Follow the technology world with Usabit."
+        brief: "From news of the main social media to the biggests releases of the technology industry, our blog fills you in on everything."
     10anos: "For over 10 years, we've been perfecting the web and creating digital products that are simple and easy to use."
     servicesIcons:
       sites: "Websites"
@@ -167,7 +168,6 @@ pages:
     nosajude: Help us figure out the types of files you deal with
     enderecofisico: Physical Address (CEP)
     vamosdescobrir: We'll find the best internet <br> services in your area
-    quantosfuncionarios: Quantos funcionários, <br> computadores e dispositivos
     quantosfuncionarios: How many employees, <br> computers and gadgets
     funcionarios: Employees
     computadores: Computers
@@ -177,30 +177,30 @@ pages:
     jaconfigurado: Do you already have a <br> network configuration?
     seusite: What's your website?
     sitenecessario: It's necessary to <br> set up the server 
-    algodeuerrado: Algo deu Errado
-    tentemaistarde: Tente novamente mais tarde
+    algodeuerrado: Something went wrong
+    tentemaistarde: Try again later
     enviar: Send
-    mensagemenviada: Mensagem enviada com <span class="success">sucesso</span>!
-    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
+    mensagemenviada: Message sent <span class="success">successfully</span>
+    vamosanalisar: We'll analyze your information and get in touch with you.
     vocepodeprecisar: "You can also need Usabit for:"
     htmlcssjs: HTML, CSS <br> and JavaScript
     cms: CMS / WordPress <br> and e-Commerce
     android: Android and <br> iOS Design
   marketing: 
-    banner_text: Concentre seus investimentos para conquistar admiradores online.
+    banner_text: Focus your investments to gain online admirers.
     banner_title_text: Digital Marketing <br> SEO and social media
     chamada:
       title: "Count on Usabit to:"
     darvoz: Listen and give voice to your clients
     espacoecletico: The internet is an eclectic and liberal space. It's where we gain space and authority to expose our thoughts, opinions and mostly dissatisfactions. Here you need to invest in transparency and quality care. 
-    casoantigobrastemp: "Caso antigo da Brastemp: cliente insatisfeito usando a força das redes sociais"
-    engajar: Engage and encourage interactions with your brand, products and philosophy.
+    casoantigobrastemp: "Brastemp old case: Unhappy client using Social Media strength"
+    engajar: Engage and encourage interactions with <br> your brand, products and philosophy.
     acrescentarconteudo: Add relevant content to people's lives and be remembered daily.
     marcarpresenca: Being present and found everywhere
     caminhos: Be sure that every path leads to you and be your client's first choice. We monitor data, accesses, navigation streams and mentions about your business.
     facaagora: DO IT NOW!
-    monitorarconcorrentes: Monitoring competitors closer and being always one step ahead
-    estaratento: Being alert to to innovation and changing your market is crucial to standing out. That's why we also take care of that for you. 
+    monitorarconcorrentes: Monitoring competitors closer <br> and being always one step ahead
+    estaratento: Being alert to to innovation and changing <br> your market is crucial to standing out. <br> That's why we also take care of that for you. 
     conectese: connect with usabit today
   ux:
     somosumaequipe: We are an integrated team that <br> brings to life perfect interfaces. 
@@ -230,27 +230,27 @@ pages:
     rodrigoposition: Partner, Technology
     rodrigobrief: Focus in development and technological coordination, specialist in projects and software management. He is ahead of interfaces, mobile and apps development. Both have been working together for over 10 years in digital projects.
   work: 
-    estimulamos: Estimulamos a participação da equipe e valorizamos suas ideias
-    quandobuscamos: Quando buscamos um novo membro para o nosso time, estamos interessados em algo muito além do conhecimento técnico. Buscamos sua particularidade, sua vivência e seu background. É por isso que aqui todo mundo tem voz.
-    acreditamos: Acreditamos que nossos projetos só são diferentes por que são fruto da soma do conhecimento cultural de muitas cabeças. Além disso, sabemos que a troca de conhecimento nos engrandece e faz com que as pessoas descubram o que têm de melhor. E não interagimos apenas em eventos. Fazemos isso todos os dias.
+    estimulamos: We stimulate the participation and appreciate the ideas of our team
+    quandobuscamos: When looking for a new member for our team, we're interested in something way beyond just technical knowledge.
+    acreditamos: We believe our projects are only different because they are the result of cultural knowledge of many minds combined. Beside that, we know that information exchange makes us better and makes people find out the best on themselves. We do that every day.
     localizacao: Rio de Janeiro <br> Shopping Nova América
-    desenhamos: Desenhamos produtos juntos
-    cadausabitante: Cada Usabitante (sabemos que esse trocadilho é horrível) tem suas funções e responsabilidades definidas como em qualquer lugar. Mas aqui o trabalho é cooperativo e permite que cada um some com seu olhar crírico.
-    semregras: Não temos muitas regras ou padrões. Parece negativo, mas entendemos que cada um tem seu método e é esse costume que o torna mais produtivo. Nos entendemos assim.
-    homeoffice: Fazemos home office
-    atecnologia: A tecnologia está no ar e um escritório não nos prende. Isso nos permite trabalhar de um café, na praia ou de casa. Qualquer lugar que estimule o prazer é uma parte da Usabit. Acordar sem vontade de encarar o caos do trânsito carioca não é um problema para nós. É uma solução.
-    vemjogar: Vem jogar?
-    vaga1: Desenvolvedor PHP
-    vaga2: Desenvolvedor Front-end
-    vaga2brief: "(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)"
-    vaga3: Analista de Redes Sociais
+    desenhamos: We design products together
+    cadausabitante: Each Usabitter has it's functions and responsibilities defined like anywhere else. But here the work is cooperative and allows all of us to add on with our critical eye.
+    semregras: We don't have much rules or standards. That might sound negative, but as far as we see each individual has it's method and that's what makes him more productive. We see it that way.
+    homeoffice: Home Office System
+    atecnologia: Technology is in the air and office can't lock us. That allows us to work on a Cafe, on the beach or at home. Anywhere que stimulates the pleasure to do our jobs is a part of Usabit. Not waking up in the mood for Rio's traffic chaos isn't a problem for us. It's a solution.
+    vemjogar: Come and play?
+    vaga1: PHP Developer
+    vaga2: Front-end Developer
+    vaga2brief: "(Html, CSS, JavaScript and other framework. Working with Stylus or other CSS pre processor. Automate tasks with gulp - differential: node)"
+    vaga3: Social Media Analyst
     vaga4: Designer
-    msgenviada: Mensagem enviada com <span class="success">sucesso</span>!
-    vamosanalizar: Vamos analizar seus dados e entraremos em contato com você.
-    deixeseucontato: "Ou deixe seu contato:"
+    msgenviada: Message sent <span class="success">successfully</span>
+    vamosanalisar: We'll analyze your information and get in touch with you.
+    deixeseucontato: "Or leave your contact:"
     nome: Name
     celular: Phone
     mensagem: Message
-    deuerrado: Algo deu errado
-    tentenovamente: Tente novamente mais tarde
+    deuerrado: Something went wrong
+    tentenovamente: Try again later
     enviar: Send

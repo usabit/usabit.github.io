@@ -45,5 +45,25 @@
 <script src="{{'/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/owl.carousel/dist/owl.carousel.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/handlebars/handlebars.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{'/assets/libs/js-cookie/src/js.cookie.js' | prepend: site.baseurl_root }}"></script>
 
 <script src="{{'/assets/js/main.js' | prepend: site.baseurl_root }}"></script>
+
+<script id="language-check" type="text/javascript">
+
+    var estamosNoBrasil = true;
+    if (geoplugin_countryName()){
+        estamosNoBrasil = geoplugin_countryName() === "Brazil";
+    }
+
+    // Passo 1, Verificar se temos cookie de lingua
+    if (!Cookies.get('lang')){
+        if (!estamosNoBrasil){
+            Cookies.set('lang', 'en');
+            if ('{{site.lang}}' !== 'en'){
+                window.location = '{% tl {{page.namespace}} en %}';
+            }
+        }
+    }
+
+</script>

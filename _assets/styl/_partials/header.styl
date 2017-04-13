@@ -192,3 +192,27 @@ header.site-header .site-nav .responsive-menu {
 header.site-header.homepage .site-nav .responsive-menu {
   padding-top 160px
 }
+
+.lang-change {
+  margin-left 30px
+  font-size 14px
+  text-transform uppercase
+  text-decoration none
+  color white
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color white
+    text-decoration none
+  }
+  
+  img {
+    width 20px
+    margin 0 5px 0 0
+  }
+  +below('small-tablet'){
+    font-size 16px !important
+    margin-left 0
+  }
+}

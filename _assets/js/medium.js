@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
   // Verifica se estou na home do site
-  if (document.location.pathname === '/') {
+  if ((document.location.pathname === '/') || (document.location.pathname === '/en/')) {
     ////////////
     // MEDIUM //
     ////////////

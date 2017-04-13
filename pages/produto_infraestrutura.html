@@ -231,7 +231,7 @@ hide_arrow: 1
 <div class="form-sucesso azul ptb-60 mtb-60">
     <div class="wrapper">
         <h1 class="text-center">{% t pages.infra.mensagemenviada %}</h1>
-        <p class="text-center">{% t pages.infra.vamosanalizar %}</p>
+        <p class="text-center">{% t pages.infra.vamosanalisar %}</p>
     </div>
 </div>
 
@@ -239,19 +239,19 @@ hide_arrow: 1
     <ul class="experts-list">
         <h2>{% t pages.infra.vocepodeprecisar %}</h2>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-ux.jpg" alt="">
+            <img src="{{ '/assets/img/especialidade-icon-ux.jpg' | prepend: site.baseurl_root }}" alt="">
             <p>UX Design</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-html.jpg" alt="">
+            <img src="{{ '/assets/img/especialidade-icon-html.jpg' | prepend: site.baseurl_root }}" alt="">
             <p>{% t pages.infra.htmlcssjs %}</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-wordpress.jpg" alt="">
+            <img src="{{ '/assets/img/especialidade-icon-wordpress.jpg' | prepend: site.baseurl_root }}" alt="">
             <p>{% t pages.infra.cms %}</p>
         </li>
         <li>
-            <img src="{{site.baseurl}}/assets/img/especialidade-icon-android.jpg" alt="">
+            <img src="{{ '/assets/img/especialidade-icon-android.jpg' | prepend: site.baseurl_root }}" alt="">
             <p>{% t pages.infra.android %}</p>
         </li>
     </ul>

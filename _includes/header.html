@@ -36,6 +36,18 @@
             {% endif %}
           {% endif %}
         {% endfor %}
+        {% for lang in site.languages %}
+          {% if lang != site.lang %}
+            <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
+              {% if lang == 'pt-br' %}
+                pt
+              {% else %}
+                {{lang}}
+              {% endif %}
+            </a>
+          {% endif %}
+        {% endfor %}
+
       </div>
     </nav>
 
