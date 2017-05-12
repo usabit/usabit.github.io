@@ -1,4 +1,5 @@
-<header class="site-header {% if page.url == '/' %}homepage{% endif %}">
+<!-- <header class="site-header {% if page.url == '/' %}homepage{% endif %}"></header> -->
+<header class="site-header">
 
   <div class="wrapper">
 
@@ -9,7 +10,52 @@
 
     <span class="flex-spacer"></span>
 
-    <nav class="site-nav">
+    <!-- <a href="#" id="menu-toggle"> -->
+      <svg viewBox="0 0 30 30" viewPort="0 0 30 30" width="30" style="border: 1px solid red;">
+          
+          <line id="top"
+                x1="3" y1="3" 
+                x2="27" y2="3"
+                stroke="#bcbcbc"
+                stroke-width="3"
+                stroke-linecap="round"
+                >
+          </line>
+          <line id="middle1"
+                x1="3" y1="3" 
+                x2="27" y2="27"
+                stroke="#bcbcbc"
+                stroke-width="3"
+                stroke-linecap="round">
+          </line>
+          <line id="middle2"
+                x1="3" y1="27"
+                x2="27" y2="3"
+                stroke="#bcbcbc"
+                stroke-width="3"
+                stroke-linecap="round">
+          </line>
+          <line id="middle3"
+                x1="3" y1="15" 
+                x2="27" y2="15"
+                stroke="#bcbcbc"
+                stroke-width="3"
+                stroke-linecap="round">
+          </line>
+          <line id="bottom"
+                x1="3" y1="27" 
+                x2="27" y2="27"
+                stroke="#bcbcbc"
+                stroke-width="3"
+                stroke-linecap="round"
+                >
+          </line>
+      </svg>
+      
+    <!-- </a> -->
+
+
+    <!--nav class="site-nav">
       <a href="#" class="menu-icon"></a>
       <div class="responsive-menu"></div>
 
@@ -49,7 +95,7 @@
         {% endfor %}
 
       </div>
-    </nav>
+    </nav-->
 
   </div>
 

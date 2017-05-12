@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
-var connect = require('gulp-connect');
 var stylus = require('gulp-stylus');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
@@ -31,11 +30,6 @@ gulp.task('stylus', function() {
     ;
 });
 
-gulp.task('reload', function() {
-    gulp.src(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js'])
-        .pipe(connect.reload());
-});
-
 gulp.task('js', function() {
     return gulp.src('_assets/js/**/*.js')
         .pipe(plumber())
@@ -55,7 +49,12 @@ gulp.task('favicon', function() {
 gulp.task('imagemin', ['favicon'], function() {
     return gulp.src('_assets/img/**/*')
         .pipe(plumber())
-        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({plugins: [{removeViewBox: true}]})
+        ]))
         .pipe(gulp.dest('assets/img/'));
 });
 
@@ -63,7 +62,6 @@ gulp.task('watch', function() {
     gulp.watch('_assets/styl/**/*.styl', ['stylus']);
     gulp.watch('_assets/js/**/*.js', ['js']);
     gulp.watch('_assets/img/**/*.{jpg,png,gif}', ['imagemin']);
-    gulp.watch(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js'], ['reload']);
 });
 
 gulp.task('clean', function(cb) {
@@ -121,9 +119,4 @@ gulp.task('sequence', function(callback) {
     );
 });
 
-gulp.task('default', ['sequence'], function() {
-    connect.server({
-        root: '_site',
-        livereload: true
-    });
-});
+gulp.task('default', ['sequence'], function() {});

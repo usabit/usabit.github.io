@@ -1,6 +1,13 @@
+a#menu-toggle {
+  display flex
+  align-items center
+}
+
 header.site-header {
-  background-color alpha(black, .7)
-  border-bottom 2px solid alpha(white, .2)
+  // background-color alpha(black, .7)
+  // border-bottom 2px solid alpha(white, .2)
+  background-color white
+  box-shadow 0 0 2px alpha(black, .3)
   position fixed
   top 0
   left 0
@@ -16,145 +23,17 @@ header.site-header {
 
   .site-title {
     display inline-flex
-    align-items flex-start
+    align-items center
     img {
       width 30px
       margin-right 10px
     }
     svg#usabit-logotipo {
       width 80px
-      margin-top 3px
+      margin-bottom 5px
       path {
-        fill white
+        fill #bcbcbc
       }
-    }
-  }
-  
-  .site-nav {
-    borderWidth = 5
-    .menu-icon {
-      display inline-block
-      size(40px)
-      border-radius 50%
-      z-index 2
-      position relative
-      cursor pointer
-      
-      &:not(.active){
-        border unit(borderWidth, px) solid azulUsabit
-        box-shadow inset 0 0 2px alpha(black, .2)
-        &:after {
-          content ''
-          position absolute
-          top unit(borderWidth * -1, px)
-          bottom unit(borderWidth * -1, px)
-          left unit(borderWidth * -1, px)
-          right unit(borderWidth * -1, px)
-          display block
-          border-radius 50%
-          z-index 1
-          animation-name breath
-          animation-duration 4s
-          animation-iteration-count infinite
-        }        
-      }
-
-      &.active:before {
-        font-family FontAwesome
-        content '\f00d'
-        font-size 30px
-        color white
-        position absolute
-        trbl 0
-        display flex
-        align-items center
-        justify-content center
-      }
-      
-      +above('tablet'){
-        display none
-      }
-    }
-
-    .trigger {
-      display flex
-      align-items center
-      
-      +below('small-tablet'){
-        display none
-      }
-      
-      .page-link {
-        position relative
-        color white
-        padding 5px 18px
-        text-decoration none
-        font-size 14px
-
-        &:after {
-          content ''
-          position absolute
-          left 15px
-          right 15px
-          bottom 3px
-          height 2px
-          background-color transparent
-        }
-        
-        &:hover,
-        &.active {
-          &:after {
-            bottom -3px
-            transition all 200ms
-            background-color #5cb2eb
-          }
-        }
-        
-        nav {
-          display none
-          position absolute
-          top 100%
-          left 50%
-          transform translateX(-50%)
-          align-items center
-          flex-direction column
-          background-image linear-gradient(top, alpha(black, .6), alpha(black, .8) 40%)
-          padding 15px 5px 10px 5px
-
-          a {
-            white-space nowrap
-            font-size .85rem !important
-            margin 4px 0
-          }
-        }
-        
-        &.group {
-          position relative
-          &:hover {
-            nav {
-              display flex
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &.homepage {
-    +above('small-tablet'){
-      padding 50px 0
-      .trigger .page-link {
-        font-size 18px
-      }
-      .site-title {
-        img {
-          width 60px
-          margin-right 18px
-        }
-        svg#usabit-logotipo {
-          width 120px
-        }
-      }      
     }
   }
 }
