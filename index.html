@@ -4,7 +4,16 @@ namespace: home
 permalink: /
 ---
 <div class="home">
-    {% include homepage/banner.html %}
+
+    <section class="banner-phrase">
+        <div class="wrapper">
+            <h1 class="text-center">
+                Tecnologia é tornar o dia a dia mais <span class="accent-foreground">simples, fácil e divertido.</span>
+            </h1>
+        </div>
+    </section>
+
+    <div class="index-divider"></div>
 
     <section class="portfolio">
         <div class="wrapper">
@@ -200,7 +209,7 @@ permalink: /
         </div>
     </div>
 
-    <section class="clientes-display mtb-60">
+    <section class="clientes-display mt-60">
         <div class="wrapper">
             <img src="{{'/assets/img/home-clientes-gf.png' | prepend: site.baseurl_root}}">
             <img src="{{'/assets/img/home-clientes-sanes.png' | prepend: site.baseurl_root}}">

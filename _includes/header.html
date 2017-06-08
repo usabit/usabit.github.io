@@ -1,102 +1,75 @@
 <!-- <header class="site-header {% if page.url == '/' %}homepage{% endif %}"></header> -->
 <header class="site-header">
+    <div class="wrapper">
+        <a class="site-title" href="{% tl home %}">
+            <img src="/assets/img/usabit-logo-u.png" alt=""> {% include img/usabit-logotipo.svg %}
+        </a>
+        <div class="flex-spacer"></div>
+        <nav class="header-nav">
+            {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "mainmenu") %} 
+            {% for my_page in sorted_pages %} 
+                {% if my_page.title %}
+                    <a class="roboto page-link {% if page.url == my_page.url %}active{% endif %}" href="{% tl my_page.namespace %}">
+                        {% t my_page.title %}
+                    </a> 
+                {% endif %} 
+            {% endfor %} 
+            {% for lang in site.languages %} 
+                {% if lang != site.lang %}
+                    <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change roboto">
+                        {% if lang == 'pt-br' %} pt
+                        {% else %} {{lang}}
+                        {% endif %}
+                    </a> 
+                {% endif %} 
+            {% endfor %}
+        </nav>
+        <a href="#" id="menu-icon">
+            <svg viewBox="0 0 50 50" viewPort="0 0 50 50" style="width: 50px; height: 50px;">
+                <path d="M 10,14 L 40,14" stroke-width="3" stroke="#bebebe" />
+                <path d="M 10,25 L 40,25" stroke-width="3" stroke="#bebebe" />
+                <path d="M 10,36 L 40,36" stroke-width="3" stroke="#bebebe" />
+            </svg>
+        </a>
 
-  <div class="wrapper">
+        <div id="menu-overlay">
+            
+        </div>
+        <!--nav class="site-nav">
+          <div class="trigger">
+            {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "mainmenu") %}
+            {% for my_page in sorted_pages %}
+              {% if my_page.title %}
+                <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{% tl my_page.namespace %}">{% t my_page.title %}</a>
 
-    <a class="site-title" href="{% tl home %}">
-      <img src="/assets/img/usabit-logo-u.png" alt="">
-      {% include img/usabit-logotipo.svg %}
-    </a>
-
-    <span class="flex-spacer"></span>
-
-    <!-- <a href="#" id="menu-toggle"> -->
-      <svg viewBox="0 0 30 30" viewPort="0 0 30 30" width="30" style="border: 1px solid red;">
-          
-          <line id="top"
-                x1="3" y1="3" 
-                x2="27" y2="3"
-                stroke="#bcbcbc"
-                stroke-width="3"
-                stroke-linecap="round"
-                >
-          </line>
-          <line id="middle1"
-                x1="3" y1="3" 
-                x2="27" y2="27"
-                stroke="#bcbcbc"
-                stroke-width="3"
-                stroke-linecap="round">
-          </line>
-          <line id="middle2"
-                x1="3" y1="27"
-                x2="27" y2="3"
-                stroke="#bcbcbc"
-                stroke-width="3"
-                stroke-linecap="round">
-          </line>
-          <line id="middle3"
-                x1="3" y1="15" 
-                x2="27" y2="15"
-                stroke="#bcbcbc"
-                stroke-width="3"
-                stroke-linecap="round">
-          </line>
-          <line id="bottom"
-                x1="3" y1="27" 
-                x2="27" y2="27"
-                stroke="#bcbcbc"
-                stroke-width="3"
-                stroke-linecap="round"
-                >
-          </line>
-      </svg>
-      
-    <!-- </a> -->
-
-
-    <!--nav class="site-nav">
-      <a href="#" class="menu-icon"></a>
-      <div class="responsive-menu"></div>
-
-      <div class="trigger">
-        <a class="page-link {% if page.namespace == 'home' %}active{% endif %}" href="{% tl home %}">{% t mainmenu.inicio %}</a>
-        {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "navigation") %}
-        {% for my_page in sorted_pages %}
-          {% if my_page.title %}
-            <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{% tl my_page.namespace %}">{% t my_page.title %}</a>
-
-            {% if my_page.order == 1 %}
-              <div class="page-link group" href="#">
-                <span>{% t mainmenu.nossosprodutos %}</span>
-                <nav>
-                  {% assign sorted_products = (site.pages | where: "group" , "product" | sort:"order") %}
-                  {% for my_product in sorted_products %}
-                    <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{% tl my_product.namespace %}">{% t my_product.title %}</a>
-                  {% endfor %}
-                </nav>
-              </div>
-            {% endif %}
-            {% if my_page.order == 3 %}
-              <a class="page-link" href="https://medium.com/usabit" target="_blank">Blog</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% for lang in site.languages %}
-          {% if lang != site.lang %}
-            <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
-              {% if lang == 'pt-br' %}
-                pt
-              {% else %}
-                {{lang}}
+                {% if my_page.order == 1 %}
+                  <div class="page-link group" href="#">
+                    <span>{% t mainmenu.nossosprodutos %}</span>
+                    <nav>
+                      {% assign sorted_products = (site.pages | where: "group" , "product" | sort:"order") %}
+                      {% for my_product in sorted_products %}
+                        <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{% tl my_product.namespace %}">{% t my_product.title %}</a>
+                      {% endfor %}
+                    </nav>
+                  </div>
+                {% endif %}
+                {% if my_page.order == 3 %}
+                  <a class="page-link" href="https://medium.com/usabit" target="_blank">Blog</a>
+                {% endif %}
               {% endif %}
-            </a>
-          {% endif %}
-        {% endfor %}
-
-      </div>
-    </nav-->
-
-  </div>
-
+            {% endfor %}
+            {% for lang in site.languages %}
+              {% if lang != site.lang %}
+                <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
+                  {% if lang == 'pt-br' %}
+                    pt
+                  {% else %}
+                    {{lang}}
+                  {% endif %}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </nav-->
+    </div>
 </header>

@@ -1,0 +1,21 @@
+#menu-icon{
+    z-index 100
+    svg {
+        display block
+        margin 0
+    }
+    
+    * {
+        transition 200ms
+    }
+
+    &.open svg {
+        path.hide-onopen {
+            stroke-width 0
+        }
+        
+        .show-onopen {
+            stroke-width 3
+        }
+    }
+}

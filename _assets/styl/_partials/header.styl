@@ -1,29 +1,71 @@
-a#menu-toggle {
+headerHeight = 100px;
+
+#menu-overlay {
+  display flex
+  position fixed
+  top 0
+  left 0
+  size(100%)
+  background-color alpha(black, .9)
+  z-index 99
+  
+  // Open/close animation
+      
+  transform translateY(-100%)
+  transition 300ms ease
+  
+  &.open {
+      transform translateY(0)
+  }
+}
+
+nav.header-nav {
   display flex
   align-items center
+  
+  > * {
+    margin-right 45px
+  }
+  a {
+    color black
+    &:hover,
+    &.active,
+    &:active {
+      color corPrincipal
+      transition 200ms
+      text-decoration none
+    }
+  }
 }
 
 header.site-header {
   // background-color alpha(black, .7)
   // border-bottom 2px solid alpha(white, .2)
+  // box-shadow 0 0 2px alpha(black, .3)
+  height headerHeight
+  display flex
+  align-items center
   background-color white
-  box-shadow 0 0 2px alpha(black, .3)
   position fixed
   top 0
   left 0
   right 0
-  padding 20px 0
   z-index 10
   
   .wrapper {
     display flex
     justify-content space-around
     align-items center
+    
+    > * {
+      z-index 100
+    }
   }
 
   .site-title {
     display inline-flex
     align-items center
+    z-index 100
     img {
       width 30px
       margin-right 10px
@@ -38,60 +80,49 @@ header.site-header {
   }
 }
 
-header.site-header .site-nav .responsive-menu {
-  padding-top 85px
-  position fixed
-  trbl 0
-  background-color alpha(azulUsabit, .9)
-  display none
-  flex-direction column
-  justify-content space-around
-  z-index -1
-  
-  &.active {
-    display flex
-  }
-
-  a {
-    color white
-    display flex
-    align-items center
-    justify-content center
-    font-size 5vh
-    padding 2vh
-    
-    &:hover {
-      background-color white
-      color azulUsabit
-      transition 100ms
-    }
-  }
-}
-
-header.site-header.homepage .site-nav .responsive-menu {
-  padding-top 160px
-}
-
 .lang-change {
-  margin-left 30px
-  font-size 14px
+  display flex
+  size(35px)
+  align-items center
+  justify-content center
+  border #a4a4a4
+  border-radius 50%
+  font-size 10px
   text-transform uppercase
   text-decoration none
-  color white
+  color black
+  padding-top 1px
   
   &:hover,
   &:focus,
   &:active {
-    color white
     text-decoration none
   }
   
-  img {
-    width 20px
-    margin 0 5px 0 0
-  }
   +below('small-tablet'){
     font-size 16px !important
     margin-left 0
   }
+}
+
+body.main-menu-open {
+  overflow hidden
+  
+  nav.header-nav a {
+    color white
+    transition 200ms
+    
+    &:hover {
+      color corPrincipal
+    }
+  }
+  
+  header.site-header .site-title svg#usabit-logotipo path {
+    fill white
+    transition 200ms
+  }
+}
+
+header.site-header + * {
+  margin-top headerHeight
 }
