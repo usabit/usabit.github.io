@@ -37,8 +37,9 @@ pages:
         brief: "Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo."
     10anos: "Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar."
     servicesIcons:
-      sites: "Sites"
-      apps: "Apps"
+      sites: "Sites, Portais, Lojas Virtuais"
+      apps: "Apps, webapps, sites mobile"
+      produtos: "Produtos, sistemas, intranets"
       marketing: "Marketing e SEO"
       marketingMobile: "Marketing"
       gestao: "Gestão e <br> Infra-estrutura"
