@@ -6,5 +6,5 @@ bower_components
 .jsbeautifyrc
 Gemfile
 Gemfile.lock
-*.css.map
+assets
 .DS_Store
