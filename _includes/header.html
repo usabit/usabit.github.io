@@ -1,56 +1,40 @@
 <header class="site-header {% if page.url == '/' %}homepage{% endif %}">
-
   <div class="wrapper">
-
-    <a class="site-title" href="{% tl home %}">
-      <img src="/assets/img/usabit-logo-u.png" alt="">
+    <a class="site-header__logo" href="{% tl home %}">
+      <img src="/assets/img/usabit-logo-u.png" alt="" />
       {% include img/usabit-logotipo.svg %}
     </a>
 
-    <span class="flex-spacer"></span>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon"></a>
-      <div class="responsive-menu"></div>
-
-      <div class="trigger">
-        <a class="page-link {% if page.namespace == 'home' %}active{% endif %}" href="{% tl home %}">{% t mainmenu.inicio %}</a>
-        {% assign sorted_pages = (site.pages | sort:"order" | where: "group", "navigation") %}
-        {% for my_page in sorted_pages %}
-          {% if my_page.title %}
-            <a class="page-link {% if page.url == my_page.url %}active{% endif %}" href="{% tl my_page.namespace %}">{% t my_page.title %}</a>
-
-            {% if my_page.order == 1 %}
-              <div class="page-link group" href="#">
-                <span>{% t mainmenu.nossosprodutos %}</span>
-                <nav>
-                  {% assign sorted_products = (site.pages | where: "group" , "product" | sort:"order") %}
-                  {% for my_product in sorted_products %}
-                    <a class="page-link {% if page.url == my_product.url %}active{% endif %}" href="{% tl my_product.namespace %}">{% t my_product.title %}</a>
-                  {% endfor %}
-                </nav>
-              </div>
-            {% endif %}
-            {% if my_page.order == 3 %}
-              <a class="page-link" href="https://medium.com/usabit" target="_blank">Blog</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% for lang in site.languages %}
-          {% if lang != site.lang %}
-            <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
-              {% if lang == 'pt-br' %}
-                pt
-              {% else %}
-                {{lang}}
+    <nav class="site-header__nav">
+      <ul class="site-header__list">
+        <li class="site-header__item">
+          <a href="#" class="site-header__link">
+            {% t mainmenu.about %}
+          </a>
+          <a href="#" class="site-header__link">
+            {% t mainmenu.contact %}
+          </a>
+          <a href="#" class="site-header__link">
+            {% for lang in site.languages %}
+              {% if lang != site.lang %}
+                <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
+                  {% if lang == 'pt-br' %}
+                    pt
+                  {% else %}
+                    {{lang}}
+                  {% endif %}
+                </a>
               {% endif %}
-            </a>
-          {% endif %}
-        {% endfor %}
-
-      </div>
+            {% endfor %}
+          </a>
+          <a href="https://www.facebook.com/usabitdigital" class="site-header__link">
+            {% t mainmenu.FBmessenger %}
+          </a>
+          <a href="#" class="site-header__link site-header__link--open-menu">
+            Abrir menu
+          </a>
+        </li>
+      </ul>
     </nav>
-
   </div>
-
 </header>
