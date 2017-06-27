@@ -1,28 +1,42 @@
 <footer class="site-footer">
     <div class="wrapper">
-        <!-- <div class="map-embed">
-            <iframe src="{{site.google_map}}" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div> -->
+        <img class="site-footer__logo" src="/assets/img/usabit-logo-u.png" alt="" />
 
-        <div class="text-wrap">
-            <h2 class="footer-heading mb-20">{{ site.title }}</h2>
-            <p class="mtb-10">{% t footer.address_line1 %}</p>
-            <p class="mtb-10">{% t footer.address_line2 %}</p>
-            <p class="mtb-10">{{site.phone_number}}</p>
+        <div class="site-footer__infos">
+            <p class="site-footer__name">
+                {% t footer.name %}
+            </p>
+            <p class="site-footer__location">
+                {% t footer.location %}
+            </p>
         </div>
 
-        <span class="flex-spacer"></span>
-
-        <ul class="social-media-list">
-            <li style="margin-right: 10px"><a href="{% tl trabalheconosco %}">{% t footer.entreprotime %}</a></li>
-
-            {% for social_link in site.social-links %}
-            <li>
-                {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
-            </li>
-            {% endfor %}
-        </ul>
-
+        <nav class="site-footer__menu">
+            <ul class="site-footer__menu-list">
+                <li class="site-footer__menu-item">
+                    <a href="#" class="site-footer__menu-link">{% t footer.about %}</a>
+                </li>
+                <li class="site-footer__menu-item">
+                    <a href="#" class="site-footer__menu-link">{% t footer.blog %}</a>
+                </li>
+                <li class="site-footer__menu-item">
+                    <a href="#" class="site-footer__menu-link">{% t footer.jobs %}</a>
+                </li>
+                <li class="site-footer__menu-item">
+                    <a href="#" class="site-footer__menu-link">{% t footer.contact %}</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <nav class="site-footer__social">
+            <ul class="site-footer__social-list">
+                {% for social_link in site.social-links %}
+                <li class="site-footer__social-item">
+                    {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
     </div>
 </footer>
 
@@ -56,7 +70,7 @@
         estamosNoBrasil = geoplugin_countryName() === "Brazil";
     }
 
-    // Passo 1, Verificar se temos cookie de lingua
+    // Passo 1: Verifica existência cookie idioma
     if (!Cookies.get('lang')){
         if (!estamosNoBrasil){
             Cookies.set('lang', 'en');
