@@ -13,16 +13,9 @@ footer:
   jobs: Trabalhe Conosco
   contact: Contrate
 mainmenu:
-  inicio: Início
-  nos: Nós
-  nossosprodutos: Nossos Produtos
-  uxdesignfrontend: UX Design + Front End
-  marketingdigital: Marketing Digital
-  infraestrutura: Infra-estrutura
-  cases: Cases
-  blog: Blog
-  contato: Contato
-  trabalheconosco: Trabalhe Conosco 
+  about: Sobre a empresa
+  contact: Contrate
+  FBmessenger: Facebook Messenger
 pages:
   index:
     banner:

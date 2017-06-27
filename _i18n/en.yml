@@ -13,16 +13,9 @@ footer:
   jobs: Work with us
   contact: Contact Us
 mainmenu:
-  inicio: Home
-  nos: About Us
-  nossosprodutos: Our Products
-  uxdesignfrontend: UX Design + Front End
-  marketingdigital: Digital Marketing
-  infraestrutura: Infrastructure
-  cases: Cases
-  blog: Blog
-  contato: Contact Us
-  trabalheconosco: Work with us
+  about: About us
+  contact: Contact Us
+  FBmessenger: Facebook Messenger
 pages:
   index:
     banner:
