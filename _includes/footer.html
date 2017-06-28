@@ -1,7 +1,6 @@
 <footer class="site-footer">
     <div class="wrapper">
         <img class="site-footer__logo" src="/assets/img/usabit-logo-u.png" alt="" />
-
         <div class="site-footer__infos">
             <p class="site-footer__name">
                 {% t footer.name %}
@@ -10,74 +9,62 @@
                 {% t footer.location %}
             </p>
         </div>
-
         <nav class="site-footer__menu">
+            {% assign pages = (site.pages | sort:"order" | where: "footer", "navigation") %}
             <ul class="site-footer__menu-list">
+                {% for my_page in pages %}
+                    {% if my_page.title %}
+                        <li class="site-footer__menu-item">
+                            <a href="{% tl my_page.namespace %}" class="site-footer__menu-link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
                 <li class="site-footer__menu-item">
-                    <a href="#" class="site-footer__menu-link">{% t footer.about %}</a>
-                </li>
-                <li class="site-footer__menu-item">
-                    <a href="https://medium.com/usabit" class="site-footer__menu-link">{% t footer.blog %}</a>
-                </li>
-                <li class="site-footer__menu-item">
-                    <a href="#" class="site-footer__menu-link">{% t footer.jobs %}</a>
-                </li>
-                <li class="site-footer__menu-item">
-                    <a href="#" class="site-footer__menu-link">{% t footer.contact %}</a>
+                    <a href="https://medium.com/usabit" class="site-footer__menu-link">Blog</a>
                 </li>
             </ul>
         </nav>
-    
+        
         <nav class="site-footer__social">
             <ul class="site-footer__social-list">
                 {% for social_link in site.social-links %}
-                <li class="site-footer__social-item">
-                    {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
-                </li>
+                    <li class="site-footer__social-item">
+                        {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
+                    </li>
                 {% endfor %}
             </ul>
         </nav>
     </div>
 </footer>
-
 <script id="medium-template" type="text/x-handlebars-template">
-
-    {% raw %}
-    <a href="{{postLink}}" target="_blank" class="post">
-        <div class="img-wrap mb-10" style="background-image: url({{postImg}})"></div>
-        <div class="text-wrap">
-            <h4 class="post-title">{{postTitle}}</h4>
-            <!-- <p class="post-subtitle">{{postSubtitle}}</p> -->
-            <p class="post-writer">{{postAuthor}} | {{postDate}}</p>
-        </div>
-    </a>
-    {% endraw %}
-
+{% raw %}
+<a href="{{postLink}}" target="_blank" class="post">
+    <div class="img-wrap mb-10" style="background-image: url({{postImg}})"></div>
+    <div class="text-wrap">
+        <h4 class="post-title">{{postTitle}}</h4>
+        <p class="post-writer">{{postAuthor}} | {{postDate}}</p>
+    </div>
+</a>
+{% endraw %}
 </script>
-
 <script src="{{'/assets/libs/jquery/dist/jquery.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/owl.carousel/dist/owl.carousel.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/handlebars/handlebars.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/js-cookie/src/js.cookie.js' | prepend: site.baseurl_root }}"></script>
-
 <script src="{{'/assets/js/main.js' | prepend: site.baseurl_root }}"></script>
-
 <script id="language-check" type="text/javascript">
-
-    var estamosNoBrasil = true;
-    if (geoplugin_countryName()){
-        estamosNoBrasil = geoplugin_countryName() === "Brazil";
-    }
-
-    // Passo 1: Verifica existência cookie idioma
-    if (!Cookies.get('lang')){
-        if (!estamosNoBrasil){
-            Cookies.set('lang', 'en');
-            if ('{{site.lang}}' !== 'en'){
-                window.location = '{% tl {{page.namespace}} en %}';
-            }
-        }
-    }
-
+var estamosNoBrasil = true;
+if (geoplugin_countryName()){
+estamosNoBrasil = geoplugin_countryName() === "Brazil";
+}
+// Passo 1: Verifica existência cookie idioma
+if (!Cookies.get('lang')){
+if (!estamosNoBrasil){
+Cookies.set('lang', 'en');
+if ('{{site.lang}}' !== 'en'){
+window.location = '{% tl {{page.namespace}} en %}';
+}
+}
+}
 </script>
