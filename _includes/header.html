@@ -1,40 +1,48 @@
-<header class="site-header {% if page.url == '/' %}homepage{% endif %}">
-  <div class="wrapper">
-    <a class="site-header__logo" href="{% tl home %}">
-      <img src="/assets/img/usabit-logo-u.png" alt="" />
-      {% include img/usabit-logotipo.svg %}
-    </a>
+<header class="site-header">
+    <div class="wrapper">
+        <a class="site-header__logo" href="{% tl home %}">
+            <img src="/assets/img/usabit-logo-u.png" alt="" />
+            {% include img/usabit-logotipo.svg %}
+        </a>
+        <div class="site-header__navigation pull-right">
+            <nav class="site-header__menu">
+                <ul class="site-header__list">
+                    {% assign pages = (site.pages | sort:"order" | where: "group", "navigation") %}
+                    <ul>
+                        {% for page in pages %}
+                            {% if page.title %}
+                                <li>
+                                    <a href="{% tl page.namespace %}">{% t page.title %}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </ul>
+            </nav>
 
-    <nav class="site-header__nav">
-      <ul class="site-header__list">
-        <li class="site-header__item">
-          <a href="#" class="site-header__link">
-            {% t mainmenu.about %}
-          </a>
-          <a href="#" class="site-header__link">
-            {% t mainmenu.contact %}
-          </a>
-          <a href="#" class="site-header__link">
             {% for lang in site.languages %}
-              {% if lang != site.lang %}
-                <a href="{% tl {{page.namespace}} {{lang}} %}" class="lang-change"><img src="{{ '/assets/img/ico_' | append: lang | append: '.png' | prepend: site.baseurl_root }}"" alt="">
-                  {% if lang == 'pt-br' %}
-                    pt
-                  {% else %}
-                    {{lang}}
-                  {% endif %}
-                </a>
-              {% endif %}
+                {% if lang != site.lang %}
+                    <a href="{% tl {{page.namespace}} {{lang}} %}" class="site-header__language">
+                        {% if lang == 'pt-br' %}
+                            pt
+                        {% else %}
+                            {{lang}}
+                        {% endif %}
+                    </a>
+                {% endif %}
             {% endfor %}
-          </a>
-          <a href="https://www.facebook.com/usabitdigital" class="site-header__link">
-            {% t mainmenu.FBmessenger %}
-          </a>
-          <a href="#" class="site-header__link site-header__link--open-menu">
-            Abrir menu
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+
+            <a href="https://www.facebook.com/usabitdigital" class="site-header__messenger">
+                Facebook Messenger
+            </a>
+
+            <a href="#" class="site-header__open-menu">
+                <svg viewBox="0 0 50 50" viewPort="0 0 50 50" style="width: 30px; height: 30px;">
+                    <path d="M 10,14 L 40,14" stroke-width="3" stroke="#bebebe" />
+                    <path d="M 10,25 L 40,25" stroke-width="3" stroke="#bebebe" />
+                    <path d="M 10,36 L 40,36" stroke-width="3" stroke="#bebebe" />
+                </svg>
+            </a>
+        </div>
+    </div>
 </header>
