@@ -8,12 +8,10 @@ global:
 footer:
   name: 2017 Usabit Tecnologia.
   location: Rio de Janeiro/Brasil
+mainmenu:
   about: Sobre a empresa
   blog: Blog
   jobs: Trabalhe Conosco
-  contact: Contrate
-mainmenu:
-  about: Sobre a empresa
   contact: Contrate
 pages:
   index:
