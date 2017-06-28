@@ -7,12 +7,12 @@
         <div class="site-header__navigation pull-right">
             <nav class="site-header__menu">
                 <ul class="site-header__list">
-                    {% assign pages = (site.pages | sort:"order" | where: "group", "navigation") %}
-                    <ul>
-                        {% for page in pages %}
-                            {% if page.title %}
-                                <li>
-                                    <a href="{% tl page.namespace %}">{% t page.title %}</a>
+                    {% assign pages = (site.pages | sort:"order" | where: "header", "navigation") %}
+                    <ul class="site-header__list">
+                        {% for my_page in pages %}
+                            {% if my_page.title %}
+                                <li class="site-header__item">
+                                    <a href="{% tl my_page.namespace %}" class="site-header__link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
