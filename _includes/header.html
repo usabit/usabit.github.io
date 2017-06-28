@@ -6,17 +6,15 @@
         </a>
         <div class="site-header__navigation pull-right">
             <nav class="site-header__menu">
-                <ul class="site-header__list">
-                    {% assign pages = (site.pages | sort:"order" | where: "header", "navigation") %}
-                    <ul class="site-header__list">
-                        {% for my_page in pages %}
-                            {% if my_page.title %}
-                                <li class="site-header__item">
-                                    <a href="{% tl my_page.namespace %}" class="site-header__link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
+                {% assign pages = (site.pages | sort:"order" | where: "header", "navigation") %}
+                <ul class="site-header__menu-list">
+                    {% for my_page in pages %}
+                        {% if my_page.title %}
+                            <li class="site-header__menu-item">
+                                <a href="{% tl my_page.namespace %}" class="site-header__menu-link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
                 </ul>
             </nav>
 
@@ -32,12 +30,14 @@
                 {% endif %}
             {% endfor %}
 
-            <a href="https://www.facebook.com/usabitdigital" class="site-header__messenger">
-                Facebook Messenger
+            <a href="#" class="site-header__messenger">
+                
+            <img src="/assets/img/icon-fb-messenger.png" alt="Facebook Messenger" />
+
             </a>
 
             <a href="#" class="site-header__open-menu">
-                <svg viewBox="0 0 50 50" viewPort="0 0 50 50" style="width: 30px; height: 30px;">
+                <svg viewBox="10 10 30 30" width="30" height="30">
                     <path d="M 10,14 L 40,14" stroke-width="3" stroke="#bebebe" />
                     <path d="M 10,25 L 40,25" stroke-width="3" stroke="#bebebe" />
                     <path d="M 10,36 L 40,36" stroke-width="3" stroke="#bebebe" />
