@@ -72,5 +72,10 @@ social-links: [
     fontawesome_icon: 'fa-pinterest',
     link: 'https://br.pinterest.com/usabit/',
     description: '/usabit'
+  },
+  {
+    fontawesome_icon: 'fa-medium',
+    link: 'https://medium.com/usabit',
+    description: '/usabit'
   }
 ]

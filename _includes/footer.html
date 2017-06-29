@@ -1,14 +1,13 @@
 <footer class="site-footer">
     <div class="wrapper">
-        <img class="site-footer__logo" src="/assets/img/usabit-logo-u.png" alt="" />
-        <div class="site-footer__infos">
-            <p class="site-footer__name">
-                {% t footer.name %}
+        <a class="site-footer__logo" href="{% tl home %}">
+            <img src="/assets/img/usabit-logo-u.png" alt="" />
+            <p class="site-footer__logo-text">
+                2017 Usabit Tecnologia.
+                <small>Rio de Janeiro/Brasil</small>
             </p>
-            <p class="site-footer__location">
-                {% t footer.location %}
-            </p>
-        </div>
+        </a>
+        
         <nav class="site-footer__menu">
             {% assign pages = (site.pages | sort:"order" | where: "footer", "navigation") %}
             <ul class="site-footer__menu-list">
@@ -20,7 +19,7 @@
                     {% endif %}
                 {% endfor %}
                 <li class="site-footer__menu-item">
-                    <a href="https://medium.com/usabit" class="site-footer__menu-link">Blog</a>
+                    <a href="https://medium.com/usabit" target="_blank" class="site-footer__menu-link">Blog</a>
                 </li>
             </ul>
         </nav>
