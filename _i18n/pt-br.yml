@@ -5,9 +5,6 @@ global:
     precisadeajudacompresencaonline: "Precisa de ajuda com presença online? Fale conosco!"
     conhecanossassolucoes: "Conheça nossas soluções"
     conhecanossoblog: "Conheça nosso Blog"
-footer:
-  name: 2017 Usabit Tecnologia.
-  location: Rio de Janeiro/Brasil
 mainmenu:
   about: Sobre a empresa
   blog: Blog
