@@ -20,15 +20,16 @@ pages:
       products: "Produtos, sistemas,<br> intranets"
       marketing: "Marketing<br> e SEO"
     sites:
-      title: "Experiências incríveis em qualquer tamanho de tela"
+      title: "Amazing experiences on all screen sizes"
       text: "Essa é a era em que as pessoas não se limitam mais a computadores. Telas sim são o que realmente atraem olhares, trabalho ou entretenimento."
-      button1: "Testar meu site"
-      button2: "Preciso de um site"
+      button1: "Test my site"
+      button2: "I need a site"
       action: "Teste se seu site está<br> funcionando corretamente:"
+      action: "Test if your website is<br> working corretly:"
     apps:
-      title: "Funcionalidades que apenas especialistas podem fazer"
+      title: "Features that only experts can do"
       text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas antes feitas por uma pessoa."
-      button1: "Veja alguns exemplos"
+      button1: "See examples"
       related: "Quanto custa fazer um aplicativo?"
     products:
       title: "Potencializamos negócios através de soluções de software"
@@ -37,9 +38,9 @@ pages:
       action: "Marque um papo online com um consultor<br> para resolver o seu problema"
       related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
     marketing:
-      title: "Resultados reais através do marketing digital"
+      title: "Real results through Digital Marketing."
       text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
-      button1: "Saiba mais"
+      button1: "See more"
       related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
     customers:
       title: "Essas empresas aprovam nosso trabalho"
