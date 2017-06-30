@@ -1,0 +1,167 @@
+.main-banner {
+    padding 140px 0 340px
+    text-align center
+    background url(/assets/img/img-mosaic.jpg) repeat-x bottom
+    
+    .main-title {
+        color $black
+        font-weight 500
+        font-size 60px
+        font-family $roboto
+
+        span {
+            display block
+            margin-top 10px
+            color  #5b9bce
+        }
+    }
+}
+.services, .customers, .blog-news {
+    margin-top 140px
+    h1 {
+        font-family $roboto
+        color $gray6
+        font-size 40px
+        font-weight 500
+        text-align center
+    }
+}
+.services {
+    text-align center
+
+    &__navigation {
+        margin-top 100px
+    }
+    &__list {
+        display flex
+        justify-content space-between
+        width 740px
+        margin 0 auto
+    }
+    &__link {
+        font-family $roboto
+        color $black
+        font-size 17px
+        font-weight 400
+        &:before {
+            content ""
+            display block
+            margin 0 auto 35px
+        }
+        &:hover {
+            color $blue2
+            text-decoration none
+        }
+        &--monitor {
+            &:before {
+                sprite($icon-monitor)
+            }
+            &:hover {
+                &:before {
+                    sprite($icon-monitor-hover)
+                }
+            }
+        }
+        &--smartphone {
+            &:before {
+                sprite($icon-smartphone)
+            }
+            &:hover {
+                &:before {
+                    sprite($icon-smartphone-hover)
+                }
+            }
+        }
+        &--product {
+            &:before {
+                sprite($icon-product)
+            }
+            &:hover {
+                &:before {
+                    sprite($icon-product-hover)
+                }
+            }
+        }
+        &--notebook {
+            &:before {
+                sprite($icon-notebook)
+            }
+            &:hover {
+                &:before {
+                    sprite($icon-notebook-hover)
+                }
+            }
+        }
+    }
+}
+.service {
+    display flex
+    justify-content space-around
+    margin-top 140px
+    &__texts {
+        max-width 580px
+        h1 {
+            font-family $roboto
+            color $black
+            font-size 40px
+            font-weight 700
+        }
+        & > p {
+            margin-top 50px
+            font-family $lato
+            color $gray4
+            font-size 20px
+            font-weight 300
+        }
+        & + .service__btn {
+            margin-left 20px
+        }
+    }
+    &__action, &__action + service__related {
+        margin-top 50px
+    }
+    &__action {
+        display flex
+        align-items center
+        
+        & + .service__related {
+            margin-top 50px
+        }
+    }
+    &__btn {
+        & + .service__btn {
+            margin-left 10px
+        }
+        & + .service__related {
+            margin-left 20px
+        }
+    }
+    &__action-text {
+        font-family $roboto
+        color $gray4
+        font-size 16px
+        font-weight 500
+        
+        & + .service__btn {
+            margin-left 20px
+        }
+    }
+    &__related {
+        font-family $roboto
+        color  #548ab4
+        font-size 15px
+        font-weight 300
+        
+        strong {
+            font-weight 700
+        }
+    }
+}
+.customers {
+    &__list {
+        display flex
+        justify-content space-around
+        align-items center
+        margin-top 30px
+    }
+}

@@ -4,211 +4,147 @@ namespace: home
 permalink: /
 ---
 <div class="home">
-    {% include homepage/banner.html %}
-
-    <section class="portfolio">
+    <section class="main-banner">
         <div class="wrapper">
-            <h2 class="center mtb-60">{% t pages.index.10anos %}</h2>
+            <h1 class="main-title">
+                {% t pages.index.title %}
+            </h1>
         </div>
-        <ul class="portfolio-list arrow-down mt-60 hide-mobile">
-            <li class="portfolio-item active">
-                <a href="#" data-banner="sites">
-                    <div class="img-wrap"><img src="{{'/assets/img/home-portfoliomenu-sites.png' | prepend: site.baseurl_root }}"></div>
-                    <span class="text-wrap show-desktop show-mobile">{% t pages.index.servicesIcons.sites %}</span>
-                </a>
+    </section>
+
+    <section class="services wrapper">
+        <h1>{% t pages.index.services.title %}</h1>
+
+        <nav class="services__navigation">
+            <ul class="services__list">
+                <li class="services__item">
+                    <a href="#sites" class="services__link services__link--monitor">{% t pages.index.services.sites %}</a>
+                </li>
+                <li class="services__item">
+                    <a href="#apps" class="services__link services__link--smartphone">{% t pages.index.services.apps %}</a>
+                </li>
+                <li class="services__item">
+                    <a href="#products" class="services__link services__link--product">{% t pages.index.services.products %}</a>
+                </li>
+                <li class="services__item">
+                    <a href="#marketing" class="services__link services__link--notebook">{% t pages.index.services.marketing %}</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="sites" class="service sites wrapper">
+        <div class="service__texts">
+            <h1>{% t pages.index.sites.title %}</h1>
+            <p>
+                {% t pages.index.sites.text %}
+            </p>
+            <div class="service__action">
+                <p class="service__action-text">
+                    {% t pages.index.sites.action %}
+                </p>
+                <a href="#" class="service__btn btn-default">{% t pages.index.sites.button1 %}</a>
+                <a href="#" class="service__btn btn-secondary">{% t pages.index.sites.button2 %}</a>
+            </div>
+        </div>
+        <div class="service__img">
+            <img src="/assets/img/img-devices.png" alt="" />
+        </div>
+    </section>
+
+    <section id="apps" class="service apps wrapper">
+        <div class="service__img">
+            <img src="/assets/img/img-apps.png" alt="" />
+        </div>
+        <div class="service__texts">
+            <h1>{% t pages.index.apps.title %}</h1>
+            <p>
+                {% t pages.index.apps.text %}
+            </p>
+            <div class="service__action">
+                <a href="#" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
+                <a href="#" class="service__related">{% t pages.index.apps.related %}</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="service products wrapper">
+        <div class="service__texts">
+            <h1>{% t pages.index.products.title %}</h1>
+            <p>
+                {% t pages.index.products.text %}
+            </p>
+            <div class="service__action">
+                <p class="service__action-text">
+                    {% t pages.index.products.action %}
+                </p>
+                <a href="#" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
+            </div>
+            <a href="#" class="service__related">{% t pages.index.products.related %}</a>
+        </div>
+        <div class="service__img">
+            <img src="/assets/img/img-solutions.png" alt="" />
+        </div>
+    </section>
+
+    <section id="marketing" class="service marketing wrapper">
+        <div class="service__img">
+            <img src="/assets/img/img-marketing.png" alt="" />
+        </div>
+        <div class="service__texts">
+            <h1>{% t pages.index.marketing.title %}</h1>
+            <p>
+               {% t pages.index.marketing.text %}
+            </p>
+            <div class="service__action">
+                <a href="#" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
+            </div>
+            <a href="#" class="service__related">{% t pages.index.marketing.related %}</a>
+        </div>
+    </section>
+
+    <section class="customers wrapper">
+        <h1>{% t pages.index.customers.title %}</h1>
+        <ul class="customers__list">
+            <li class="customers__item icon-geracao-futuro">
+                Geração Futuro
             </li>
-            <li class="portfolio-item">
-                <a href="#" data-banner="apps">
-                    <div class="img-wrap"><img src="{{'/assets/img/home-portfoliomenu-apps.png' | prepend: site.baseurl_root }}"></div>
-                    <span class="text-wrap show-desktop show-mobile">{% t pages.index.servicesIcons.apps %}</span>
-                </a>
+            <li class="customers__item icon-tech-healthy">
+                Tech Healthy
             </li>
-            <!--li class="portfolio-item">
-                <a href="#" data-banner="desenvolvimento">
-                    <div class="img-wrap"><img src="assets/img/home-portfoliomenu-desenvolvimento.png"></div>
-                    <span class="text-wrap show-desktop">Desenvolvimento <br> de Produtos</span>
-                    <span class="text-wrap show-mobile">Produtos</span>
-                </a>
-            </li-->
-            <li class="portfolio-item">
-                <a href="#" data-banner="mkt">
-                    <div class="img-wrap"><img src="{{'/assets/img/home-portfoliomenu-marketing.png' | prepend: site.baseurl_root}}" class="mb-10"></div>
-                    <span class="text-wrap show-desktop">{% t pages.index.servicesIcons.marketing %}</span>
-                    <span class="text-wrap show-mobile">{% t pages.index.servicesIcons.marketingMobile %}</span>
-                </a>
+            <li class="customers__item icon-loreal">
+                L'oreal
             </li>
-            <li class="portfolio-item">
-                <a href="#" data-banner="infra">
-                    <div class="img-wrap"><img src="{{'/assets/img/home-portfoliomenu-infra.png' | prepend: site.baseurl_root}}" class="mb-10"></div>
-                    <span class="text-wrap show-desktop">{% t pages.index.servicesIcons.gestao %}</span>
-                    <span class="text-wrap show-mobile">{% t pages.index.servicesIcons.gestaoMobile %}</span>
-                </a>
+            <li class="customers__item icon-linc-edge">
+                Linc Edge
+            </li>
+            <li class="customers__item icon-outra-coisa">
+                Outra Coisa
             </li>
         </ul>
-        <ul class="portfolio-display">
-            <li class="wrapper portfolio-display-item active" id="sites">
-                <div class="img-wrap">
-                    <!-- <img class="n-mt-80 n-mb-60 sites" src="assets/img/home-portfoliodisplay-sites.png"> -->
-                    <img class="above-mobile" src="{{'/assets/img/home-portfoliodisplay-sites2.png' | prepend: site.baseurl_root}}">
-                    <img class="mobile-only" src="{{'/assets/img/home-portfoliomenu-sites.png' | prepend: site.baseurl_root}}">
-                    <p>{% t pages.index.servicesBanners.sites.imageSubtitle %}</p>
-                </div>
-                <div class="text-wrap">
-                    <h1>{% t pages.index.servicesBanners.sites.title %}</h1>
-                    <p>{% t pages.index.servicesBanners.sites.paragrath %}</p>
-
-                    <ul class="clientes-lista-icon hide-mobile">
-                        <li>
-                            <div class="img-wrap">
-                                <img src="{{'/assets/img/home-portfoliodisplay-sites-rx.png' | prepend: site.baseurl_root}}">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">{% t pages.index.servicesBanners.sites.cases.caseRx %}</p>
-                                <p class="description">{% t pages.index.servicesBanners.sites.cases.caseRxSubtitle %}</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrap">
-                                <img src="{{'/assets/img/home-portfoliodisplay-sites-sanes.png' | prepend: site.baseurl_root}}">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">{% t pages.index.servicesBanners.sites.cases.caseSanes %}</p>
-                                <p class="description">{% t pages.index.servicesBanners.sites.cases.caseSanesSubtitle %}</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="contato/" class="hide-mobile contato black mt-30">{% t global.links.precisadeumsite %}</a>
-                </div>
+        <ul class="customers__list">
+            <li class="customers__item icon-mongeral-aegon">
+                Mongeral Aegon
             </li>
-
-            <li class="wrapper portfolio-display-item" id="apps">
-                <div class="img-wrap">
-                    <!-- <img class="n-mt-60 n-mb-60 apps" src="assets/img/home-portfoliodisplay-apps.png"> -->
-                    <img class="above-mobile" src="{{'/assets/img/home-portfoliodisplay-apps2.png' | prepend: site.baseurl_root}}">
-                    <img class="mobile-only" src="{{'/assets/img/home-portfoliomenu-apps.png' | prepend: site.baseurl_root}}">
-                    <p>{% t pages.index.servicesBanners.apps.imageSubtitle %}</p>
-                </div>
-                <div class="text-wrap">
-                    <h1>{% t pages.index.servicesBanners.apps.title %}</h1>
-                    <p>{% t pages.index.servicesBanners.apps.paragrath %}</p>
-                    <ul class="clientes-lista-icon hide-mobile">
-                        <li>
-                            <div class="img-wrap">
-                                <img src="{{'/assets/img/home-portfoliodisplay-apps-meucorretor.png' | prepend: site.baseurl_root}}">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">{% t pages.index.servicesBanners.apps.cases.caseMeuCorretor %}</p>
-                                <p class="description">{% t pages.index.servicesBanners.apps.cases.caseMeuCorretorSubtitle %}</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="contato/" class="hide-mobile contato black mt-30">{% t global.links.precisadeumapp %}</a>
-                </div>
+            <li class="customers__item icon-dufry">
+                Dufry
             </li>
-
-            <!--li class="wrapper portfolio-display-item" id="desenvolvimento">
-                <div class="img-wrap">
-                    <img class="n-mt-60 n-mb-60" src="assets/img/home-portfoliodisplay-apps.png">
-                </div>
-                <div class="text-wrap">
-                    <h1><span class='hide-mobile'>Novos</span> Produtos <span class='hide-mobile'>e Negócios</span></h1>
-                    <p>Se você tem uma ideia e precisa de uma equipe de tecnologia, a Usabit pode te ajudar. <span class='hide-mobile'>Um time completo em estratégia de software, gestão, marketing e design para a sua startup.</span> </p>
-                    <ul class="clientes-lista-icon hide-mobile">
-                        <li>
-                            <div class="img-wrap">
-                                <img src="assets/img/home-portfoliodisplay-desenvolvimento-arca.png">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">Arca do Saber</p>
-                                <p class="description">Portal de Ensino</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrap">
-                                <img src="assets/img/home-portfoliodisplay-desenvolvimento-guia.png">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">Guia Atleta</p>
-                                <p class="description">Em Breve</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-wrap">
-                                <img src="assets/img/home-portfoliodisplay-desenvolvimento-aliga.png">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">A Liga</p>
-                                <p class="description">Campeonato de Futebol Não Profissional</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="#" class="hide-mobile contato black mtb-30">Precisa de um site? Fale conosco!</a>
-                </div>            
-            </li-->
-
-            <li class="wrapper portfolio-display-item" id="mkt">
-                <div class="img-wrap vcenter">
-                    <!-- <img class="mobile-n-mt-60 mkt" src="assets/img/home-portfoliodisplay-mkt.png"> -->
-                    <img class="mobile-only" src="{{'/assets/img/home-portfoliomenu-marketing.png' | prepend: site.baseurl_root}}">
-                    <img class="above-mobile" src="{{'/assets/img/home-portfoliodisplay-mkt2.png' | prepend: site.baseurl_root}}">
-                </div>
-                <div class="text-wrap">
-                    <h1>{% t pages.index.servicesBanners.marketing.title %}</h1>
-                    <p>{% t pages.index.servicesBanners.marketing.paragrath %}</p>
-                    <ul class="clientes-lista-icon hide-mobile">
-                        <li>
-                            <div class="img-wrap">
-                                <img src="{{'/assets/img/home-portfoliodisplay-mkt-beluga.png' | prepend: site.baseurl_root}}">
-                            </div>
-                            <div class="text-wrap">
-                                <p class="client">{% t pages.index.servicesBanners.marketing.cases.caseBeluga %}</p>
-                                <p class="description">{% t pages.index.servicesBanners.marketing.cases.caseBelugaSubtitle %}</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="contato/" class="hide-mobile contato black mt-30">{% t global.links.precisadeajudacompresencaonline %}</a>
-                </div>
+            <li class="customers__item icon-sanes">
+                Sanes
             </li>
-
-            <li class="wrapper portfolio-display-item" id="infra">
-                <div class="img-wrap">
-                    <img class="above-mobile" src="{{'/assets/img/home-portfoliodisplay-infra2.png' | prepend: site.baseurl_root}}">
-                    <img class="mobile-only" src="{{'/assets/img/home-portfoliomenu-infra.png' | prepend: site.baseurl_root}}">
-                </div>
-                <div class="text-wrap">
-                    <h1>{% t pages.index.servicesBanners.gestao.title %}</h1>
-                    <p>{% t pages.index.servicesBanners.gestao.paragrath %}</p>
-                    <ul class="ml-30 hide-mobile">
-                        <li class="blue">{% t pages.index.servicesBanners.gestao.list.item1 %}</li>
-                        <li class="red">{% t pages.index.servicesBanners.gestao.list.item2 %}</li>
-                        <li class="purple">{% t pages.index.servicesBanners.gestao.list.item3 %}</li>
-                    </ul>
-                    <!-- <p class="mb-5 hide-mobile">Confira um pequeno texto para aprender a detectar se você está pagando o justo pela infra da sua empresa:</p> -->
-                    <!-- <a class='hide-mobile' href="#">Meu técnico está me enrolando?</a> -->
-                </div>
+            <li class="customers__item icon-twelve">
+                Twelve
+            </li>
+            <li class="customers__item icon-qx3">
+                qx3
             </li>
         </ul>
     </section>
 
-    <div class="chamada-blog mtb-60">
+    <section class="blog-news wrapper">
         <div class="wrapper">
-            <h1>{% t pages.index.novidadesdonossoblog %}</h1>
-            <div class="medium-loading center">
-                {% include img/svg-loading.html size="50px" fill="#000" %}
-            </div>
+            <h1>{% t pages.index.blog.title %}</h1>
             <div id="medium-posts"></div>
         </div>
-    </div>
-
-    <section class="clientes-display mtb-60">
-        <div class="wrapper">
-            <img src="{{'/assets/img/home-clientes-gf.png' | prepend: site.baseurl_root}}">
-            <img src="{{'/assets/img/home-clientes-sanes.png' | prepend: site.baseurl_root}}">
-            <img src="{{'/assets/img/home-clientes-th.png' | prepend: site.baseurl_root}}">
-            <img src="{{'/assets/img/home-clientes-twelve.png' | prepend: site.baseurl_root}}">
-            <img src="{{'/assets/img/home-clientes-qx3.png' | prepend: site.baseurl_root}}">
-            <img src="{{'/assets/img/home-clientes-rxbandeirantes.png' | prepend: site.baseurl_root}}">
-        </div>
     </section>
-
 </div>

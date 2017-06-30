@@ -12,58 +12,39 @@ mainmenu:
   contact: Contact Us
 pages:
   index:
-    banner:
-      banner1:
-        title: "Leaving it for tomorrow <br> is not an option anymore."
-        brief: "We help companies update themselves, following the technological advance and overcoming their limitations on the digital environment."
-      banner2:
-        title: "Technology can't be a barrier for your startup development."
-        brief: "We add our UX design, front and back-end knowledge to the small teams ones to design successful products."
-      banner3:
-        title: "Focus your investments to gain online admirers."
-        brief: "We take care of the technology for your <br> company to go further. And marketing too."
-      banner4:
-        title: "Follow the technology world with Usabit."
-        brief: "From news of the main social media to the biggests releases of the technology industry, our blog fills you in on everything."
-    10anos: "For over 10 years, we've been perfecting the web and creating digital products that are simple and easy to use."
-    servicesIcons:
-      sites: "Websites"
-      apps: "Apps"
-      marketing: "Marketing and SEO"
-      marketingMobile: "Marketing"
-      gestao: "Management and Infrastructure"
-      gestaoMobile: "Management"
-    servicesBanners:
-      sites:
-        title: "Websites <span class='hide-mobile'> that work. </span>"
-        paragrath: "We've been helping companies <span class='hide-mobile'> of all sizes and areas to demystify digital presence, </span> developing websites that <span class='hide-mobile'>, as tools,</span> fulfill their purpose on any <span class='hide-mobile'>device or </span> screen size. "
-        imageSubtitle: "Medical Exams Online Appointment feature"
-        cases:
-          caseRx: "Rx Bandeirantes"
-          caseRxSubtitle: "Medical Exams Online Appointment"
-          caseSanes: "Sanes"
-          caseSanesSubtitle: "Products Display"
-      apps:
-        title: "Apps <span class='hide-mobile'> for productivity </span>"
-        paragrath: "Transform your business through the features attributed to smartphones.<span class='hide-mobile'> Control processes, collect informations, register and send data in real time and make operations more efficient everyday.</span>"
-        imageSubtitle: "Automation of tasks through smartphones. "
-        cases:
-          caseMeuCorretor: "Meu Corretor"
-          caseMeuCorretorSubtitle: "Car insurance"
-      marketing:
-        title: "Marketing <span class='hide-mobile'>and online audience</span>"
-        paragrath: "<span class='hide-mobile'>Social Media is the perfect opportunity to build a close relation with the public.</span> Count on us to promote your brand and consolidate customers."
-        cases:
-          caseBeluga: "Rede Beluga"
-          caseBelugaSubtitle: "Restaurant Franchise"
-      gestao:
-        title: "Infrastructure <span class='hide-mobile'> on the cloud</span>"
-        paragrath: "<span class='hide-mobile'>Our new support service for small business was designed to help you abandon cables, servers and problematic computer technicians.</span> We want to present new solutions to old problems. <span class='hide-mobile'> Find out how to: </span>"
-        list:
-          item1: "Storage files safely and with low costs"
-          item2: "Register data in the smartest way possible - and reduce ink costs"
-          item3: "Manage tasks and team online"
-    novidadesdonossoblog: "News from our Blog"
+    title: "Tecnologia é tornar o dia a dia mais <span>simples, fácil e divertido.</span>"
+    services:
+      title: "For over 10 years, we've been perfecting the web<br> and creating digital products that are simple and easy to use."
+      sites: "Sites, Portais,<br> Lojas Virtuais"
+      apps: "Apps, webapps,<br> sites mobile"
+      products: "Produtos, sistemas,<br> intranets"
+      marketing: "Marketing<br> e SEO"
+    sites:
+      title: "Experiências incríveis em qualquer tamanho de tela"
+      text: "Essa é a era em que as pessoas não se limitam mais a computadores. Telas sim são o que realmente atraem olhares, trabalho ou entretenimento."
+      button1: "Testar meu site"
+      button2: "Preciso de um site"
+      action: "Teste se seu site está<br> funcionando corretamente:"
+    apps:
+      title: "Funcionalidades que apenas especialistas podem fazer"
+      text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas antes feitas por uma pessoa."
+      button1: "Veja alguns exemplos"
+      related: "Quanto custa fazer um aplicativo?"
+    products:
+      title: "Potencializamos negócios através de soluções de software"
+      text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, nós dominamos o mundo das linguagens de programação."
+      button1: "Agende um chat"
+      action: "Marque um papo online com um consultor<br> para resolver o seu problema"
+      related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
+    marketing:
+      title: "Resultados reais através do marketing digital"
+      text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
+      button1: "Saiba mais"
+      related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
+    customers:
+      title: "Essas empresas aprovam nosso trabalho"
+    blog:
+      title: "News from our Blog"
   cases:
     banner_text: Know a little bit of what we do through <br> our most recent cases and projects.
     chamada: 

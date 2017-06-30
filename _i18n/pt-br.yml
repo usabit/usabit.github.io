@@ -12,58 +12,39 @@ mainmenu:
   contact: Contrate
 pages:
   index:
-    banner:
-      banner1:
-        title: "Deixar para amanhã não <br> é mais uma opção."
-        brief: "Nós ajudamos empresas a se atualizarem, acompanhando o avanço da tecnologia e superando suas limitações no ambiente digital."
-      banner2:
-        title: "Tecnologia não pode ser uma barreira para o avanço da sua startup."
-        brief: "Nós somamos nosso conhecimento de UX, front e back-end ao de pequenas equipes para desenhar produtos de sucesso."
-      banner3:
-        title: "Concentre seus investimentos <br> para conquistar admiradores online"
-        brief: "Nós cuidamos da tecnologia para a sua <br> empresa ir mais longe. E do marketing também."
-      banner4:
-        title: "Acompanhe o mundo da tecnologia com a Usabit."
-        brief: "Desde novidades das principais redes sociais até os maiores lançamentos da indústria tecnológica  nosso blog te deixa por dentro de tudo."
-    10anos: "Há mais de 10 anos, aperfeiçoamos a web e criamos produtos digitais simples e fáceis de usar."
-    servicesIcons:
-      sites: "Sites"
-      apps: "Apps"
-      marketing: "Marketing e SEO"
-      marketingMobile: "Marketing"
-      gestao: "Gestão e <br> Infra-estrutura"
-      gestaoMobile: "Gestão"
-    servicesBanners:
-      sites:
-        title: "Sites <span class='hide-mobile'> que funcionam </span>"
-        paragrath: "Nós temos ajudado empresas <span class='hide-mobile'> de diversos portes e áreas de atuação a desmistificar a presença digital,</span> desenvolvendo sites que <span class='hide-mobile'>, como ferramentas,</span> cumprem sua função em qualquer <span class='hide-mobile'> dispositivo ou </span> tamanho de tela."
-        imageSubtitle: "Funcionalidade de agendamento de exames online"
-        cases:
-          caseRx: "Rx Bandeirantes"
-          caseRxSubtitle: "Marcação de Exames Online"
-          caseSanes: "Sanes"
-          caseSanesSubtitle: "Vitrine de Produtos"
-      apps:
-        title: "Aplicativos <span class='hide-mobile'> para produtividade </span>"
-        paragrath: "Transforme seu negócio através de funcionalidades atribuídas a smartphones.<span class='hide-mobile'> Controle processos, colete informações, registre e envie dados em tempo real e torne sua operação mais eficiente a cada dia.</span>"
-        imageSubtitle: "Automatização de tarefas pelo smartphone"
-        cases:
-          caseMeuCorretor: "Meu Corretor"
-          caseMeuCorretorSubtitle: "Corretora de Seguros"
-      marketing:
-        title: "Marketing <span class='hide-mobile'>e Audiência Online</span>"
-        paragrath: "<span class='hide-mobile'>Redes sociais são a oportunidade perfeita para construir um relacionamento próximo com o público.</span> Conte com a Usabit para promover sua marca e consolidar clientes."
-        cases:
-          caseBeluga: "Rede Beluga"
-          caseBelugaSubtitle: "Rede de Restaurantes"
-      gestao:
-        title: "Infra-estrutura <span class='hide-mobile'> na nuvem</span>"
-        paragrath: "<span class='hide-mobile'>Nosso novo serviço de suporte para pequenas empresas foi desenhado para te ajudar a abandonar cabos, servidores e técnicos de informática problemáticos.</span> Queremos te apresentar novas soluções para problemas antigos. <span class='hide-mobile'> Saiba como: </span>"
-        list:
-          item1: "Armazenar arquivos de forma segura sem pagar caro por isso"
-          item2: "Registrar dados de forma inteligente - e diminuir o gasto de tinta"
-          item3: "Gerenciar tarefas e equipe online"
-    novidadesdonossoblog: "Novidades do Nosso Blog"
+    title: "Tecnologia é tornar o dia a dia mais <span>simples, fácil e divertido.</span>"
+    services:
+      title: "Há mais de 10 anos aperfeiçoamos a web<br> e criamos produtos digitais simples e fáceis de usar."
+      sites: "Sites, Portais,<br> Lojas Virtuais"
+      apps: "Apps, webapps,<br> sites mobile"
+      products: "Produtos, sistemas,<br> intranets"
+      marketing: "Marketing<br> e SEO"
+    sites:
+      title: "Experiências incríveis em qualquer tamanho de tela"
+      text: "Essa é a era em que as pessoas não se limitam mais a computadores. Telas sim são o que realmente atraem olhares, trabalho ou entretenimento."
+      button1: "Testar meu site"
+      button2: "Preciso de um site"
+      action: "Teste se seu site está<br> funcionando corretamente:"
+    apps:
+      title: "Funcionalidades que apenas especialistas podem fazer"
+      text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas antes feitas por uma pessoa."
+      button1: "Veja alguns exemplos"
+      related: "Quanto custa fazer um aplicativo?"
+    products:
+      title: "Potencializamos negócios através de soluções de software"
+      text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, nós dominamos o mundo das linguagens de programação."
+      button1: "Agende um chat"
+      action: "Marque um papo online com um consultor<br> para resolver o seu problema"
+      related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
+    marketing:
+      title: "Resultados reais através do marketing digital"
+      text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
+      button1: "Saiba mais"
+      related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
+    customers:
+      title: "Essas empresas aprovam nosso trabalho"
+    blog:
+      title: "Últimas do Nosso Blog"
   cases:
     banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes.
     chamada: 
@@ -219,7 +200,7 @@ pages:
     rafaelbrief: Responsável por novos negócios e conexões da Usabit e à frente do planejamento criativo dos produtos da empresa. No passado, atuou em projetos importantes para grandes empresas brasileiras como Itaú, Globo, Tim e Brasil Brokers.
     rodrigoposition: Sócio, Tecnologia
     rodrigobrief: Foco no desenvolvimento e coordenação tecnológica, especialista em projetos e gestão de software. Está à frente do desenvolvimento de interfaces, mobile e apps. Trabalham juntos em projetos digitais  há mais de 10 anos.
-  work: 
+  work:
     estimulamos: Estimulamos a participação da equipe e valorizamos suas ideias
     quandobuscamos: Quando buscamos um novo membro para o nosso time, estamos interessados em algo muito além do conhecimento técnico. Buscamos sua particularidade, sua vivência e seu background. É por isso que aqui todo mundo tem voz.
     acreditamos: Acreditamos que nossos projetos só são diferentes por que são fruto da soma do conhecimento cultural de muitas cabeças. Além disso, sabemos que a troca de conhecimento nos engrandece e faz com que as pessoas descubram o que têm de melhor. E não interagimos apenas em eventos. Fazemos isso todos os dias.
@@ -244,14 +225,3 @@ pages:
     deuerrado: Algo deu errado
     tentenovamente: Tente novamente mais tarde
     enviar: Enviar
-
-
-
-
-
-
-
-
-
-
-
