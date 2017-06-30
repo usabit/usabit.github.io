@@ -36,15 +36,16 @@
     </div>
 </footer>
 <script id="medium-template" type="text/x-handlebars-template">
-{% raw %}
-<a href="{{postLink}}" target="_blank" class="post">
-    <div class="img-wrap mb-10" style="background-image: url({{postImg}})"></div>
-    <div class="text-wrap">
-        <h4 class="post-title">{{postTitle}}</h4>
-        <p class="post-writer">{{postAuthor}} | {{postDate}}</p>
-    </div>
-</a>
-{% endraw %}
+    {% raw %}
+    <a href="{{postLink}}" target="_blank" class="post">
+        <div class="img-wrap mb-10" style="background-image: url({{postImg}})"></div>
+        <div class="text-wrap">
+            <h4 class="post-title">{{postTitle}}</h4>
+            <!-- <p class="post-subtitle">{{postSubtitle}}</p> -->
+            <p class="post-writer">{{postAuthor}} | {{postDate}}</p>
+        </div>
+    </a>
+    {% endraw %}
 </script>
 <script src="{{'/assets/libs/jquery/dist/jquery.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js' | prepend: site.baseurl_root }}"></script>
@@ -53,17 +54,18 @@
 <script src="{{'/assets/libs/js-cookie/src/js.cookie.js' | prepend: site.baseurl_root }}"></script>
 <script src="{{'/assets/js/main.js' | prepend: site.baseurl_root }}"></script>
 <script id="language-check" type="text/javascript">
-var estamosNoBrasil = true;
-if (geoplugin_countryName()){
-estamosNoBrasil = geoplugin_countryName() === "Brazil";
-}
-// Passo 1: Verifica existência cookie idioma
-if (!Cookies.get('lang')){
-if (!estamosNoBrasil){
-Cookies.set('lang', 'en');
-if ('{{site.lang}}' !== 'en'){
-window.location = '{% tl {{page.namespace}} en %}';
-}
-}
-}
+    var estamosNoBrasil = true;
+    
+    if (geoplugin_countryName()) {
+        estamosNoBrasil = geoplugin_countryName() === "Brazil";
+    }
+    // Passo 1: Verifica existência cookie idioma
+    if (!Cookies.get('lang')) {
+        if (!estamosNoBrasil)   {
+            Cookies.set('lang', 'en');
+            if ('{{site.lang}}' !== 'en') {
+                window.location = '{% tl {{page.namespace}} en %}';
+            }
+        }
+    }
 </script>
