@@ -6,46 +6,47 @@ global:
     conhecanossassolucoes: "Know our solutions"
     conhecanossoblog: "Know our Blog"
 mainmenu:
-  about: About us
+  about: About the company
   blog: Blog
   jobs: Work with us
-  contact: Contact Us
+  contact: Hire us
 pages:
   index:
     title: "Tecnologia é tornar o dia a dia mais <span>simples, fácil e divertido.</span>"
+    title: "Technology is making everyday life <span>simpler, easier and more fun.</span>"
     services:
       title: "For over 10 years, we've been perfecting the web<br> and creating digital products that are simple and easy to use."
-      sites: "Sites, Portais,<br> Lojas Virtuais"
-      apps: "Apps, webapps,<br> sites mobile"
-      products: "Produtos, sistemas,<br> intranets"
-      marketing: "Marketing<br> e SEO"
+      sites: "Websites"
+      apps: "Apps"
+      products: "Product development"
+      marketing: "Marketing<br> and SEO"
     sites:
-      title: "Amazing experiences on all screen sizes"
-      text: "Essa é a era em que as pessoas não se limitam mais a computadores. Telas sim são o que realmente atraem olhares, trabalho ou entretenimento."
-      button1: "Test my site"
-      button2: "I need a site"
+      title: "Incredible experiences in any screen size"
+      text: "This is the era where people are not limited to computers. Screens instead, are what actually attract looks, work or entertainment. "
+      button1: "Test my website"
+      button2: "I need a new site"
       action: "Teste se seu site está<br> funcionando corretamente:"
       action: "Test if your website is<br> working corretly:"
     apps:
-      title: "Features that only experts can do"
-      text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas antes feitas por uma pessoa."
-      button1: "See examples"
-      related: "Quanto custa fazer um aplicativo?"
+      title: "Features that only specialists can develop"
+      text: "You can reduce your company's costs significantly by automating online tasks previously performed by human effort."
+      button1: "Check out some examples"
+      related: "How much does it cost to build an app?"
     products:
-      title: "Potencializamos negócios através de soluções de software"
-      text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, nós dominamos o mundo das linguagens de programação."
-      button1: "Agende um chat"
-      action: "Marque um papo online com um consultor<br> para resolver o seu problema"
-      related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
+      title: "We potentiate business through software solutions"
+      text: "For computers, IPhones, IPads, Androids, SmartTv's or Smart Watches, we own the world of programing language."
+      button1: "Schedule a chat"
+      action: "Schedule an online chat with a consultant that can<br> solve your problem"
+      related: "<strong>Blog:</strong> How do smartphones and GPS can help you control your team?"
     marketing:
-      title: "Real results through Digital Marketing."
-      text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
-      button1: "See more"
-      related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
+      title: "Real results through Digital Marketing"
+      text: "We put Google and Facebook to work for you. And also help you on some important processes to improve your digital results."
+      button1: "Find out more"
+      related: "<strong>Related:</strong> Why invest in digital marketing?"
     customers:
-      title: "Essas empresas aprovam nosso trabalho"
+      title: "These companies approve our work"
     blog:
-      title: "News from our Blog"
+      title: "Latest news on our Blog"
   cases:
     banner_text: Know a little bit of what we do through <br> our most recent cases and projects.
     chamada: 
