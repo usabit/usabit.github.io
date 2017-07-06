@@ -10,6 +10,11 @@ mainmenu:
   blog: Blog
   jobs: Trabalhe Conosco
   contact: Contrate
+sidenav:
+  title: "O que a Usabit pode fazer pela sua empresa hoje?"
+  products: "Produtos"
+  webdevelopment: "Desenvolvimento Web"
+  seealso: "Veja também"
 pages:
   index:
     title: "Tecnologia é tornar o dia a dia mais <span>simples, fácil e divertido.</span>"

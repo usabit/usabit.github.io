@@ -65,8 +65,8 @@
 }
 .sidenav {
     position fixed
-    top 0
-    left 0
+    top 30px
+    left -30px
     bottom 0
     display flex
     width 100%
@@ -75,8 +75,11 @@
     transition all 250ms
     overflow hidden
     transform scale(0)
+    transform-origin top right
     
     &.active {
+        top 0
+        left 0
         transform scale(1)
         transition all 250ms
     }
