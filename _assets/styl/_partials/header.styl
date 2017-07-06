@@ -63,3 +63,179 @@
         margin-left 34px
     }
 }
+.sidenav {
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    display flex
+    width 100%
+    height 100%
+    z-index 99
+    transition all 250ms
+    overflow hidden
+    transform scale(0)
+    
+    &.active {
+        transform scale(1)
+        transition all 250ms
+    }
+
+    &__close-menu {
+        position absolute
+        top 30px
+        right 30px
+        font-size 0
+        
+        &:before {
+            content ""
+            display inline-block
+            sprite($icon-close)
+            opacity 0.7
+        }
+    }
+    &__left {
+        display flex
+        align-items center
+        justify-content center
+        flex 1
+        padding 15px 15px 55px
+        background $white
+        text-align center
+    }
+    &__logo {
+        display flex
+        align-items center
+        position absolute
+        img {
+            width 45px
+            margin-right 14px
+        }
+        svg {
+            width 84px
+            path {
+                fill $gray10
+            }
+        }
+    }
+    &__social {
+        align-self flex-end
+    }
+    &__social-list {
+        display flex
+        align-items center
+    }
+    &__social-item {
+        opacity 1
+        transition opacity 250ms
+        .social-media-link {
+            font-size 12px
+        }
+        &:nth-of-type(1) {
+            .fa-circle {
+                color $facebook
+            }
+        }
+        &:nth-of-type(2) {
+            .fa-circle {
+                color $linkedin
+            }
+        }
+        &:nth-of-type(3) {
+            .fa-circle {
+                color $behance
+            }
+        }
+        &:nth-of-type(4) {
+            .fa-circle {
+                color $instagram
+            }
+        }
+        &:nth-of-type(5) {
+            .fa-circle {
+                color $pinterest
+            }
+        }
+        &:nth-of-type(6) {
+            .fa-circle {
+                color $medium
+            }
+        }
+        &:hover {
+            opacity 0.6
+            transition opacity 250ms
+        }
+    }
+    &__right {
+        flex 3
+        padding 55px
+        background $blue9
+
+        h1, h2 {
+            font-family Lato
+            color $white
+            font-size 30px
+            font-weight 300
+        }
+    }
+    &__nav {
+        display inline-block
+        margin 70px 55px 0 0
+        h2 {
+            position relative
+            padding-left 45px
+            font-size 14px
+            font-weight 700
+            text-transform uppercase
+            &:before {
+                content ""
+                position absolute
+                top -5px
+                left 0
+                display inline-block
+            }
+        }
+        &:nth-of-type(1) {
+            h2 {
+                &:before {
+                    sprite($icon-heart)
+                }
+            }
+        }
+        &:nth-of-type(2) {
+            h2 {
+                &:before {
+                    top -15px
+                    sprite($icon-keyboard)
+                }
+            }
+        }
+        &:nth-of-type(3) {
+            h2 {
+                &:before {
+                    sprite($icon-paperplane)
+                }
+            }
+        }
+    }
+    &__list {
+        margin-top 20px
+        padding-left 45px
+    }
+    &__link {
+        font-family Lato
+        color $white
+        line-height 53px
+        font-size 22px
+        font-weight 300
+        opacity 1
+        transition opacity 250ms
+        
+        &:hover {
+            color $white
+            opacity 0.6
+            transition opacity 250ms
+            text-decoration none
+        }
+    }
+}

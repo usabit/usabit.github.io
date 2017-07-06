@@ -4,7 +4,7 @@
             <img src="/assets/img/usabit-logo-u.png" alt="" />
             {% include img/usabit-logotipo.svg %}
         </a>
-        <div class="site-header__navigation pull-right">
+        <div class="site-header__navigation">
             <nav class="site-header__menu">
                 {% assign pages = (site.pages | sort:"order" | where: "header", "navigation") %}
                 <ul class="site-header__menu-list">
@@ -31,9 +31,7 @@
             {% endfor %}
 
             <a href="#" class="site-header__messenger">
-                
-            <img src="/assets/img/icon-fb-messenger.png" alt="Facebook Messenger" />
-
+                <img src="/assets/img/icon-fb-messenger.png" alt="Facebook Messenger" />
             </a>
 
             <a href="#" class="site-header__open-menu">
@@ -43,6 +41,71 @@
                     <path d="M 10,36 L 40,36" stroke-width="3" stroke="#bebebe" />
                 </svg>
             </a>
+        </div>
+    </div>
+    <div class="sidenav">
+        <a href="#" class="sidenav__close-menu">Fechar navegação lateral</a>
+
+        <div class="sidenav__left">
+            <a class="sidenav__logo" href="{% tl home %}">
+                <img src="/assets/img/usabit-logo-u.png" alt="" />
+                {% include img/usabit-logotipo.svg %}
+            </a>
+            <nav class="sidenav__social">
+                <ul class="sidenav__social-list">
+                    {% for social_link in site.social-links %}
+                        <li class="sidenav__social-item">
+                            {% include icon-social.html link=social_link.link fontawesome_icon=social_link.fontawesome_icon %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="sidenav__right">
+            <h1>O que a Usabit pode fazer pela sua empresa hoje?</h1>
+
+            <nav class="sidenav__nav">
+                <h2>Produtos</h2>
+                <ul class="sidenav__list">
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Sites, hotsites e Portais</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Aplicativos Android e IOS</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Sistemas, Intranets</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sidenav__nav">
+                <h2>Desenvolvimento Web</h2>
+                <ul class="sidenav__list">
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Design de Interfaces</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Angular, Saas, Stylus, Ionic, Backbone, React</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">PHP, Wordpress, Zend, Dot.net, Nodejs</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sidenav__nav">
+                <h2>Veja também</h2>
+                <ul class="sidenav__list">
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Alguns Cases</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Nosso Blog</a>
+                    </li>
+                    <li class="sidenav__item">
+                        <a href="#" class="sidenav__link">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
