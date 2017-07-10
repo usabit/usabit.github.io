@@ -1,0 +1,26 @@
+.btn-default {
+    display inline-block
+    height 44px
+    line-height 44px
+    padding 0 15px
+    font-family $roboto
+    color $black
+    font-size 15px
+    font-weight 700
+    text-align left
+    border-radius 3px
+    background  $yellow
+    opacity 1
+    transition all 250ms    
+    
+    &:hover {
+        color $black
+        text-decoration none
+        opacity 0.6
+        transition all 250ms
+    }
+}
+.btn-secondary {
+    @extend .btn-default
+    background $blue12
+}

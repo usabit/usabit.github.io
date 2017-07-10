@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Criamos produtos digitais simples e fáceis de usar.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://usabit.com.br" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+twitter_username: usabitdigital
 github_username:  usabit
 
 # Footer Information
@@ -54,13 +54,28 @@ social-links: [
     description: '/usabitdigital'
   },
   {
+    fontawesome_icon: 'fa-linkedin',
+    link: 'https://www.linkedin.com/company/usabit',
+    description: '/company/usabit'
+  },
+  {
+    fontawesome_icon: 'fa-behance',
+    link: 'https://www.behance.net/usabitdigital',
+    description: '/usabitdigital'
+  },
+  {
     fontawesome_icon: 'fa-instagram',
     link: 'https://www.instagram.com/usabit_/',
     description: '@usabit_'
   },
   {
-    fontawesome_icon: 'fa-linkedin',
-    link: 'https://www.linkedin.com/company/usabit',
-    description: '/company/usabit'
+    fontawesome_icon: 'fa-pinterest',
+    link: 'https://br.pinterest.com/usabit/',
+    description: '/usabit'
+  },
+  {
+    fontawesome_icon: 'fa-medium',
+    link: 'https://medium.com/usabit',
+    description: '/usabit'
   }
 ]

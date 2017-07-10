@@ -4,3 +4,7 @@ _site
 node_modules
 bower_components
 .jsbeautifyrc
+Gemfile
+Gemfile.lock
+assets
+.DS_Store
