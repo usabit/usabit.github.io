@@ -63,6 +63,28 @@
     &__messenger, &__open-menu {
         margin-left 34px
     }
+    &__messenger {
+        position relative
+        
+        .fb-page {
+            position absolute
+            top 38px
+            right 0 
+            width 0
+            height 0
+            overflow hidden
+            opacity 0
+            transition opacity 250ms
+        }
+        &.active {
+            .fb-page {
+                width auto
+                height auto
+                opacity 1
+                transition opacity 500ms
+            }
+        }
+    }
 }
 .sidenav {
     position fixed
