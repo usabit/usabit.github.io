@@ -83,7 +83,7 @@ gulp.task('watch', function() {
     gulp.watch('./_assets/img/sprite/*.*', ['sprite']);
     gulp.watch('./_assets/js/**/*.js', ['js']);
     gulp.watch('./_assets/img/**/*.{jpg,png,gif}', ['imagemin']);
-    gulp.watch(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js'], ['reload']);
+    gulp.watch(['_site/**/*.html', '_site/**/*.css', '_site/**/*.js']);
 });
 
 gulp.task('clean', function(cb) {

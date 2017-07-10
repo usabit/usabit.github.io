@@ -23,7 +23,7 @@ google_map: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d759.28382152346
 # Build settings
 markdown: kramdown
 
-gems: 
+plugins: 
   - jekyll-multiple-languages-plugin
   - kramdown
 
