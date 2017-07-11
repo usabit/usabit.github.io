@@ -13,11 +13,19 @@ mainmenu:
 sidenav:
   title: "What can Usabit do for your company today?"
   products: "Products"
-  webdevelopment: "Web Development"
-  seealso: "See also"
+  webdevelopment:
+    title: "Web Development"
+    interfacedesign: "Interface Design"
+    front: "Angular, Saas, Stylus, Ionic, Backbone, React"
+    back: "PHP, Wordpress, Zend, Dot.net, Nodejs"
+  seealso:
+    title: "See also"
+    cases: "Some Cases"
+    blog: "Our Blog"
+    contact: "Contacts"
 pages:
   index:
-    title: "Technology is making everyday life <span>simpler, easier and more fun.</span>"
+    title: "Productivity and intelligence to <span>develop your digital side.</span>"
     services:
       title: "For over 10 years, we've been perfecting the web<br> and creating digital products that are simple and easy to use."
       sites: "Websites"
@@ -29,7 +37,6 @@ pages:
       text: "This is the era where people are not limited to computers. Screens instead, are what actually attract looks, work or entertainment. "
       button1: "Test my website"
       button2: "I need a new site"
-      action: "Teste se seu site está<br> funcionando corretamente:"
       action: "Test if your website is<br> working corretly:"
     apps:
       title: "Features that only specialists can develop"
@@ -52,10 +59,10 @@ pages:
     blog:
       title: "Latest news on our Blog"
   cases:
-    banner_text: Know a little bit of what we do through <br> our most recent cases and projects.
+    banner_text: "Know a little bit of what we do through <br> our most recent cases and projects."
     chamada: 
-      title: Our Projects
-      text: The Usabit team work with dedication and care to create the best projects to our clients.
+      title: "Our Projects"
+      text: "The Usabit team work with dedication and care to create the best projects to our clients."
     listacases: [
       {
         id: 'aliga',

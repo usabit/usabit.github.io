@@ -13,11 +13,19 @@ mainmenu:
 sidenav:
   title: "O que a Usabit pode fazer pela sua empresa hoje?"
   products: "Produtos"
-  webdevelopment: "Desenvolvimento Web"
-  seealso: "Veja também"
+  webdevelopment:
+    title: "Desenvolvimento Web"
+    interfacedesign: "Design de Interfaces"
+    front: "Angular, Saas, Stylus, Ionic, Backbone, React"
+    back: "PHP, Wordpress, Zend, Dot.net, Nodejs"
+  seealso:
+    title: "Veja também"
+    cases: "Alguns Cases"
+    blog: "Nosso Blog"
+    contact: "Contatos"
 pages:
   index:
-    title: "Tecnologia é tornar o dia a dia mais <span>simples, fácil e divertido.</span>"
+    title: "Produtividade e inteligência para <span>desenvolver seu lado digital.</span>"
     services:
       title: "Há mais de 10 anos aperfeiçoamos a web<br> e criamos produtos digitais simples e fáceis de usar."
       sites: "Sites, Portais,<br> Lojas Virtuais"
@@ -51,10 +59,10 @@ pages:
     blog:
       title: "Últimas do Nosso Blog"
   cases:
-    banner_text: Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes.
+    banner_text: "Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes."
     chamada: 
-      title: Nossos Projetos
-      text: A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes.
+      title: "Nossos Projetos"
+      text: "A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes."
     listacases: [
       {
         id: 'aliga',
