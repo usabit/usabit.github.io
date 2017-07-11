@@ -31,9 +31,7 @@
             {% endfor %}
             
             <div class="site-header__messenger">
-                <a href="#" class="site-header__messenger-link">
-                    <img src="/assets/img/icon-fb-messenger.png" alt="Facebook Messenger" />
-                </a>
+                <img src="/assets/img/icon-fb-messenger.png" alt="Facebook Messenger" />
                 
                 <div
                 class="fb-page"
@@ -81,7 +79,7 @@
         <div class="sidenav__right">
             <h1>{% t sidenav.title %}</h1>
 
-            <nav class="sidenav__nav">
+            <nav class="sidenav__nav" style="display: none">
                 <h2>{% t sidenav.products %}</h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
@@ -96,30 +94,30 @@
                 </ul>
             </nav>
             <nav class="sidenav__nav">
-                <h2>{% t sidenav.webdevelopment %}</h2>
+                <h2>{% t sidenav.webdevelopment.title %}</h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Design de Interfaces</a>
+                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.interfacedesign %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Angular, Saas, Stylus, Ionic, Backbone, React</a>
+                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.front %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">PHP, Wordpress, Zend, Dot.net, Nodejs</a>
+                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.back %}</a>
                     </li>
                 </ul>
             </nav>
             <nav class="sidenav__nav">
-                <h2>{% t sidenav.seealso %}</h2>
+                <h2>{% t sidenav.seealso.title %}</h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Alguns Cases</a>
+                        <a href="/cases" class="sidenav__link">{% t sidenav.seealso.cases %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Nosso Blog</a>
+                        <a href="https://medium.com/usabit" class="sidenav__link">{% t sidenav.seealso.blog %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Contatos</a>
+                        <a href="http://campanhas.usabit.com.br/provenientes-do-e-mail" class="sidenav__link">{% t sidenav.seealso.contact %}</a>
                     </li>
                 </ul>
             </nav>

@@ -44,8 +44,8 @@ permalink: /
                 <p class="service__action-text">
                     {% t pages.index.sites.action %}
                 </p>
-                <a href="#" class="service__btn btn-default">{% t pages.index.sites.button1 %}</a>
-                <a href="#" class="service__btn btn-secondary">{% t pages.index.sites.button2 %}</a>
+                <a href="https://testmysite.thinkwithgoogle.com/intl/pt-br" target="_target" class="service__btn btn-default">{% t pages.index.sites.button1 %}</a>
+                <a href="#" class="service__btn btn-secondary" style="display: none">{% t pages.index.sites.button2 %}</a>
             </div>
         </div>
         <div class="service__img">
@@ -63,8 +63,8 @@ permalink: /
                 {% t pages.index.apps.text %}
             </p>
             <div class="service__action">
-                <a href="#" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
-                <a href="#" class="service__related">{% t pages.index.apps.related %}</a>
+                <a href="/cases" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
+                <a href="#" class="service__related" style="display: none">{% t pages.index.apps.related %}</a>
             </div>
         </div>
     </section>
@@ -75,13 +75,13 @@ permalink: /
             <p>
                 {% t pages.index.products.text %}
             </p>
-            <div class="service__action">
+            <div class="service__action" style="display: none">
                 <p class="service__action-text">
                     {% t pages.index.products.action %}
                 </p>
                 <a href="#" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
             </div>
-            <a href="#" class="service__related">{% t pages.index.products.related %}</a>
+            <a href="#" class="service__related" style="display: none">{% t pages.index.products.related %}</a>
         </div>
         <div class="service__img">
             <img src="/assets/img/img-solutions.png" alt="" />
@@ -98,9 +98,9 @@ permalink: /
                {% t pages.index.marketing.text %}
             </p>
             <div class="service__action">
-                <a href="#" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
+                <a href="/produtos/marketing-digital/" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
             </div>
-            <a href="#" class="service__related">{% t pages.index.marketing.related %}</a>
+            <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a>
         </div>
     </section>
 
