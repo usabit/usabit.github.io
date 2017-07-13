@@ -1,14 +1,19 @@
 .top {
+    padding 160px 0
     text-align center
     &__title {
         color $black
         font-size 60px
     }
     &__subtitle {
+        margin-top 60px
         color $blue8
         font-weight 400
         font-size 30px
     }
+}
+.skills, .portfolio, .strategy, .about .customers, .contact {
+    margin-top 200px
 }
 .skills {
     display flex
@@ -18,6 +23,9 @@
         font-weight 700
         font-size 23px
     }
+    &__list {
+        margin-top 10px
+    }
     &__item {
         color $gray2
         font-weight 300
@@ -26,8 +34,18 @@
     }
 }
 .portfolio {
-    &__row {
+    display flex
+    justify-content space-between
+    &__content {
+        width 75%
+    }
+    &__box {
+        &:nth-of-type(1) {
+            padding-right 100px
+        }
         &:nth-of-type(2) {
+            margin-top 170px
+            padding-left 100px
             text-align right
         }
     }
@@ -36,6 +54,7 @@
         font-size 32px
     }
     &__text {
+        margin 30px 0
         color $gray4
         font-size 18px
         line-height 24px
@@ -43,26 +62,45 @@
     &__link {
         display inline-block
         height 44px
-        line-height 44px
-        padding 0 15px 0 10px
+        padding 5px 15px 0 10px
         color $gray2
         font-size 18px
         text-align center
         background $yellow
         border-radius 3px
+        opacity 1
+        transition opacity 250ms
+        &:hover {
+            text-decoration none
+            opacity 0.6
+            transition opacity 250ms
+        }
+        .fa-behance {
+            font-size 14px
+        }
     }
 }
 .strategy {
     background $blue13
+    .wrapper {
+        padding-top 120px
+        padding-bottom 120px
+        background url("/assets/img/img-code-js.png") no-repeat right center
+    }
     &__content {
         display flex
         justify-content space-between
+        margin-top 95px
+    }
+    &__box {
+        width 48%
     }
     &__title {
         color $white
         font-size 40px
     }
     &__text, &__box-text {
+        margin 25px 0 0
         color $white
         font-size 18px
         line-height 24px
@@ -73,11 +111,14 @@
     }
 }
 .lab {
+    padding-top 155px
+    background url("/assets/img/bg-lab.png") no-repeat center top
     &__title {
         color $gray5
         font-size 40px
     }
     &__text {
+        margin 30px 0 0
         color $gray4
         font-size 18px
         line-height: 24px
@@ -85,25 +126,51 @@
     &__content {
         display flex
         justify-content space-between
+        margin-top 75px
+    }
+    &__box {
+        width 22%
     }
     &__box-title {
+        position relative
+        padding-top 45px
         font-size 14px
         text-transform uppercase
         
+        &:before {
+            content ""
+            position absolute
+            top 0
+            left 0
+        }
+        
         &--red {
+            &:before {
+                sprite($icon-mkt)
+            }
             color $red3
         }
         &--green {
+            &:before {
+                sprite($icon-seo)
+            }
             color $green
         }
         &--yellow {
+            &:before {
+                sprite($icon-statistics)
+            }
             color $yellow2
         }
         &--blue {
+            &:before {
+                sprite($icon-testeab)
+            }
             color $blue9
         }
     }
     &__box-text {
+        margin 35px 0 0
         color $gray4
         font-size 14px
         line-height 32px
@@ -111,6 +178,7 @@
 }
 .about {
     .contact {
+        padding-bottom 200px
         text-align center
         &__title {
             color $gray14
@@ -120,6 +188,7 @@
             display inline-block
             height 44px
             line-height 44px
+            margin-top 90px
             padding 0 15px 0 10px
             color $black
             font-weight 700
@@ -127,6 +196,13 @@
             text-align center
             background $yellow
             border-radius 3px
+            opacity 1
+            transition opacity 250ms
+            &:hover {
+                text-decoration none
+                opacity 0.6
+                transition opacity 250ms
+            }
         }
     }
 }

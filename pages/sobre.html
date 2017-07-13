@@ -53,16 +53,30 @@ footer: "navigation"
     </section>
 
     <section class="portfolio wrapper">
-        <div class="portfolio__row">
-            <h1 class="portfolio__title">Design</h1>
-            <p class="portfolio__text">{% t pages.about.portfolio.design.text %}</p>
-            <a href="#" class="portfolio__link">{% t pages.about.portfolio.link %}</a>
+        <div class="portfolio__content">
+            <div class="portfolio__box">
+                <h1 class="portfolio__title">Design</h1>
+                <p class="portfolio__text">{% t pages.about.portfolio.design.text %}</p>
+                <a href="/cases" class="portfolio__link">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-behance fa-stack-1x"></i>
+                    </span>
+                    {% t pages.about.portfolio.link %}
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <h1 class="portfolio__title">{% t pages.about.portfolio.front.title %}</h1>
+                <p class="portfolio__text">{% t pages.about.portfolio.front.text %}</p>
+                <a href="/cases" class="portfolio__link">
+                <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-behance fa-stack-1x"></i>
+                </span>
+                {% t pages.about.portfolio.link %}</a>
+            </div>
         </div>
-        <div class="portfolio__row">
-            <h1 class="portfolio__title">{% t pages.about.portfolio.front.title %}</h1>
-            <p class="portfolio__text">{% t pages.about.portfolio.front.text %}</p>
-            <a href="#" class="portfolio__link">{% t pages.about.portfolio.link %}</a>
-        </div>
+        <img src="/assets/img/iphone7.png" alt="iPhone 7" />
     </section>
 
     <section class="strategy">
@@ -113,6 +127,6 @@ footer: "navigation"
 
     <section class="contact wrapper">
         <h1 class="contact__title">{% t pages.about.contact.title %}</h1>
-        <a href="#" class="contact__link">{% t pages.about.contact.link %}</a>
+        <a href="/contrate" class="contact__link">{% t pages.about.contact.link %}</a>
     </section>
 </div>
