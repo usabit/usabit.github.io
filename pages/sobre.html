@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 namespace: about
 title: mainmenu.about
 permalink: /sobre-a-empresa/
@@ -7,67 +7,126 @@ permalink_en: /about-us/
 order: 1
 header: "navigation"
 footer: "navigation"
-banner_text: pages.about.banner_text
-banner_img: /assets/img/cases-banner-01.jpg
 ---
-<section class="portfolio mt-60">
-    <div class="wrapper">
-        <h2 class="center mtb-60 accent-foreground">{% t pages.about.oqueprecisa %}</h2>
-    </div>
-    <div class="wrapper">
+<div class="about">
+    <section class="top wrapper">
+        <h1 class="top__title">{% t pages.about.title %}</h1>
+        <h2 class="top__subtitle">{% t pages.about.subtitle %}</h2>
+    </section>
 
-        <ul class="portfolio-list">
-            <li class="portfolio-item">
-                <div class="img-wrap">
-                    <img src="/assets/img/sobre-automatizar.png" alt="">
-                </div>
-                <div class="text-wrap">{% t pages.about.automatizarprocessos %}</div>
-            </li>
-            <li class="portfolio-item">
-                <div class="img-wrap">
-                    <img src="/assets/img/sobre-ideia.png" alt="">
-                </div>
-                <div class="text-wrap">{% t pages.about.tirardopapel %}</div>
-            </li>
-            <li class="portfolio-item">
-                <div class="img-wrap">
-                    <img src="/assets/img/sobre-desempenho.png" alt="">
-                </div>
-                <div class="text-wrap">{% t pages.about.melhorardesempenho %}</div>
-            </li>
-            <li class="portfolio-item">
-                <div class="img-wrap">
-                    <img src="/assets/img/sobre-alcancar.png" alt="">
-                </div>
-                <div class="text-wrap">{% t pages.about.alcancarmais %}</div>
-            </li>
-        </ul>
+    <section class="skills wrapper">
+        <div class="skills__box">
+            <h1 class="skills__title">Design</h1>
+            <ul class="skills__list">
+                <li class="skills__item">{% t pages.about.skills.design.item1 %}</li>
+                <li class="skills__item">{% t pages.about.skills.design.item2 %}</li>
+                <li class="skills__item">{% t pages.about.skills.design.item3 %}</li>
+                <li class="skills__item">{% t pages.about.skills.design.item4 %}</li>
+                <li class="skills__item">{% t pages.about.skills.design.item5 %}</li>
+                <li class="skills__item">Naming</li>
+                <li class="skills__item">Mobile Design</li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <h1 class="skills__title">Web Development</h1>
+            <ul class="skills__list">
+                <li class="skills__item">PHP</li>
+                <li class="skills__item">C#</li>
+                <li class="skills__item">Javascript</li>
+                <li class="skills__item">DotNet</li>
+                <li class="skills__item">Wordpress</li>
+                <li class="skills__item">Zend</li>
+                <li class="skills__item">AngularJS, Backbone, ReactJS</li>
+                <li class="skills__item">Jade, Jekyll, Haml</li>
+                <li class="skills__item">SASS, Stylus, Less</li>
+                <li class="skills__item">Grunt e Gulp</li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <h1 class="skills__title">Mobile Development</h1>
+            <ul class="skills__list">
+                <li class="skills__item">iOS</li>
+                <li class="skills__item">Android</li>
+                <li class="skills__item">Ionic</li>
+            </ul>
+        </div>
+    </section>
 
-    </div>
-</section>
+    <section class="portfolio wrapper">
+        <div class="portfolio__content">
+            <div class="portfolio__box">
+                <h1 class="portfolio__title">Design</h1>
+                <p class="portfolio__text">{% t pages.about.portfolio.design.text %}</p>
+                <a href="/cases" class="portfolio__link">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-behance fa-stack-1x"></i>
+                    </span>
+                    {% t pages.about.portfolio.link %}
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <h1 class="portfolio__title">{% t pages.about.portfolio.front.title %}</h1>
+                <p class="portfolio__text">{% t pages.about.portfolio.front.text %}</p>
+                <a href="/cases" class="portfolio__link">
+                <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-behance fa-stack-1x"></i>
+                </span>
+                {% t pages.about.portfolio.link %}</a>
+            </div>
+        </div>
+        <img src="/assets/img/iphone7.png" alt="iPhone 7" />
+    </section>
 
-<section class="crew-display">
-    <div class="wrapper">
-        <h2 class="center mtb-60 accent-foreground">{% t pages.about.lideres %}</h2>
-    </div>
-    <div class="wrapper">
-        <ul class="crew-list">
-            <li class="crew-item">
-                <div class="img-wrap mb-30">
-                    <img src="/assets/img/crew-rafaeltavares.png" alt="Rafael Tavares">
+    <section class="strategy">
+        <div class="wrapper">            
+            <h1 class="strategy__title">{% t pages.about.strategy.title %}</h1>
+            <p class="strategy__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <div class="strategy__content">
+                <div class="strategy__box">
+                    <h2 class="strategy__box-title">{% t pages.about.strategy.item1.title %}</h2>
+                    <p class="strategy__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <h3 class="crew-name">Rafael Tavares</h3>
-                <p class="crew-position">{% t pages.about.rafaelposition %}</p>
-                <p class="crew-description mt-30">{% t pages.about.rafaelbrief %}</p>
-            </li>
-            <li class="crew-item">
-                <div class="img-wrap mb-30">
-                    <img src="/assets/img/crew-rodrigolemos.png" alt="Rodrigo Lemos">
+                <div class="strategy__box">
+                    <h2 class="strategy__box-title">{% t pages.about.strategy.item2.title %}</h2>
+                    <p class="strategy__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <h3 class="crew-name">Rodrigo Lemos</h3>
-                <p class="crew-position">{% t pages.about.rodrigoposition %}</p>
-                <p class="crew-description mt-30">{% t pages.about.rodrigobrief %}</p>
-            </li>
-        </ul>
-    </div>
-</section>
+            </div>
+        </div>
+    </section>
+
+    <section class="lab wrapper">
+        <h1 class="lab__title">{% t pages.about.lab.title %}</h1>
+        <p class="lab__text">{% t pages.about.lab.text %}</p>
+
+        <div class="lab__content">
+            <div class="lab__box">
+                <h2 class="lab__box-title lab__box-title--red">{% t pages.about.lab.marketing.title %}</h2>
+                <p class="lab__box-text">Não adianta entregar um produto visualmente perfeito, adequado para diversos dispositivos e com código impecável.</p>
+            </div>
+            <div class="lab__box">
+                <h2 class="lab__box-title lab__box-title--green">{% t pages.about.lab.seo.title %}</h2>
+                <p class="lab__box-text">Não adianta entregar um produto visualmente perfeito, adequado para diversos dispositivos e com código impecável.</p>
+            </div>
+            <div class="lab__box">
+                <h2 class="lab__box-title lab__box-title--yellow">{% t pages.about.lab.statistics.title %}</h2>
+                <p class="lab__box-text">Não adianta entregar um produto visualmente perfeito, adequado para diversos dispositivos e com código impecável.</p>
+            </div>
+            <div class="lab__box">
+                <h2 class="lab__box-title lab__box-title--blue">{% t pages.about.lab.test.title %}</h2>
+                <p class="lab__box-text">Não adianta entregar um produto visualmente perfeito, adequado para diversos dispositivos e com código impecável.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers list -->
+    {% include customers.html %}
+    <!-- / Customers list -->
+
+    <section class="contact wrapper">
+        <h1 class="contact__title">{% t pages.about.contact.title %}</h1>
+        <a href="/contrate" class="contact__link">{% t pages.about.contact.link %}</a>
+    </section>
+</div>
