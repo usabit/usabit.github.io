@@ -202,18 +202,43 @@ pages:
     expert3: Android and <br> iOS Design
     conectese: CONNECT WITH USABIT TODAY
   about:
-    banner_text: We simplify technology and develop products there are easy to use.
-    oqueprecisa: What do you need to achieve your goals?
-    automatizarprocessos: Automate Processes
-    tirardopapel: Take your business <br> out of the paper
-    melhorardesempenho: Improve your <br> online performance 
-    alcancarmais: Reach <br> more clients
-    lideres: Leaders
-    rafaelposition: Partner, Design
-    rafaelbrief: Responsible for new business and connexions of Usabit and ahead of the creative planning of the company's products. In the past, was part of important projects for big companies like Itaú Bank, Globo TV, Tim and Brasil Brokers Real Estate.
-    rodrigoposition: Partner, Technology
-    rodrigobrief: Focus in development and technological coordination, specialist in projects and software management. He is ahead of interfaces, mobile and apps development. Both have been working together for over 10 years in digital projects.
-  work: 
+    title: "Nós"
+    subtitle: "Somos especialistas em interfaces e no desenvolvimento de negócios digitais."
+    skills:
+      design:
+        item1: "Conceituação do Produto"
+        item2: "Prototipação"
+        item3: "Pesquisa"
+        item4: "Design de Interfaces"
+        item5: "Identidade Visual"
+    portfolio:
+      design:
+        text: "Nossas telas são concebidas com base nos princípios invariáveis do bom design, que nos permitem desenhar interfaces que conquistam e conduzem usuários ao acerto unindo forma, conteúdo, tecnologia e performance."
+      front:
+        title: "Front-end e Interfaces sofisticadas"
+        text: "A usabilidade e a ergonomia de cada tela tornam-se possíveis por que tomamos as melhores decisões de implementação, utilizando a tecnologia adequada para cada caso. Falando em tecnologia, nosso time multidisciplinarn os permite atender à maioria dos requisitos de implementação da Web e mobile."
+      link: "Nosso Portfolio"
+    strategy:
+      title: "Desenvolvimento Ágil"
+      item1:
+        title: "Prototipação"
+      item2:
+        title: "Transparência e acompanhamento online"
+    lab:
+      title: "Usabit Lab: UX, Marketing, SEO e Dados"
+      text: "Nosso laboratório constantemente para manter seu produto vivo. Não adianta visualmente perfeito, adequado para diversos dispositivos e com código impecável, se não atrair o usuário de forma eficiente. Nós cuidamos disso também."
+      marketing:
+        title: "Marketing e Publicidade Digital"
+      seo:
+        title: "SEO - Search Engine Optimization"
+      statistics:
+        title: "Estatísticas de uso"
+      test:
+        title: "Testes a/b e Engajamento"
+    contact:
+      title: "Queremos fazer tudo isso<br /> pelo seu projeto também."
+      link: "Vamos conversar?"
+  work:
     estimulamos: We stimulate the participation and appreciate the ideas of our team
     quandobuscamos: When looking for a new member for our team, we're interested in something way beyond just technical knowledge.
     acreditamos: We believe our projects are only different because they are the result of cultural knowledge of many minds combined. Beside that, we know that information exchange makes us better and makes people find out the best on themselves. We do that every day.
