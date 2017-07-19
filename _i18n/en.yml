@@ -187,6 +187,7 @@ pages:
     estaratento: Being alert to to innovation and changing <br> your market is crucial to standing out. <br> That's why we also take care of that for you. 
     conectese: connect with usabit today
   ux:
+    title: "UX Design + Front End"
     somosumaequipe: We are an integrated team that <br> brings to life perfect interfaces. 
     nossaformula: Our key to success is defining the screen goals and knowing the user close enough. To achieve the best results, we bet on performance and function, finest technology, metrics and beauty.
     focodesempenho: Design with focus in performance and business
@@ -200,10 +201,10 @@ pages:
     expert1: HTML, CSS <br> and JavaScript
     expert2: CMS / WordPress <br> and e-Commerce
     expert3: Android and <br> iOS Design
-    conectese: CONNECT WITH USABIT TODAY
+    conectese: Connect with Usabit today
   about:
     title: "Nós"
-    subtitle: "Somos especialistas em interfaces e no desenvolvimento de negócios digitais."
+    subtitle: "Somos especialistas em interfaces web<br /> e no desenvolvimento de negócios digitais."
     skills:
       design:
         item1: "Conceituação do Produto"
@@ -219,22 +220,29 @@ pages:
         text: "A usabilidade e a ergonomia de cada tela tornam-se possíveis por que tomamos as melhores decisões de implementação, utilizando a tecnologia adequada para cada caso. Falando em tecnologia, nosso time multidisciplinarn os permite atender à maioria dos requisitos de implementação da Web e mobile."
       link: "Nosso Portfolio"
     strategy:
-      title: "Desenvolvimento Ágil"
+      title: "Custo x Benefício"
+      text: "É possível desenhar, construir, integrar e gerenciar produtos digitais sem dores de cabeça quando todas as decisões são tomadas com foco no usuário mas sem deixar os objetivos financeiros de lado. Nossa gestão inclui planejamento financeiro de custos, gestão de escopo, design da solução, validação com usuários, desenvolvimento de código, homologação e muita interação com você."
       item1:
         title: "Prototipação"
+        text: "Todas as discussões e decisões de um projeto são baseadas em protótipos navegáveis, que permitem fidelidade e validação perfeita de escopo. Isso garante uma alta taxa de acerto e muita agilidade no processo."
       item2:
         title: "Transparência e acompanhamento online"
+        text: "Disponibilizamos online o andamento em tempo real da produção e evolução do projeto. Funciona tão bem que nos permite atender clientes de qualquer lugar do mundo."
     lab:
-      title: "Usabit Lab: UX, Marketing, SEO e Dados"
-      text: "Nosso laboratório constantemente para manter seu produto vivo. Não adianta visualmente perfeito, adequado para diversos dispositivos e com código impecável, se não atrair o usuário de forma eficiente. Nós cuidamos disso também."
+      title: "Usabit After: UX, Marketing, SEO e Dados"
+      text: "Nosso laboratório funcionando constantemente para manter seu produto vivo. De nada adianta todo<br /> esforço de desenvolvimento se não atrair o usuário de forma eficiente. Nós cuidamos disso também."
       marketing:
         title: "Marketing e Publicidade Digital"
+        text: "Vamos sentar juntos e desenhar a melhor forma de alcançar pessoas e mostrar valor a elas."
       seo:
         title: "SEO - Search Engine Optimization"
+        text: "Facilitamos as coisas através da otimização do código, facilitando a entrega por mecanimos de busca."
       statistics:
         title: "Estatísticas de uso"
+        text: "As melhores decisões são tomadas em tempo real com base em dados bem construídos."
       test:
         title: "Testes a/b e Engajamento"
+        text: "Entendemos com precisão as preferências dos usuários para manter a melhoria contínua de qualquer produto."
     contact:
       title: "Queremos fazer tudo isso<br /> pelo seu projeto também."
       link: "Vamos conversar?"
