@@ -203,49 +203,49 @@ pages:
     expert3: Android and <br> iOS Design
     conectese: Connect with Usabit today
   about:
-    title: "Nós"
-    subtitle: "Somos especialistas em interfaces web<br /> e no desenvolvimento de negócios digitais."
+    title: "About the company"
+    subtitle: "We are specialists in web interfaces<br /> and digital business development."
     skills:
       design:
-        item1: "Conceituação do Produto"
-        item2: "Prototipação"
-        item3: "Pesquisa"
-        item4: "Design de Interfaces"
-        item5: "Identidade Visual"
+        item1: "Product Conceptualization"
+        item2: "Prototyping"
+        item3: "Research"
+        item4: "Design Interfaces"
+        item5: "Visual Identity"
     portfolio:
       design:
-        text: "Nossas telas são concebidas com base nos princípios invariáveis do bom design, que nos permitem desenhar interfaces que conquistam e conduzem usuários ao acerto unindo forma, conteúdo, tecnologia e performance."
+        text: "Our screens are designed based on the invariable principles of good design that allows us to create interfaces that amaze and guide users through the right path uniting form, content, technology and performance."
       front:
         title: "Front-end e Interfaces sofisticadas"
-        text: "A usabilidade e a ergonomia de cada tela tornam-se possíveis por que tomamos as melhores decisões de implementação, utilizando a tecnologia adequada para cada caso. Falando em tecnologia, nosso time multidisciplinarn os permite atender à maioria dos requisitos de implementação da Web e mobile."
-      link: "Nosso Portfolio"
+        text: "The usability and ergonomics of each screen become available because we take the best implementacion decisions, using the most appropriate technology for each individual case. Speaking of technology, our multidisciplinary team allows us to attend to most of the implementation requirements of web and mobile."
+      link: "Our Portfolio "
     strategy:
-      title: "Custo x Benefício"
-      text: "É possível desenhar, construir, integrar e gerenciar produtos digitais sem dores de cabeça quando todas as decisões são tomadas com foco no usuário mas sem deixar os objetivos financeiros de lado. Nossa gestão inclui planejamento financeiro de custos, gestão de escopo, design da solução, validação com usuários, desenvolvimento de código, homologação e muita interação com você."
+      title: "Cost x Benefit"
+      text: "It's possible to design, build, integrate and manage digital products without stress when all the decisions are made with focus on the user but without putting the financial interests to the side. Our management includes costs financial planning , scope management, solution design, validation with users, code development, homologation and lots of interaction with you."
       item1:
-        title: "Prototipação"
-        text: "Todas as discussões e decisões de um projeto são baseadas em protótipos navegáveis, que permitem fidelidade e validação perfeita de escopo. Isso garante uma alta taxa de acerto e muita agilidade no processo."
+        title: "Prototyping"
+        text: "A discussions and decisions of a projects are based on navigable prototypes, that allows fidelity and a perfect scope validation. That guarantees a high hit rate and lots of agility in the process."
       item2:
-        title: "Transparência e acompanhamento online"
-        text: "Disponibilizamos online o andamento em tempo real da produção e evolução do projeto. Funciona tão bem que nos permite atender clientes de qualquer lugar do mundo."
+        title: "Transparency and online monitoring"
+        text: "We provide an online, real time monitoring of the project's production. It works so well that it allows us to serve clients all over the world."
     lab:
-      title: "Usabit After: UX, Marketing, SEO e Dados"
-      text: "Nosso laboratório funcionando constantemente para manter seu produto vivo. De nada adianta todo<br /> esforço de desenvolvimento se não atrair o usuário de forma eficiente. Nós cuidamos disso também."
+      title: "Usabit After: UX, Marketing, SEO e Data"
+      text: "Our laboratory is constantly working to keep your product alive. It's useless to put all the effort on the development if it doesn't attract users efficiently. We take care of that too."
       marketing:
-        title: "Marketing e Publicidade Digital"
-        text: "Vamos sentar juntos e desenhar a melhor forma de alcançar pessoas e mostrar valor a elas."
+        title: "Marketing and digital advertising"
+        text: "Let's sit together and design the best way to achieve people and show them real value."
       seo:
         title: "SEO - Search Engine Optimization"
-        text: "Facilitamos as coisas através da otimização do código, facilitando a entrega por mecanimos de busca."
+        text: "We make thing easier with code optimization, facilitating the delivery through searching mechanisms."
       statistics:
-        title: "Estatísticas de uso"
-        text: "As melhores decisões são tomadas em tempo real com base em dados bem construídos."
+        title: "Using statistics"
+        text: "The best decisions are taken in real time based on well constructed data."
       test:
-        title: "Testes a/b e Engajamento"
-        text: "Entendemos com precisão as preferências dos usuários para manter a melhoria contínua de qualquer produto."
+        title: "Tests A/B and engagement"
+        text: "We understand with precision the user's preferences in order to keep the improvement of any product."
     contact:
-      title: "Queremos fazer tudo isso<br /> pelo seu projeto também."
-      link: "Vamos conversar?"
+      title: "We wanna do all this for your project too. "
+      link: "Let's talk?"
   work:
     estimulamos: We stimulate the participation and appreciate the ideas of our team
     quandobuscamos: When looking for a new member for our team, we're interested in something way beyond just technical knowledge.
