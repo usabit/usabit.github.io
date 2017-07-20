@@ -7,6 +7,7 @@
         $('.sidenav').addClass('active');
         $('html').css('overflow', 'hidden');
     });
+
     $('.sidenav__close-menu').on('click', function(e) {
         e.preventDefault();
         $('.sidenav').removeClass('active');
