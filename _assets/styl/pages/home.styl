@@ -2,15 +2,25 @@
     padding 140px 0 340px
     text-align center
     background url(/assets/img/img-mosaic.jpg) repeat-x bottom
-    
+
     .main-title {
         color $black
         font-size 60px
+
 
         span {
             display block
             margin-top 10px
             color  #5b9bce
+        }
+
+        +below('small-tablet') {
+          font-size 40px
+          line-height 120%
+
+          span {
+            display inline
+          }
         }
     }
 }
@@ -20,6 +30,15 @@
         color $gray6
         font-size 40px
         text-align center
+
+        +below('small-tablet') {
+          font-size 28px
+          line-height 120%
+
+          br {
+            display none
+          }
+        }
     }
 }
 .services {
@@ -33,6 +52,19 @@
         justify-content space-between
         width 740px
         margin 0 auto
+
+        +below('small-tablet') {
+          width 100%
+          flex-direction column
+
+          li {
+            margin-bottom 40px
+
+            &:last-child {
+              margin-bottom 0
+            }
+          }
+        }
     }
     &__link {
         font-family $roboto
@@ -95,12 +127,22 @@
     justify-content space-around
     align-items center
     margin-top 140px
+
+    +below('small-tablet') {
+      flex-direction column
+    }
+
     &__texts {
         max-width 580px
         h1 {
             color $black
             font-size 40px
             font-weight 700
+
+            +below('small-tablet') {
+              font-size 28px
+              line-height 120%
+            }
         }
         & > p {
             margin-top 50px
@@ -119,9 +161,14 @@
     &__action {
         display flex
         align-items center
-        
+
         & + .service__related {
             margin-top 50px
+        }
+
+        +below('small-tablet') {
+          flex-direction column
+          text-align center
         }
     }
     &__btn {
@@ -137,9 +184,14 @@
         color $gray4
         font-size 16px
         font-weight 500
-        
+
         & + .service__btn {
             margin-left 20px
+
+            +below('small-tablet') {
+              margin-left 0
+              margin-bottom 15px
+            }
         }
     }
     &__related {
@@ -147,9 +199,14 @@
         color  #548ab4
         font-size 15px
         font-weight 300
-        
+
         strong {
             font-weight 700
         }
+    }
+    &__img {
+      img {
+        max-width 100%
+      }
     }
 }

@@ -27,10 +27,24 @@
                 fill $gray10
             }
         }
+
+        +below('mobile') {
+          img {
+            width 40px
+          }
+          svg {
+            width 73px
+          }
+        }
     }
     &__navigation, &__menu-list {
         display flex
         align-items center
+    }
+    +below('small-tablet'){
+      &__menu {
+        display none
+      }
     }
     &__menu-item {
         margin-right 46px
@@ -67,18 +81,22 @@
     }
     &__messenger, &__open-menu {
         margin-left 34px
+
+        +below('mobile') {
+          margin-left 15px
+        }
     }
     &__messenger {
         position relative
-        
+
         img {
             cursor pointer
         }
-        
+
         .fb-page {
             position absolute
             top 38px
-            right 0 
+            right 0
             width 0
             height 0
             overflow hidden
@@ -108,7 +126,7 @@
     overflow hidden
     transform scale(0)
     transform-origin top right
-    
+
     &.active {
         top 0
         left 0
@@ -121,12 +139,17 @@
         top 30px
         right 30px
         font-size 0
-        
+
         &:before {
             content ""
             display inline-block
             sprite($icon-close)
             opacity 0.7
+        }
+
+        +below('small-tablet') {
+          top 15px
+          right 15px
         }
     }
     &__left {
@@ -137,6 +160,10 @@
         padding 15px 15px 55px
         background $white
         text-align center
+
+        +below('small-tablet') {
+          display none
+        }
     }
     &__logo {
         display flex
@@ -206,11 +233,24 @@
         padding 55px
         background $blue9
 
+        +below('small-tablet') {
+          overflow auto
+          padding 25px
+        }
+
         h1, h2 {
             font-family Lato
             color $white
             font-size 30px
             font-weight 300
+        }
+
+        +below('small-tablet') {
+          h1 {
+            font-size 25px
+            line-height 120%
+            margin-right 30px
+          }
         }
     }
     &__nav {
@@ -265,7 +305,7 @@
         font-weight 300
         opacity 1
         transition opacity 250ms
-        
+
         &:hover {
             color $white
             opacity 0.6

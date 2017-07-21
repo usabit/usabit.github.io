@@ -6,6 +6,10 @@
         justify-content space-between
         align-items center
         border-top 1px solid rgba($gray7, 0.3)
+
+        +below('small-tablet') {
+          flex-direction column
+        }
     }
     &__logo {
         display inline-flex
@@ -34,6 +38,10 @@
     &__menu-list, &__social-list {
         display flex
         align-items center
+
+        +below('small-tablet') {
+          margin 20px 0
+        }
     }
     &__menu-item {
         &:before {
@@ -48,6 +56,19 @@
                 display none
             }
         }
+    }
+    +below('small-tablet') {
+      &__menu-list {
+        display block
+
+      }
+      &__menu-item {
+        &:first-of-type {
+          &:before {
+            display initial
+          }
+        }
+      }
     }
     &__menu-link {
         font-family $lato

@@ -1,10 +1,30 @@
 .customers {
     margin-top 140px
     text-align center
+
+    +below('small-tablet') {
+      h1 {
+        font-size 28px
+        line-height 120%
+      }
+    }
     &__list {
         display flex
         justify-content space-around
         align-items center
         margin-top 30px
+
+        +below('small-tablet') {
+          flex-direction column
+
+          li {
+            margin 20px 0
+          }
+
+          & + .customers__list {
+            margin-top 0
+          }
+        }
+
     }
 }
