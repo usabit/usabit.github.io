@@ -6,12 +6,20 @@
     padding 30px 0
     background rgba($white, 0.9)
     z-index 100
+
+    +below('mobile') {
+        padding 15px 0
+    }
+
     .wrapper {
         display flex
-        padding-right 25px
-        padding-left 25px
         justify-content space-between
         align-items center
+
+        +below('mobile') {
+            padding-right 15px
+            padding-left 15px
+        }
     }
     &__logo {
         display inline-flex
@@ -19,6 +27,13 @@
         img {
             width 45px
             margin-right 14px
+
+            +below('small-tablet') {
+                width 35px
+            }
+            +below('mobile') {
+                width 25px
+            }
         }
         svg {
             width 84px
@@ -26,25 +41,22 @@
             path {
                 fill $gray10
             }
-        }
-
-        +below('mobile') {
-          img {
-            width 40px
-          }
-          svg {
-            width 73px
-          }
+            +below('small-tablet') {
+                width 65px
+            }
+            +below('mobile') {
+                width 45px
+            }
         }
     }
     &__navigation, &__menu-list {
         display flex
         align-items center
     }
-    +below('small-tablet'){
-      &__menu {
-        display none
-      }
+    &__menu {
+        +below('small-tablet') {
+            display none
+        }
     }
     &__menu-item {
         margin-right 46px
@@ -75,21 +87,33 @@
         font-weight 400
         text-align center
         text-transform uppercase
+
+        +below('mobile') {
+            width 25px
+            height 25px
+            line-height 25px
+        }
         &:hover {
             text-decoration none
         }
     }
     &__messenger, &__open-menu {
         margin-left 34px
-
-        +below('mobile') {
-          margin-left 15px
-        }
     }
     &__messenger {
         position relative
+        width 32px
+        height 32px
+
+        +below('mobile') {
+            width 25px
+            height 25px
+            margin 0 15px
+        }
 
         img {
+            width 100%
+            height auto
             cursor pointer
         }
 
@@ -110,6 +134,12 @@
                 opacity 1
                 transition opacity 500ms
             }
+        }
+    }
+    &__open-menu {
+        +below('mobile') {
+            margin 0
+            zoom 0.7
         }
     }
 }
@@ -148,8 +178,8 @@
         }
 
         +below('small-tablet') {
-          top 15px
-          right 15px
+            top 15px
+            right 15px
         }
     }
     &__left {
@@ -162,7 +192,7 @@
         text-align center
 
         +below('small-tablet') {
-          display none
+            display none
         }
     }
     &__logo {

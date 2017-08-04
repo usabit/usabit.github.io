@@ -3,24 +3,46 @@
     text-align center
     background url(/assets/img/img-mosaic.jpg) repeat-x bottom
 
+    +below('mobile') {
+        padding 100px 0 185px
+        background-size 120%
+    }
+
     .main-title {
         color $black
         font-size 60px
 
+        +below('small-tablet') {
+            font-size 40px
+            line-height 120%
+        }
+
+        +below('mobile') {
+            font-size 36px
+        }
 
         span {
             display block
             margin-top 10px
             color  #5b9bce
+
+            +below('small-tablet') {
+                display inline
+                margin 0
+            }
         }
-
-        +below('small-tablet') {
-          font-size 40px
-          line-height 120%
-
-          span {
-            display inline
-          }
+    }
+    .main-text {
+        display none
+        color $gray8
+        +below('mobile') {
+            display block
+        }
+    }
+    .banner-btn {
+        display none
+        +below('mobile') {
+            display block
         }
     }
 }

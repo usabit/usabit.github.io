@@ -134,7 +134,7 @@ gulp.task('wiredep', function() {
 gulp.task('sequence', function(callback) {
     sequence(
         'bower', 
-        ['sprite', 'stylus', 'imagemin', 'js'],
+        ['stylus', 'sprite', 'imagemin', 'js'],
         'wiredep',
         'watch',
         callback
