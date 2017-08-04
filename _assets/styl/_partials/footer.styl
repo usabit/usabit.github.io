@@ -1,25 +1,46 @@
 .site-footer {
+    margin 0 55px
+
+    +below('small-tablet') {
+        margin 0 25px
+        text-align center
+    }
+    +below('mobile') {
+        margin 0 15px
+    }
     .wrapper {
         display flex
-        padding-top 55px
-        padding-bottom 55px
         justify-content space-between
         align-items center
+        padding 55px 0
         border-top 1px solid rgba($gray7, 0.3)
 
         +below('small-tablet') {
-          flex-direction column
+            flex-direction column
+        }
+        +below('mobile') {
+            padding 55px 0 20px
         }
     }
     &__logo {
         display inline-flex
         align-items flex-start
+
+        +below('small-tablet') {
+            display block
+        }
+
+        &:hover {
+            text-decoration none
+        }
+
         img {
             width 29px
             margin 3px 24px 0 0
-        }
-        &:hover {
-            text-decoration none
+
+            +below('small-tablet') {
+                margin 0 0 20px 0
+            }
         }
     }
     &__logo-text {
@@ -29,27 +50,46 @@
         line-height 100%
         font-size 16px
         font-weight 400
+
+        +below('mobile') {
+            font-size 12px
+        }
+
         small {
             display block
             margin-top 3px
             font-size 12px
+
+            +below('mobile') {
+                margin-top 8px
+                font-size 9px
+            }
         }
     }
     &__menu-list, &__social-list {
         display flex
         align-items center
-
+    }
+    &__menu-list {
         +below('small-tablet') {
-          margin 20px 0
+            display block
+            margin 50px 0
         }
     }
     &__menu-item {
+        +below('small-tablet') {
+            display block
+        }
         &:before {
             content "•"
             margin 0 15px
             color $blue9
             font-size 16px
             font-weight 400
+
+            +below('small-tablet') {
+                display none
+            }
         }
         &:first-of-type {
             &:before {
@@ -57,24 +97,15 @@
             }
         }
     }
-    +below('small-tablet') {
-      &__menu-list {
-        display block
-
-      }
-      &__menu-item {
-        &:first-of-type {
-          &:before {
-            display initial
-          }
-        }
-      }
-    }
     &__menu-link {
         font-family $lato
         color $gray3
-        font-size 16px
         font-weight 400
+        font-size 16px
+
+        +below('small-tablet') {
+            font-size 12px
+        }
     }
     &__social-item {
         margin-left 10px
@@ -86,6 +117,10 @@
             font-size 15px
             opacity 1
             transition opacity 250ms
+
+            +below('mobile') {
+                zoom 0.7
+            }
             &:hover {
                 opacity 0.6
                 transition opacity 250ms

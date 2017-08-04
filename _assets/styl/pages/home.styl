@@ -4,7 +4,7 @@
     background url(/assets/img/img-mosaic.jpg) repeat-x bottom
 
     +below('mobile') {
-        padding 100px 0 185px
+        padding 100px 0 175px
         background-size 120%
     }
 
@@ -41,6 +41,11 @@
     }
     .banner-btn {
         display none
+        margin 0 auto
+        font-size 0
+        zoom 0.5
+        sprite($icon-arrow-yellow)
+
         +below('mobile') {
             display block
         }
@@ -48,18 +53,32 @@
 }
 .services, .blog-news {
     margin-top 140px
+
+    +below('small-tablet') {
+        margin-top 70px
+    }
+    +below('mobile') {
+        margin-top 50px
+    }
     h1 {
         color $gray6
         font-size 40px
         text-align center
 
         +below('small-tablet') {
-          font-size 28px
-          line-height 120%
+            font-size 28px
+            line-height 120%
 
-          br {
-            display none
-          }
+            br {
+                display none
+            }
+        }
+        +below('mobile') {
+            font-size 24px
+
+            br {
+                display none
+            }
         }
     }
 }
@@ -68,6 +87,10 @@
 
     &__navigation {
         margin-top 100px
+
+        +below('mobile') {
+            margin-top 50px
+        }
     }
     &__list {
         display flex
@@ -76,16 +99,18 @@
         margin 0 auto
 
         +below('small-tablet') {
-          width 100%
-          flex-direction column
-
-          li {
+            display block
+            width 100%
+        }
+    }
+    &__item {
+        +below('small-tablet') {
+            display inline-block
+            width 47%
             margin-bottom 40px
-
-            &:last-child {
-              margin-bottom 0
-            }
-          }
+        }
+        &:last-of-type {
+            margin-bottom 0
         }
     }
     &__link {
@@ -93,10 +118,17 @@
         color $black
         font-size 17px
         font-weight 400
+        +below('mobile') {
+            font-size 12px
+        }
         &:before {
             content ""
             display block
             margin 0 auto 35px
+
+            +below('mobile') {
+                zoom 0.6
+            }
         }
         &:hover {
             color $blue2
@@ -151,19 +183,29 @@
     margin-top 140px
 
     +below('small-tablet') {
-      flex-direction column
+        flex-direction column
+        margin-top 50px
     }
 
     &__texts {
         max-width 580px
+
+        +below('small-tablet') {
+            order 1
+        }
+
         h1 {
             color $black
             font-size 40px
             font-weight 700
 
             +below('small-tablet') {
-              font-size 28px
-              line-height 120%
+                font-size 28px
+                line-height 120%
+            }
+            +below('mobile') {
+                font-size 20px
+                text-align center
             }
         }
         & > p {
@@ -172,12 +214,18 @@
             color $gray4
             font-size 20px
             font-weight 300
+
+            +below('small-tablet') {
+                margin 35px 0 0
+                font-size 16px
+                text-align center
+            }
         }
         & + .service__btn {
             margin-left 20px
         }
     }
-    &__action, &__action + service__related {
+    &__action, &__action + .service__related {
         margin-top 50px
     }
     &__action {
@@ -189,8 +237,12 @@
         }
 
         +below('small-tablet') {
-          flex-direction column
-          text-align center
+            flex-direction column
+            margin-top 0
+            text-align center
+        }
+        +below('mobile') {
+            display none
         }
     }
     &__btn {
@@ -227,8 +279,57 @@
         }
     }
     &__img {
-      img {
-        max-width 100%
-      }
+        +below('small-tablet') {
+            order 2
+            margin-top 20px
+        }
+        img {
+            max-width 100%
+
+            +below('small-tablet') {
+                zoom 0.6
+            }
+            +below('mobile') {
+                zoom 0.4
+            }
+        }
+    }
+}
+.lets-talk {
+    margin-top 60px
+    padding 30px
+    background $lilac
+    text-align center
+
+    &__title {
+        color $white
+        font-size 26px
+    }
+    &__btn {
+        margin 25px 0
+    }
+    &__link {
+        color $white
+        font-weight 100
+        font-size 16px
+    }
+}
+.blog-news {
+    +below('mobile') {
+        display none
+    }
+}
+.btn-go-top {
+    display none
+    position fixed
+    right 30px
+    bottom 30px
+    font-size 0
+    zoom 0.5
+    transform rotate(180deg)
+    sprite($icon-arrow-yellow)
+
+    +below('mobile') {
+        display block
     }
 }
