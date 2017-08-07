@@ -55,6 +55,11 @@ pages:
       text: "We put Google and Facebook to work for you. And also help you on some important processes to improve your digital results."
       button1: "Find out more"
       related: "<strong>Related:</strong> Why invest in digital marketing?"
+    letstalk: "Let’s talk about your project!"
+    projects:
+      title: "Usabit develops the best projects: Yours."
+      button: "Let’s talk"
+      link: "Or learn more about what we’ve been doing here."
     customers:
       title: "These companies approve our work"
     blog:

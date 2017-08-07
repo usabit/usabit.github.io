@@ -55,6 +55,11 @@ pages:
       text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
       button1: "Saiba mais"
       related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
+    letstalk: "Vamos conversar sobre o seu projeto!"
+    projects:
+      title: "A Usabit desenvolve os melhores projetos:<br /> os seus."
+      button: "Vamos conversar"
+      link: "Ou conheça mais sobre o que temos feito por aqui."
     customers:
       title: "Essas empresas aprovam nosso trabalho"
     blog:
