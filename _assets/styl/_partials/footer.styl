@@ -9,6 +9,7 @@
         margin 0 15px
     }
     .wrapper {
+        position relative
         display flex
         justify-content space-between
         align-items center
@@ -125,6 +126,27 @@
                 opacity 0.6
                 transition opacity 250ms
             }
+        }
+    }
+    .btn-go-top {
+        display none
+        position absolute
+        right 0
+        bottom 130px
+        width 35px
+        height 35px
+        background $yellow
+        border-radius 50%
+        z-index 1
+
+        svg {
+            width 20px
+        }
+
+        +below('mobile') {
+            display flex
+            justify-content center
+            align-items center
         }
     }
 }

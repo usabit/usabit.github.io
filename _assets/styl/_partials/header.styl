@@ -176,6 +176,9 @@
             top 15px
             right 15px
         }
+        +below('small-tablet') {
+            zoom 0.5
+        }
     }
     &__left {
         display flex
@@ -259,8 +262,11 @@
         background $blue9
 
         +below('small-tablet') {
-          overflow auto
-          padding 25px
+            overflow auto
+            padding 25px
+        }
+        +below('mobile') {
+            padding 15px
         }
 
         h1, h2 {
@@ -269,30 +275,48 @@
             font-size 30px
             font-weight 300
         }
-
-        +below('small-tablet') {
-          h1 {
-            font-size 25px
-            line-height 120%
-            margin-right 30px
-          }
+        h1 {
+            +below('small-tablet') {
+                font-size 25px
+                line-height 120%
+            }
+            +below('mobile') {
+                font-weight 100
+                font-size 18px
+                line-height 150%
+            }
         }
     }
     &__nav {
         display inline-block
         margin 70px 55px 0 0
+
+        +below('mobile') {
+            margin 25px 0 0
+        }
+
         h2 {
             position relative
             padding-left 45px
             font-size 14px
             font-weight 700
             text-transform uppercase
+
+            +below('mobile') {
+                padding-left 35px
+                font-size 12px
+            }
+
             &:before {
                 content ""
                 position absolute
                 top -5px
                 left 0
                 display inline-block
+                
+                +below('mobile') {
+                    zoom 0.8
+                }
             }
         }
         &:nth-of-type(1) {
@@ -321,6 +345,11 @@
     &__list {
         margin-top 20px
         padding-left 45px
+
+        +below('mobile') {
+            margin-top 10px
+            padding-left 35px
+        }
     }
     &__link {
         font-family Lato
@@ -330,6 +359,11 @@
         font-weight 300
         opacity 1
         transition opacity 250ms
+
+        +below('mobile') {
+            line-height 200%
+            font-size 16px
+        }
 
         &:hover {
             color $white

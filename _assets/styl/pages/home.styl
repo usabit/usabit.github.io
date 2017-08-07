@@ -42,12 +42,19 @@
     .banner-btn {
         display none
         margin 0 auto
-        font-size 0
-        zoom 0.5
-        sprite($icon-arrow-yellow)
+        width 35px
+        height 35px
+        background $yellow
+        border-radius 50%
+
+        svg {
+            width 20px
+        }
 
         +below('mobile') {
-            display block
+            display flex
+            justify-content center
+            align-items center
         }
     }
 }
@@ -296,6 +303,35 @@
     }
 }
 .lets-talk {
+    position fixed
+    top -70px
+    width 100%
+    padding 5px 0
+    background rgba($white, 0.9)
+    text-align center
+    transition top 500ms
+
+    &.active {
+        +below('mobile') {
+            top 55px
+            transition top 500ms
+        }
+    }
+
+    &__btn {
+        display inline-block
+        width 80%
+        height 25px
+        line-height 25px
+        color $white
+        font-size 11px
+        text-transform uppercase
+        text-align center
+        background $blue7
+    }
+}
+.projects {
+    display none
     margin-top 60px
     padding 30px
     background $lilac
@@ -313,23 +349,12 @@
         font-weight 100
         font-size 16px
     }
+    +below('mobile') {
+        display block
+    }
 }
 .blog-news {
     +below('mobile') {
         display none
-    }
-}
-.btn-go-top {
-    display none
-    position fixed
-    right 30px
-    bottom 30px
-    font-size 0
-    zoom 0.5
-    transform rotate(180deg)
-    sprite($icon-arrow-yellow)
-
-    +below('mobile') {
-        display block
     }
 }

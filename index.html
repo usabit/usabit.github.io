@@ -3,8 +3,7 @@ layout: default
 namespace: home
 permalink: /
 ---
-<div class="home">
-
+<div id="home" class="home">
     <section class="main-banner">
         <div class="wrapper">
             <h1 class="main-title">
@@ -13,7 +12,13 @@ permalink: /
             <p class="main-text">
                 {% t pages.index.text %}
             </p>
-            <a href="#letsTalk" class="banner-btn">Go to "Let's talk"</a>
+            <a href="#projects" class="banner-btn anchor">
+                <svg viewBox="1 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M9.031,15.97 L2.339,9.665 C1.88,9.206 2.043,8.505 2.245,8.306 C2.648,7.904 3.243,7.964 3.647,8.367 L8.085,12.263 L8.086,0.948 C8.087,0.436 8.512,0.022 9.038,0.021 C9.563,0.02 9.989,0.436 9.988,0.948 L10.001,12.16 L14.272,8.306 C14.676,7.904 15.331,7.904 15.733,8.306 C16.138,8.706 16.037,9.256 15.632,9.658 L9.031,15.97 L9.031,15.97 Z" fill="#434343" class="si-glyph-fill"></path>
+                    </g>
+                </svg>
+            </a>
         </div>
     </section>
 
@@ -108,10 +113,14 @@ permalink: /
         </div>
     </section>
 
-    <section id="letsTalk" class="lets-talk">
-        <h1 class="lets-talk__title">A Usabit desenvolve os melhores projetos:<br /> os seus.</h1>
-        <a href="#" class="lets-talk__btn btn-default">Vamos conversar</a>
-        <a href="#" class="lets-talk__link">Ou conheça mais sobre o que temos feito por aqui.</a>
+    <section class="lets-talk">
+        <a href="#" class="lets-talk__btn">Vamos conversar sobre o seu projeto!</a>
+    </section>
+
+    <section id="projects" class="projects">
+        <h1 class="projects__title">A Usabit desenvolve os melhores projetos:<br /> os seus.</h1>
+        <a href="#" class="projects__btn btn-default">Vamos conversar</a>
+        <a href="#" class="projects__link">Ou conheça mais sobre o que temos feito por aqui.</a>
     </section>
 
     <!-- Customers list -->
@@ -124,6 +133,4 @@ permalink: /
             <div id="medium-posts"></div>
         </div>
     </section>
-
-    <a href="#" class="btn-go-top">Go to the Top</a>
 </div>
