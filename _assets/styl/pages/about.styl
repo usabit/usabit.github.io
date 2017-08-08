@@ -32,6 +32,13 @@
 
 .skills, .portfolio, .strategy, .about .customers, .contact {
     margin-top 200px
+
+    +below('small-tablet') {
+        margin-top 100px
+    }
+    +below('mobile') {
+        margin-top 50px
+    }
 }
 
 .skills {
@@ -64,28 +71,61 @@
 .portfolio {
     display flex
     justify-content space-between
+
+    +below('tablet') {
+        flex-direction column
+    }
+
     &__content {
         width 75%
+
+        +below('tablet') {
+            width 100%
+            margin-bottom 20px
+        }
+
+        & + img {
+            +below('tablet') {
+                display none
+            }
+        }
     }
     &__box {
         &:nth-of-type(1) {
             padding-right 100px
+
+            +below('tablet') {
+                padding-right 0
+            }
         }
         &:nth-of-type(2) {
             margin-top 170px
             padding-left 100px
             text-align right
+
+            +below('tablet') {
+                margin-top 70px
+                padding-left 0
+            }
         }
     }
     &__title {
         color $gray1
         font-size 32px
+
+        +below('tablet') {
+            font-size 28px
+        }
     }
     &__text {
         margin 30px 0
         color $gray4
         font-size 18px
         line-height 24px
+
+        +below('tablet') {
+            font-size 16px
+        }
     }
     &__link {
         display inline-block
@@ -107,26 +147,6 @@
             font-size 14px
         }
     }
-
-    +below('small-tablet') {
-      flex-direction column
-
-      &__content {
-        width 100%
-        margin-bottom 20px
-      }
-
-      &__box {
-        &:nth-of-type(1) {
-            padding-right 0
-        }
-        &:nth-of-type(2) {
-            margin-top 70px
-            padding-left 0
-            text-align right
-        }
-      }
-    }
 }
 
 .strategy {
@@ -135,59 +155,111 @@
         padding-top 120px
         padding-bottom 120px
         background url("/assets/img/img-code-js.png") no-repeat right center
+
+        +below('small-tablet') {
+            padding-top 60px
+            padding-bottom 60px
+        }
+        +below('mobile') {
+            padding-top 30px
+            padding-bottom 30px
+        }
     }
     &__content {
         display flex
         justify-content space-between
         margin-top 95px
+
+        +below('small-tablet') {
+            flex-direction column
+            margin-top 60px
+        }
+        +below('mobile') {
+            margin-top 30px
+        }
     }
     &__box {
         width 48%
+
+        +below('small-tablet') {
+            width 100%
+            margin-top 60px
+        }
+        +below('mobile') {
+            margin-top 30px
+        }
+        &:first-of-type {
+            +below('small-tablet') {
+                margin-top 0
+            }   
+        }
     }
     &__title {
         color $white
         font-size 40px
+
+        +below('mobile') {
+            font-size 28px
+        }
     }
     &__text, &__box-text {
         margin 25px 0 0
         color $white
         font-size 18px
         line-height 24px
+
+        +below('mobile') {
+            font-size 16px
+        }
     }
     &__box-title {
         color $blue10
         font-size 24px
-    }
 
-    +below('small-tablet') {
-       &__content {
-         flex-direction column
-       }
-
-       &__box {
-        width 100%
-        margin-bottom 50px
-      }
+        +below('mobile') {
+            font-size 18px
+        }
     }
 }
 
 .lab {
     padding-top 155px
     background url("/assets/img/bg-lab.png") no-repeat center top
+
+    +below('mobile') {
+        padding-bottom 80px
+    }
+
     &__title {
         color $gray5
         font-size 40px
+
+        +below('small-tablet') {
+            font-size 32px
+        }
+
+        +below('mobile') {
+            font-size 28px
+        }
     }
     &__text {
         margin 30px 0 0
         color $gray4
         font-size 18px
         line-height: 24px
+
+        +below('mobile') {
+            font-size 16px
+        }
     }
     &__content {
         display flex
         justify-content space-between
         margin-top 75px
+
+        +below('mobile') {
+            margin-top 50px
+        }
     }
     &__box {
         width 22%
@@ -256,13 +328,21 @@
     .contact {
         padding-bottom 200px
         text-align center
+
+        +below('small-tablet') {
+            padding-bottom 100px
+        }
+
         &__title {
             color $gray14
             font-size 60px
 
             +below('small-tablet') {
-              font-size 30px
-              line-height 120%
+                font-size 30px
+                line-height 120%
+            }
+            +below('mobile') {
+                font-size 24px
             }
         }
         &__link {
