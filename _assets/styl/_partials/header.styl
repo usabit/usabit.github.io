@@ -261,8 +261,10 @@
         padding 55px
         background $blue9
 
-        +below('small-tablet') {
+        +below('desktop') {
             overflow auto
+        }
+        +below('small-tablet') {
             padding 25px
         }
         +below('mobile') {
@@ -289,7 +291,7 @@
     }
     &__nav {
         display inline-block
-        margin 70px 55px 0 0
+        margin 70px 50px 0 0
 
         +below('mobile') {
             margin 25px 0 0
