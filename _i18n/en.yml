@@ -9,7 +9,7 @@ mainmenu:
   about: About the company
   blog: Blog
   jobs: Work with us
-  contact: Hire us
+  contact: Contact us
 sidenav:
   title: "What can Usabit do for your company today?"
   products: "Products"
@@ -22,7 +22,7 @@ sidenav:
     title: "See also"
     cases: "Some Cases"
     blog: "Our Blog"
-    contact: "Contacts"
+    contact: "Hire Us"
 pages:
   index:
     title: "Productivity and intelligence to <span>develop your digital side.</span>"
@@ -132,7 +132,7 @@ pages:
     podefalar: Go ahead and talk.
     vamosseramigos: Let's be friends?
     portelefone: Or by phone
-    escritorio: Office
+    escritorio: Office Barra da Tijuca/RJ
   infra:
     banner_text: Everything you need to make the everyday of your office easier is an infrastructure reliable and affordable.
     banner_title_text: Infrastructure, e-mails and servers on the cloud

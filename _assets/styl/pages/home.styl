@@ -302,34 +302,6 @@
         }
     }
 }
-.lets-talk {
-    position fixed
-    top -70px
-    width 100%
-    padding 5px 0
-    background rgba($white, 0.9)
-    text-align center
-    transition top 500ms
-
-    &.active {
-        +below('mobile') {
-            top 55px
-            transition top 500ms
-        }
-    }
-
-    &__btn {
-        display inline-block
-        width 80%
-        height 25px
-        line-height 25px
-        color $white
-        font-size 11px
-        text-transform uppercase
-        text-align center
-        background $blue7
-    }
-}
 .projects {
     display none
     margin-top 60px
@@ -358,7 +330,48 @@
         display none
     }
 }
+
+.lets-talk {
+    position fixed
+    top -700px
+    display none
+    width 100%
+    padding 5px 0
+    background rgba($white, 0.9)
+    text-align center
+    transition top 1000ms
+    
+    +below('mobile') {
+        display block
+    }
+
+    &__btn {
+        display inline-block
+        width 80%
+        height 25px
+        line-height 25px
+        color $white
+        font-size 11px
+        text-transform uppercase
+        text-align center
+        background $blue7
+    }
+}
+
 .home {
+    .lets-talk {
+        +below('mobile') {
+            display block
+        }
+
+        &.active {
+            +below('mobile') {
+                top 55px
+                transition top 1000ms
+            }
+        }
+    }
+
     .btn-go-top {
         display none
         position fixed

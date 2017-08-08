@@ -9,7 +9,7 @@ mainmenu:
   about: Sobre a empresa
   blog: Blog
   jobs: Trabalhe Conosco
-  contact: Contrate
+  contact: Contato
 sidenav:
   title: "O que a Usabit pode fazer pela sua empresa hoje?"
   products: "Produtos"
@@ -22,7 +22,7 @@ sidenav:
     title: "Veja também"
     cases: "Alguns Cases"
     blog: "Nosso Blog"
-    contact: "Contatos"
+    contact: "Contrate"
 pages:
   index:
     title: "Produtividade e inteligência para <span>desenvolver seu lado digital.</span>"
@@ -132,7 +132,7 @@ pages:
     podefalar: Pode falar agora.
     vamosseramigos: Vamos ser amigos?
     portelefone: Ou por telefone
-    escritorio: Escritório
+    escritorio: Escritório Barra da Tijuca/RJ
   infra:
     banner_text: Tudo que você precisa para facilitar o dia-a-dia de seu escritório é uma infra-estrutura barata e confiável.
     banner_title_text: Infra-estrutura, e-mails e servidores na nuvem
