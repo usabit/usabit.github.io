@@ -11,6 +11,12 @@
                 } else {
                     $('.lets-talk').removeClass('active');
                 }
+
+                if($(document).height() - $(window).height() == $(window).scrollTop()) {
+                    $('.btn-go-top').addClass('active');
+                } else {
+                    $('.btn-go-top').removeClass('active');
+                }
             }
         }
     }

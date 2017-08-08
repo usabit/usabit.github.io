@@ -358,3 +358,35 @@
         display none
     }
 }
+.home {
+    .btn-go-top {
+        display none
+        position fixed
+        right 15px
+        bottom -70px
+        width 35px
+        height 35px
+        background $yellow
+        border-radius 50%
+        z-index 1
+        transition bottom 500ms
+
+        +below('mobile') {
+            display flex
+            justify-content center
+            align-items center
+        }
+
+        &.active {
+            +below('mobile') {
+                bottom 130px
+                transition bottom 500ms
+            }
+        }
+
+        svg {
+            width 20px
+        }
+
+    }
+}
