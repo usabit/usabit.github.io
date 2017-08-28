@@ -62,6 +62,27 @@ pages:
       link: "Ou conheça mais sobre o que temos feito por aqui."
     customers:
       title: "Essas empresas aprovam nosso trabalho"
+    differentials:
+      title: "Os diferenciais"
+      subtitle: "Que fazem a Usabit entregar mais"
+      box1:
+        title: "Parceria dentro <br />e fora de casa"
+        text: "Cultivamos uma excelente relação entre trabalho e felicidade, com um ambiente sem hierarquias complexas e muita autonomia. E com o cliente, compromisso diário."
+      box2:
+        title: "Time maduro e <br />comprometido"
+        text: "O perfil do nosso time é de profissionais maduros, 100% dedicados ao sucesso da Usabit. Isso garante  estabilidade, qualidade e sempre os melhores resultados para nossos clientes."
+      box3:
+        title: "Metodologia e processos <br />personalizados"
+        text: "Nosso método ágil de desenvolvimento baseado no kambam e scrum, permite que o tempo e o custo sejam sempre otimizados e o cronograma sempre cumprido. Aqui não tem firula."
+      box4:
+        title: "Atendimento feito <br />pelos líderes"
+        text: "Não temos burocracias. Os líderes da Usabit são os líderes dos projetos e fazem o contato com o cliente. É desta forma que garantimos que todos os projetos sejam entregues com a maior prioridade sempre."
+      box5:
+        title: "Foco na entrega"
+        text: "Diferente de uma fábrica, nosso desenvolvimento não é uma linha de produção irracional. Todas as decisões são tomadas pela equipe e em conjunto com o cliente para que todos compartilhem do mesmo objetivo."
+      box6:
+        title: "Visão e respeito humano"
+        text: "Mais que o ganho do capital, acreditamos que uma empresa de sucesso é formada por um grupo de pessoas que precisam alcançar seus interesses pessoais. Se nossas pessoas atingem seus objetivos, a empresa atinge o seu objetivo também."
     blog:
       title: "Últimas do Nosso Blog"
   cases:

@@ -60,6 +60,27 @@ pages:
       title: "Usabit develops the best projects: Yours."
       button: "Let’s talk"
       link: "Or learn more about what we’ve been doing here."
+    differentials:
+      title: "Our Assets"
+      subtitle: "That make Usabit deliver so much more"
+      box1:
+        title: "Partnership in and outside <br />the house"
+        text: "We cultivate an excellent relation between work and happiness, with an environment without complex hierarchies and lots of autonomy. And with the client, daily commitment."
+      box2:
+        title: "Mature and committed <br />team"
+        text: "Our team profile is of mature professionals, 100% dedicated to Usabit’s success. That guarantees stability, quality and always the best results for our clients."
+      box3:
+        title: "Custom processes and <br />methodology"
+        text: "Our agile development method based on kambam and scrum, allows that the time and cost are always optimized and the schedule is always followed properly. There is no rambling in here."
+      box4:
+        title: "Attendance by the <br />leaders"
+        text: "We don’t have bureaucracies. Usabit leaders are also the project’s leaders and make contact directly with the clients. That’s the way we guarantee that all projects are delivered with top priority always."
+      box5:
+        title: "Focus on the delivery"
+        text: "Unlike a factory, our development isn’t an irrational production line. All decisions are made by the team and together with the client so that everybody share the same goal."
+      box6:
+        title: "Human respect and vision"
+        text: "More than earning money, we believe that a successful company is made of a group of people that want to reach their personal interests. If our people reach their goals, the company also does."
     customers:
       title: "These companies approve our work"
     blog:
