@@ -7,7 +7,7 @@
                 <small>Rio de Janeiro/Brasil</small>
             </p>
         </a>
-        
+
         <nav class="site-footer__menu">
             {% assign pages = (site.pages | sort:"order" | where: "footer", "navigation") %}
             <ul class="site-footer__menu-list">
@@ -23,7 +23,7 @@
                 </li>
             </ul>
         </nav>
-        
+
         <nav class="site-footer__social">
             <ul class="site-footer__social-list">
                 {% for social_link in site.social-links %}
@@ -55,7 +55,7 @@
 <script src="{{'/assets/js/main.js' | prepend: site.baseurl_root }}"></script>
 <script id="language-check" type="text/javascript">
     var estamosNoBrasil = true;
-    
+
     if (geoplugin_countryName()) {
         estamosNoBrasil = geoplugin_countryName() === "Brazil";
     }
@@ -68,4 +68,20 @@
             }
         }
     }
+</script>
+<script>
+  (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-62134612-1', 'auto');
+  ga('send', 'pageview');
 </script>
