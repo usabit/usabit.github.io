@@ -9,7 +9,7 @@ mainmenu:
   about: About the company
   blog: Blog
   jobs: Work with us
-  contact: Contact us
+  hireus: Hire Us
 sidenav:
   title: "What can Usabit do for your company today?"
   products: "Products"
@@ -22,7 +22,7 @@ sidenav:
     title: "See also"
     cases: "Some Cases"
     blog: "Our Blog"
-    contact: "Hire Us"
+    contact: "Contact"
 pages:
   index:
     title: "Productivity and intelligence to <span>develop your digital side.</span>"
