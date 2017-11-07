@@ -92,6 +92,10 @@
 .services {
     text-align center
 
+    h1 {
+        color $blue14
+    }
+
     &__navigation {
         margin-top 100px
 
@@ -122,31 +126,50 @@
     }
     &__link {
         font-family $roboto
-        color $black
-        font-size 17px
+        color $gray4
+        font-size 20px
         font-weight 400
-        +below('mobile') {
-            font-size 12px
-        }
-        &:before {
-            content ""
-            display block
-            margin 0 auto 35px
 
-            +below('mobile') {
-                zoom 0.6
+        +below('desktop') {
+            font-size 17px
+        }
+
+        +below('mobile') {
+            font-size 14px
+        }
+
+        &:hover {
+            color $blue9
+            text-decoration none
+
+            .services__icon {
+                background $blue9
             }
         }
-        &:hover {
-            color $blue2
-            text-decoration none
+    }
+    &__icon {
+        content ""
+        display flex
+        justify-content center
+        align-items center
+        width 112px
+        height 112px
+        margin 0 auto 35px
+        background $gray15
+        border-radius 50%
+        text-align center
+        box-shadow: -5px 5px 16px rgba(0, 0, 0, 0.1);
+
+        &:before {
+            +below('mobile') {
+                zoom 0.8
+            }
         }
         &--monitor {
             &:before {
                 sprite($icon-monitor)
-            }
-            &:hover {
-                &:before {
+
+                .services__link:hover & {
                     sprite($icon-monitor-hover)
                 }
             }
@@ -154,9 +177,8 @@
         &--smartphone {
             &:before {
                 sprite($icon-smartphone)
-            }
-            &:hover {
-                &:before {
+
+                .services__link:hover & {
                     sprite($icon-smartphone-hover)
                 }
             }
@@ -164,9 +186,8 @@
         &--product {
             &:before {
                 sprite($icon-product)
-            }
-            &:hover {
-                &:before {
+
+                .services__link:hover & {
                     sprite($icon-product-hover)
                 }
             }
@@ -174,9 +195,8 @@
         &--notebook {
             &:before {
                 sprite($icon-notebook)
-            }
-            &:hover {
-                &:before {
+
+                .services__link:hover & {
                     sprite($icon-notebook-hover)
                 }
             }
