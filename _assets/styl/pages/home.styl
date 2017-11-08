@@ -1,60 +1,34 @@
 .main-banner {
-    padding 140px 0 340px
-    text-align center
-    background url(/assets/img/img-mosaic.jpg) repeat-x bottom
+    padding-top 115px
+    background linear-gradient(left, #7fc7ff, #4c80a9)
 
-    +below('mobile') {
-        padding 100px 0 175px
-        background-size 120%
+    .wrapper {
+        display flex
     }
 
-    .main-title {
-        color $black
-        font-size 60px
-
+    &__title, &__sub-title {
+        margin-top 50px
+        color $white
+        font-size 44px
+    }
+    &__sub-title {
+        margin-top 25px
+        font-weight 100
+        font-size 28px
+    }
+    &__btn {
+        margin-top 35px
+    }
+    &__img {
+        +below('desktop') {
+            width 70%
+            height 100%
+        }
         +below('small-tablet') {
-            font-size 40px
-            line-height 120%
+            width 50%
         }
-
         +below('mobile') {
-            font-size 36px
-        }
-
-        span {
-            display block
-            margin-top 10px
-            color  #5b9bce
-
-            +below('small-tablet') {
-                display inline
-                margin 0
-            }
-        }
-    }
-    .main-text {
-        display none
-        color $gray8
-        +below('mobile') {
-            display block
-        }
-    }
-    .banner-btn {
-        display none
-        margin 0 auto
-        width 35px
-        height 35px
-        background $yellow
-        border-radius 50%
-
-        svg {
-            width 20px
-        }
-
-        +below('mobile') {
-            display flex
-            justify-content center
-            align-items center
+            display none
         }
     }
 }
