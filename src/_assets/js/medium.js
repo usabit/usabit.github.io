@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 
     var ajaxRequest = {};
     ajaxRequest.method = 'GET';
-    ajaxRequest.url = 'https://usabit-api.herokuapp.com/medium';
+    ajaxRequest.url = 'https://medium-usasite.wedeploy.io';
     ajaxRequest.contentType = 'application/json; charset=utf-8';
     ajaxRequest.dataType = 'json';
 

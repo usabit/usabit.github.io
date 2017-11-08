@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Somos um time de desenvolvimento digital unido, integrado e aberto para o mundo.
   Criamos produtos digitais simples e fáceis de usar.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://usabit.com.br" # the base hostname & protocol for your site
+url: "https://usabit.com.br" # the base hostname & protocol for your site
 twitter_username: usabitdigital
 github_username:  usabit
 
@@ -23,7 +23,7 @@ google_map: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d759.28382152346
 # Build settings
 markdown: kramdown
 
-plugins: 
+plugins:
   - jekyll-multiple-languages-plugin
   - kramdown
 
@@ -79,3 +79,6 @@ social-links: [
     description: '/usabit'
   }
 ]
+
+source: src
+destination: _site
