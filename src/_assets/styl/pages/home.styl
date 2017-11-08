@@ -1,34 +1,60 @@
 .main-banner {
-    padding-top 115px
-    background linear-gradient(left, #7fc7ff, #4c80a9)
+    padding 140px 0 340px
+    text-align center
+    background url(/assets/img/img-mosaic.jpg) repeat-x bottom
 
-    .wrapper {
-        display flex
+    +below('mobile') {
+        padding 100px 0 175px
+        background-size 120%
     }
 
-    &__title, &__sub-title {
-        margin-top 50px
-        color $white
-        font-size 44px
-    }
-    &__sub-title {
-        margin-top 25px
-        font-weight 100
-        font-size 28px
-    }
-    &__btn {
-        margin-top 35px
-    }
-    &__img {
-        +below('desktop') {
-            width 70%
-            height 100%
-        }
+    .main-title {
+        color $black
+        font-size 60px
+
         +below('small-tablet') {
-            width 50%
+            font-size 40px
+            line-height 120%
         }
+
         +below('mobile') {
-            display none
+            font-size 36px
+        }
+
+        span {
+            display block
+            margin-top 10px
+            color  #5b9bce
+
+            +below('small-tablet') {
+                display inline
+                margin 0
+            }
+        }
+    }
+    .main-text {
+        display none
+        color $gray8
+        +below('mobile') {
+            display block
+        }
+    }
+    .banner-btn {
+        display none
+        margin 0 auto
+        width 35px
+        height 35px
+        background $yellow
+        border-radius 50%
+
+        svg {
+            width 20px
+        }
+
+        +below('mobile') {
+            display flex
+            justify-content center
+            align-items center
         }
     }
 }
@@ -66,10 +92,6 @@
 .services {
     text-align center
 
-    h1 {
-        color $blue14
-    }
-
     &__navigation {
         margin-top 100px
 
@@ -100,50 +122,31 @@
     }
     &__link {
         font-family $roboto
-        color $gray4
-        font-size 20px
+        color $black
+        font-size 17px
         font-weight 400
-
-        +below('desktop') {
-            font-size 17px
-        }
-
         +below('mobile') {
-            font-size 14px
+            font-size 12px
         }
-
-        &:hover {
-            color $blue9
-            text-decoration none
-
-            .services__icon {
-                background $blue9
-            }
-        }
-    }
-    &__icon {
-        content ""
-        display flex
-        justify-content center
-        align-items center
-        width 112px
-        height 112px
-        margin 0 auto 35px
-        background $gray15
-        border-radius 50%
-        text-align center
-        box-shadow: -5px 5px 16px rgba(0, 0, 0, 0.1);
-
         &:before {
+            content ""
+            display block
+            margin 0 auto 35px
+
             +below('mobile') {
-                zoom 0.8
+                zoom 0.6
             }
+        }
+        &:hover {
+            color $blue2
+            text-decoration none
         }
         &--monitor {
             &:before {
                 sprite($icon-monitor)
-
-                .services__link:hover & {
+            }
+            &:hover {
+                &:before {
                     sprite($icon-monitor-hover)
                 }
             }
@@ -151,8 +154,9 @@
         &--smartphone {
             &:before {
                 sprite($icon-smartphone)
-
-                .services__link:hover & {
+            }
+            &:hover {
+                &:before {
                     sprite($icon-smartphone-hover)
                 }
             }
@@ -160,8 +164,9 @@
         &--product {
             &:before {
                 sprite($icon-product)
-
-                .services__link:hover & {
+            }
+            &:hover {
+                &:before {
                     sprite($icon-product-hover)
                 }
             }
@@ -169,8 +174,9 @@
         &--notebook {
             &:before {
                 sprite($icon-notebook)
-
-                .services__link:hover & {
+            }
+            &:hover {
+                &:before {
                     sprite($icon-notebook-hover)
                 }
             }
