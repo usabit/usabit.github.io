@@ -1,28 +1,67 @@
 .main-banner {
+    position relative
     padding-top 115px
     background linear-gradient(left, #7fc7ff, #4c80a9)
+
+    +below('tablet') {
+        padding 50px 0 100px
+    }
+    +below('mobile') {
+        padding 50px 0 70px
+    }
 
     .wrapper {
         display flex
     }
-
     &__title, &__sub-title {
+        position relative
+        z-index 1
         margin-top 50px
         color $white
         font-size 44px
+
+        +below('desktop') {
+            font-size 40px
+        }
+        +below('tablet') {
+            margin 0
+            font-size 36px
+        }
+        +below('mobile') {
+            margin-top 50px
+            font-size 32px
+        }
     }
     &__sub-title {
         margin-top 25px
         font-weight 100
         font-size 28px
+
+        +below('mobile') {
+            font-size 20px
+        }
     }
     &__btn {
+        position relative
+        z-index 1
         margin-top 35px
+
+        +below('mobile') {
+            height 36px
+            line-height 36px
+            margin-top 25px
+        }
     }
     &__img {
+        position relative
+        z-index 1
+
         +below('desktop') {
             width 70%
             height 100%
+        }
+        +below('tablet') {
+            width 60%
         }
         +below('small-tablet') {
             width 50%
@@ -30,6 +69,10 @@
         +below('mobile') {
             display none
         }
+    }
+    &__waves {
+        position absolute
+        bottom 0
     }
 }
 .services, .blog-news {
@@ -39,7 +82,7 @@
         margin-top 70px
     }
     +below('mobile') {
-        margin-top 50px
+        margin-top 35px
     }
     h1 {
         color $gray6
@@ -112,7 +155,7 @@
             font-size 14px
         }
 
-        &:hover {
+        &:hover, &:focus {
             color $blue9
             text-decoration none
 
@@ -143,7 +186,7 @@
             &:before {
                 sprite($icon-monitor)
 
-                .services__link:hover & {
+                .services__link:hover &, .services__link:focus & {
                     sprite($icon-monitor-hover)
                 }
             }
@@ -152,7 +195,7 @@
             &:before {
                 sprite($icon-smartphone)
 
-                .services__link:hover & {
+                .services__link:hover &, .services__link:focus & {
                     sprite($icon-smartphone-hover)
                 }
             }
@@ -161,7 +204,7 @@
             &:before {
                 sprite($icon-product)
 
-                .services__link:hover & {
+                .services__link:hover &, .services__link:focus & {
                     sprite($icon-product-hover)
                 }
             }
@@ -170,7 +213,7 @@
             &:before {
                 sprite($icon-notebook)
 
-                .services__link:hover & {
+                .services__link:hover &, .services__link:focus & {
                     sprite($icon-notebook-hover)
                 }
             }
@@ -181,7 +224,7 @@
     display flex
     justify-content space-around
     align-items center
-    margin-top 140px
+    padding-top 140px
 
     +below('small-tablet') {
         flex-direction column
