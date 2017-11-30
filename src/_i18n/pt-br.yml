@@ -87,66 +87,51 @@ pages:
     blog:
       title: "Últimas do Nosso Blog"
   cases:
-    banner_text: "Conheça um pouco do que fazemos através <br> dos nossos cases e projetos mais recentes."
     chamada: 
       title: "Nossos Projetos"
-      text: "A equipe Usabit trabalha com dedicação e cuidado para administrar e criar os melhores projetos para nossos clientes."
+      text: "Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas"
     listacases: [
       {
         id: 'aliga',
         title: 'A Liga',
-        slogan: 'Todo jogo vale',
-        linkhref: 'appaliga.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'left bottom'
+        info: 'Lançamos A Liga: O mais novo torneio de futebol amador real dentro de uma plataforma virtual. <a href="https://play.google.com/store/apps/details?id=br.com.usabit.twelve.aliga" target="_blank">Android</a> e <a href="https://itunes.apple.com/br/app/a-liga/id1264066422?l=pt&ls=1&mt=8" target="_blank">IOS</a>',
+        linkhref: 'https://www.behance.net/gallery/52838139/APP-A-Liga-By-Usabit'
       },
       {
-        id: 'rxbandeirantes',
-        title: 'RX Bandeirantes',
-        slogan: 'Clínica Radiológica',
-        linkhref: 'rxbandeirantes.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'right'
+        id: 'beluga',
+        title: 'Beluga',
+        info: 'Criamos o site do beluga com foco total na apresentação do mais importante: as melhores batatas rostie.',
+        linkhref: 'https://www.behance.net/gallery/52859007/WEBSITE-Beluga-By-Usabit'
       },
       {
-        id: 'eurovip',
-        title: 'EuroVip',
-        slogan: 'Transporte e Turismo',
-        linkhref: 'euroviptransportes.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'left'
+        id: 'genial',
+        title: 'Geração Futuro/Genial',
+        info: 'Cuidamos do look and feel e desenvolvimento da interface da nova plataforma de investimentos.',
+        linkhref: '#'
       },
       {
-        id: 'matanativa',
-        title: 'Mata Nativa',
-        slogan: 'Pousada',
-        linkhref: 'pousadamatanativa.tur.br',
-        linkclass: 'fa-link',
-        deviceclass: 'right'
+        id: 'dufry',
+        title: 'Duty Free Dufry',
+        info: 'Suportamos em design e implementação para manter os sites do Duty Free sempre atualizados.',
+        linkhref: '#'
       },
       {
-        id: 'paula-moraes',
-        title: 'Dra. Paula Moraes',
-        slogan: 'Dentista',
-        linkhref: null, #'paulamoraes.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'left'
+        id: 'bandeirantes',
+        title: 'Rx Bandeirantes',
+        info: 'Criamos um site para desafogar a sobrecarregada equipe de atendentes telefonicos,  através da funcionalidade de agendamento online de exames.',
+        linkhref: 'https://www.behance.net/gallery/52859583/WEBSITE-Rx-Bandeirantes-By-Usabit'
       },
       {
-        id: 'sanes',
-        title: 'Sanes',
-        slogan: 'Indústria alimentícia',
-        linkhref: 'sanesbr.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'right'
+        id: 'tripco',
+        title: 'Tripco',
+        info: 'O Tripco é um concierge virtual que auxilia a administração do hotel e cria uma experiência ainda mais incrível para o hóspede.',
+        linkhref: 'https://www.behance.net/gallery/52872235/APP-Tripco-By-Usabit'
       },
       {
-        id: 'techhealthy',
-        title: 'TechHealthy',
-        slogan: 'Agência virtual',
-        linkhref: null, #'techhealthy.com.br',
-        linkclass: 'fa-link',
-        deviceclass: 'left'
+        id: 'seleto',
+        title: 'Grupo Seleto',
+        info: 'O novo site do Grupo Seleto em WordPress é totalmente otimizado para excelente desempenho orgânico em sites de busca.',
+        linkhref: '#'
       }
     ]
   contato:

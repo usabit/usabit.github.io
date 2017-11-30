@@ -1,42 +1,46 @@
 ---
-layout: page
+layout: default
 namespace: cases
 title: mainmenu.cases
 permalink: /cases/
-banner_class: cases
-banner_text: pages.cases.banner_text
-banner_img: /assets/img/cases-banner-01.jpg
 ---
+<div class="cases">
+  <section class="top wrapper">
+    <h1 class="top__title">{% t pages.cases.chamada.title %}</h1>
+    <h2 class="top__subtitle">{% t pages.cases.chamada.text %}</h2>
+  </section>
 
-<div class="wrapper">
+  <ul class="cases__list wrapper">
+    {% for case in site.translations[site.lang]["pages"]["cases"]["listacases"] %}
+    <li class="cases__item">
+      <img src="/assets/img/cases/{{case.id}}/case-img.png" alt="" class="cases__img" />
 
-  <div class="text-center mtb-60">
-    <h2 class="mb-30">{% t pages.cases.chamada.title %}</h2>
-    <p class="fixed-width">{% t pages.cases.chamada.text %}</p>
-  </div>
+      <div class="cases__texts">
+        <h2 class="cases__title">{{case.title}}</h2>
+        <p class="cases__info">{{case.info}}</p>
 
-</div>
-
-<ul class="cases-display-list">
-
-  {% for case in site.translations[site.lang]["pages"]["cases"]["listacases"] %}
-    <li class="cases-display-item" style="background-image: url('/assets/img/cases/{{case.id}}/background.jpg');">
-      <div class="wrapper">
-        <div class="text-wrapper">
-          <img src="/assets/img/cases/{{case.id}}/device.png" alt="" class="case-img-helper {{case.deviceclass}}">
-          <img src="/assets/img/cases/{{case.id}}/icon.png" alt="" class="case-icon">
-          <h2 class="case-title">{{case.title}}</h2>
-          <h3 class="case-slogan">{{case.slogan}}</h3>
-          <ul class="case-links">
-            <!-- <li><a href="#" class="download"><i class="fa fa-download"></i>Download</a></li> -->
-            {% if case.linkhref != null %}
-            <li><a href="http://www.{{case.linkhref}}" target="_blank" class="link"><i class="fa {{case.linkclass}}"></i>{{case.linkhref}}</a></li>
-            {% endif %}
-          </ul>
-          <!-- <p class="case-disclaimer">Em colaboração com a Twelve Sports</p> -->
-        </div>
+        <ul class="cases__links">
+          {% if case.linkhref != null %}
+          <li>
+            <a href="http://www.{{case.linkhref}}" target="_blank" class="link">
+              <span class="fa-stack fa-md">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+              </span>
+              Veja mais
+            </a>
+          </li>
+          {% endif %}
+        </ul>
       </div>
     </li>
-  {% endfor %}
+    {% endfor %}
+  </ul>
 
-</ul>
+  <section class="cases__contact">
+    <div class="wrapper">
+      <h1 class="cases__contact-title">Vamos conversar sobre o seu?</h1>
+      <a href="/contato" class="cases__contact-link">Entre em contato</a>
+    </div>
+  </section>
+</div>

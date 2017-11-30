@@ -1,0 +1,40 @@
+.cases {
+    &__item {
+        display flex
+        flex-direction row
+        justify-content space-around
+        align-items center
+        margin 150px 0
+
+        &:nth-of-type(odd) {
+            .cases__img {
+                order 2
+            }
+        }
+    }
+    &__texts {
+        width 35%
+        text-align center
+    }
+    &__links {
+        .link:hover {
+            text-decoration none
+        }
+    }
+    &__info {
+        margin 30px 0
+        color $gray8
+        line-height 130%
+        font-size 18px
+        text-align center
+    }
+    &__contact {
+        padding: 200px 0;
+        text-align center
+    }
+    &__contact-link {
+        margin-top 30px
+        font-size 1.5em
+        cursor pointer
+    }
+}
