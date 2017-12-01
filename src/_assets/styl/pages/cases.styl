@@ -1,4 +1,9 @@
 .cases {
+    .top__subtitle {
+        +below('small-tablet') {
+            font-size 25px
+        }
+    }
     &__item {
         display flex
         flex-direction row
@@ -6,15 +11,39 @@
         align-items center
         margin 150px 0
 
+        +below('mobile') {
+            flex-direction column
+        }
+
         &:nth-of-type(odd) {
             .cases__img {
                 order 2
             }
         }
     }
+    &__img {
+        +below('small-tablet') {
+            width 35%
+        }
+
+        +below('mobile') {
+            width 45%
+            order 1 !important
+        }
+    }
     &__texts {
         width 35%
         text-align center
+
+        +below('small-tablet') {
+            width 50%
+        }
+
+        +below('mobile') {
+            width 100%
+            margin-top 30px
+            order 2
+        }
     }
     &__links {
         .link:hover {

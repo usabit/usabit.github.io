@@ -27,7 +27,7 @@ pages:
   index:
     title: "Productivity and<br /> Intelligence"
     subtitle: "To develop your digital side"
-    text: "Experimente tudo que a Usabit<br /> pode fazer pela sua empresa."
+    link: "About Us"
     services:
       title: "For over 10 years, we've been perfecting the web<br> and creating digital products that are simple and easy to use."
       sites: "Websites"
