@@ -107,13 +107,13 @@ pages:
         id: 'genial',
         title: 'Geração Futuro/Genial',
         info: 'Cuidamos do look and feel e desenvolvimento da interface da nova plataforma de investimentos.',
-        linkhref: '#'
+        linkhref: null
       },
       {
         id: 'dufry',
         title: 'Duty Free Dufry',
         info: 'Suportamos em design e implementação para manter os sites do Duty Free sempre atualizados.',
-        linkhref: '#'
+        linkhref: null
       },
       {
         id: 'bandeirantes',
@@ -131,7 +131,7 @@ pages:
         id: 'seleto',
         title: 'Grupo Seleto',
         info: 'O novo site do Grupo Seleto em WordPress é totalmente otimizado para excelente desempenho orgânico em sites de busca.',
-        linkhref: '#'
+        linkhref: null
       }
     ]
   contato:

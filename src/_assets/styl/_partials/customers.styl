@@ -3,31 +3,51 @@
   text-align center
 
   +below('small-tablet') {
-    h1 {
+    margin-top 50px
+  }
+
+  +below('mobile') {
+    margin-top 25px
+  }
+
+  h1 {
+    +below('tablet') {
       font-size 28px
+    }
+    +below('mobile') {
       line-height 120%
+      font-size 24px
     }
   }
-  +below('mobile') {
-    display none
-  }
+
   &__list {
     display flex
     justify-content space-around
     align-items center
     margin-top 60px
 
-    +below('small-tablet') {
+    +below('mobile') {
       flex-direction column
       margin-top 30px
-
-      li {
-        margin 20px 0
-      }
 
       & + .customers__list {
         margin-top 0
       }
+    }
+  }
+  &__item {
+    +below('desktop') {
+      zoom 0.8
+    }
+    +below('tablet') {
+      zoom 0.7
+    }
+    +below('small-tablet') {
+      zoom 0.6
+    }
+    +below('mobile') {
+      margin 25px 0
+      zoom 0.5
     }
   }
 }
