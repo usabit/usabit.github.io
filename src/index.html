@@ -6,6 +6,7 @@ permalink: /
 <div id="home" class="home">
     <section class="main-banner">
         <div class="wrapper">
+<<<<<<< HEAD
             <div class="main-banner__texts">
                 <h1 class="main-banner__title">
                     {% t pages.index.title %}
@@ -16,6 +17,21 @@ permalink: /
                 <a href="/sobre-a-empresa/" class="main-banner__btn btn-default">{% t pages.index.link %}</a>
             </div>
             <img src="/assets/img/img-banner-devices.png" alt="" class="main-banner__img" />
+=======
+            <h1 class="main-title">
+                {% t pages.index.title %}
+            </h1>
+            <p class="main-text">
+                {% t pages.index.text %}
+            </p>
+            <a href="#projects" class="banner-btn anchor">
+                <svg viewBox="1 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M9.031,15.97 L2.339,9.665 C1.88,9.206 2.043,8.505 2.245,8.306 C2.648,7.904 3.243,7.964 3.647,8.367 L8.085,12.263 L8.086,0.948 C8.087,0.436 8.512,0.022 9.038,0.021 C9.563,0.02 9.989,0.436 9.988,0.948 L10.001,12.16 L14.272,8.306 C14.676,7.904 15.331,7.904 15.733,8.306 C16.138,8.706 16.037,9.256 15.632,9.658 L9.031,15.97 L9.031,15.97 Z" fill="#434343" class="si-glyph-fill"></path>
+                    </g>
+                </svg>
+            </a>
+>>>>>>> master
         </div>
 
         <svg class="main-banner__waves" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2546.000000 440.000000" preserveAspectRatio="xMidYMid meet">
@@ -38,28 +54,16 @@ permalink: /
         <nav class="services__navigation">
             <ul class="services__list">
                 <li class="services__item">
-                    <a href="#sites" class="services__link anchor">
-                        <span class="services__icon services__icon--monitor"></span>
-                        {% t pages.index.services.sites %}
-                    </a>
+                    <a href="#sites" class="services__link services__link--monitor anchor">{% t pages.index.services.sites %}</a>
                 </li>
                 <li class="services__item">
-                    <a href="#apps" class="services__link anchor">
-                        <span class="services__icon services__icon--smartphone"></span>
-                        {% t pages.index.services.apps %}
-                    </a>
+                    <a href="#apps" class="services__link services__link--smartphone anchor">{% t pages.index.services.apps %}</a>
                 </li>
                 <li class="services__item">
-                    <a href="#products" class="services__link anchor">
-                        <span class="services__icon services__icon--product"></span>
-                        {% t pages.index.services.products %}
-                    </a>
+                    <a href="#products" class="services__link services__link--product anchor">{% t pages.index.services.products %}</a>
                 </li>
                 <li class="services__item">
-                    <a href="#marketing" class="services__link anchor">
-                        <span class="services__icon services__icon--notebook"></span>
-                        {% t pages.index.services.marketing %}
-                    </a>
+                    <a href="#marketing" class="services__link services__link--notebook anchor">{% t pages.index.services.marketing %}</a>
                 </li>
             </ul>
         </nav>

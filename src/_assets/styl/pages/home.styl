@@ -66,8 +66,11 @@
         +below('small-tablet') {
             width 50%
         }
+
         +below('mobile') {
-            display none
+            display flex
+            justify-content center
+            align-items center
         }
     }
     &__waves {
@@ -109,10 +112,6 @@
 .services {
     text-align center
 
-    h1 {
-        color $blue14
-    }
-
     &__navigation {
         margin-top 100px
 
@@ -143,14 +142,9 @@
     }
     &__link {
         font-family $roboto
-        color $gray4
-        font-size 20px
+        color $black
+        font-size 17px
         font-weight 400
-
-        +below('desktop') {
-            font-size 17px
-        }
-
         +below('mobile') {
             font-size 14px
         }
@@ -163,24 +157,18 @@
                 background $blue9
             }
         }
-    }
-    &__icon {
-        content ""
-        display flex
-        justify-content center
-        align-items center
-        width 112px
-        height 112px
-        margin 0 auto 35px
-        background $gray15
-        border-radius 50%
-        text-align center
-        box-shadow: -5px 5px 16px rgba(0, 0, 0, 0.1);
-
         &:before {
+            content ""
+            display block
+            margin 0 auto 35px
+
             +below('mobile') {
-                zoom 0.8
+                zoom 0.6
             }
+        }
+        &:hover {
+            color $blue2
+            text-decoration none
         }
         &--monitor {
             &:before {
