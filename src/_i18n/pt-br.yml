@@ -1,18 +1,18 @@
-global:
-  links:
-    precisadeumsite: "Precisa de um site? Fale conosco!"
-    precisadeumapp: "Precisa de um App? Fale conosco!"
-    precisadeajudacompresencaonline: "Precisa de ajuda com presença online? Fale conosco!"
-    conhecanossassolucoes: "Conheça nossas soluções"
-    conhecanossoblog: "Conheça nosso Blog"
-mainmenu:
-  about: Sobre a empresa
-  blog: Blog
-  jobs: Trabalhe Conosco
-  hireus: Contrate
+pagetitle:
+  about: "Sobre a empresa"
+  hireus: "Contrate"
+  jobs: "Trabalhe Conosco"
+  ux: "UX Design"
+  cases: "Cases"
+  contact: "Contato"
+  marketing: "Marketing Digital"
 sidenav:
   title: "O que a Usabit pode fazer pela sua empresa hoje?"
-  products: "Produtos"
+  products:
+    title: "Produtos"
+    sites: "Sites, hotsites e Portais"
+    apps: "Aplicativos Android e IOS"
+    systems: "Sistemas, Intranets"
   webdevelopment:
     title: "Desenvolvimento Web"
     interfacedesign: "Design de Interfaces"

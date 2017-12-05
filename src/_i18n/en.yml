@@ -1,18 +1,18 @@
-global:
-  links:
-    precisadeumsite: "Need a website? Contact us!"
-    precisadeumapp: "Need an app? Contact us!"
-    precisadeajudacompresencaonline: "Need help with your online presence? Contact us."
-    conhecanossassolucoes: "Know our solutions"
-    conhecanossoblog: "Know our Blog"
-mainmenu:
-  about: About the company
-  blog: Blog
-  jobs: Work with us
-  hireus: Hire Us
+pagetitle:
+  about: "About the company"
+  hireus: "Hire Us"
+  jobs: "Work with us"
+  ux: "UX Design"
+  cases: "Cases"
+  contact: "Contact"
+  marketing: "Digital Marketing"
 sidenav:
   title: "What can Usabit do for your company today?"
-  products: "Products"
+  products:
+    title: "Products"
+    sites: "Sites, hotsites e Portals"
+    apps: "Apps Android and IOS"
+    systems: "Systems, Intranets"
   webdevelopment:
     title: "Web Development"
     interfacedesign: "Interface Design"

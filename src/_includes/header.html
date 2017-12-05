@@ -8,17 +8,12 @@
         </a>
         <div class="site-header__navigation">
             <nav class="site-header__menu">
-                {% assign pages = (site.pages | sort:"order" | where: "header", "navigation") %}
                 <ul class="site-header__menu-list">
-                    {% for my_page in pages %}
-                        {% if my_page.title %}
-                            <li class="site-header__menu-item">
-                                <a href="{% tl my_page.namespace %}" class="site-header__menu-link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
                     <li class="site-header__menu-item">
-                        <a href="https://campanhas.usabit.com.br/provenientes-do-e-mail" class="site-header__menu-link" target="_blank">{% t mainmenu.hireus %}</a>
+                        <a href="{% tl about %}" class="site-header__menu-link" target="_blank">{% t pagetitle.about %}</a>
+                    </li>
+                    <li class="site-header__menu-item">
+                        <a href="https://campanhas.usabit.com.br/provenientes-do-e-mail" class="site-header__menu-link" target="_blank">{% t pagetitle.hireus %}</a>
                     </li>
                 </ul>
             </nav>
@@ -54,7 +49,6 @@
                     </div>
                 </div>
             </div>
-
 
             <a href="#" class="site-header__open-menu">
                 <svg viewBox="10 10 30 30" width="30" height="30">
@@ -95,17 +89,17 @@
                     <svg class="icon">
                         <use xlink:href="#like"></use>
                     </svg>
-                    {% t sidenav.products %}
+                    {% t sidenav.products.title %}
                 </h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">Sites, hotsites e Portais</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.products.sites %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">Aplicativos Android e IOS</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.products.apps %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">Sistemas, Intranets</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.products.systems %}</a>
                     </li>
                 </ul>
             </nav>
@@ -118,13 +112,13 @@
                 </h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.interfacedesign %}</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.webdevelopment.interfacedesign %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.front %}</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.webdevelopment.front %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="/produtos/ux-design/" class="sidenav__link">{% t sidenav.webdevelopment.back %}</a>
+                        <a href="{% tl ux %}" class="sidenav__link">{% t sidenav.webdevelopment.back %}</a>
                     </li>
                 </ul>
             </nav>
@@ -137,13 +131,13 @@
                 </h2>
                 <ul class="sidenav__list">
                     <li class="sidenav__item">
-                        <a href="/cases" class="sidenav__link">{% t sidenav.seealso.cases %}</a>
+                        <a href="{% tl cases %}" class="sidenav__link">{% t sidenav.seealso.cases %}</a>
                     </li>
                     <li class="sidenav__item">
                         <a href="https://medium.com/usabit" class="sidenav__link">{% t sidenav.seealso.blog %}</a>
                     </li>
                     <li class="sidenav__item">
-                        <a href="/contato" class="sidenav__link">{% t sidenav.seealso.contact %}</a>
+                        <a href="{% tl contact %}" class="sidenav__link">{% t sidenav.seealso.contact %}</a>
                     </li>
                 </ul>
             </nav>

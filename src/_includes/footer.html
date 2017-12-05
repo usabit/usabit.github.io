@@ -9,17 +9,15 @@
         </a>
 
         <nav class="site-footer__menu">
-            {% assign pages = (site.pages | sort:"order" | where: "footer", "navigation") %}
             <ul class="site-footer__menu-list">
-                {% for my_page in pages %}
-                    {% if my_page.title %}
-                        <li class="site-footer__menu-item">
-                            <a href="{% tl my_page.namespace %}" class="site-footer__menu-link {% if page.url == my_page.url %}active{% endif %}">{% t my_page.title %}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
                 <li class="site-footer__menu-item">
-                    <a href="http://campanhas.usabit.com.br/provenientes-do-e-mail" class="site-footer__menu-link" target="_blank">{% t mainmenu.hireus %}</a>
+                    <a href="{% tl about %}" class="site-footer__menu-link" target="_blank">{% t pagetitle.about %}</a>
+                </li>
+                <li class="site-footer__menu-item">
+                    <a href="{% tl jobs %}" class="site-footer__menu-link" target="_blank">{% t pagetitle.jobs %}</a>
+                </li>
+                <li class="site-footer__menu-item">
+                    <a href="http://campanhas.usabit.com.br/provenientes-do-e-mail" class="site-footer__menu-link" target="_blank">{% t pagetitle.hireus %}</a>
                 </li>
                 <li class="site-footer__menu-item">
                     <a href="https://medium.com/usabit" target="_blank" class="site-footer__menu-link">Blog</a>

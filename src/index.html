@@ -13,7 +13,7 @@ permalink: /
                 <h2 class="main-banner__sub-title">
                     {% t pages.index.subtitle %}
                 </h2>
-                <a href="/sobre-a-empresa/" class="main-banner__btn btn-default">{% t pages.index.link %}</a>
+                <a href="{% tl about %}" class="main-banner__btn btn-default">{% t pages.index.link %}</a>
             </div>
             <img src="/assets/img/img-banner-devices.png" alt="" class="main-banner__img" />
         </div>
@@ -82,7 +82,7 @@ permalink: /
                 {% t pages.index.apps.text %}
             </p>
             <div class="service__action">
-                <a href="/cases" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
+                <a href="{% tl cases %}" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
                 <a href="#" class="service__related" style="display: none">{% t pages.index.apps.related %}</a>
             </div>
         </div>
@@ -117,7 +117,7 @@ permalink: /
                {% t pages.index.marketing.text %}
             </p>
             <div class="service__action">
-                <a href="/produtos/marketing-digital/" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
+                <a href="{% tl marketing %}" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
             </div>
             <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a>
         </div>
