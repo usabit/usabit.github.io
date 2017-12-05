@@ -87,53 +87,56 @@ pages:
     blog:
       title: "Latest news on our Blog"
   cases:
-    chamada: 
-      title: "Our Projects"
-      text: "Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas"
+    title: "Our Projects"
+    text: "A little of what we have been doing for big clients, startups<br /> or in partnership with agencies and other companies."
+    link: "See more"
     listacases: [
       {
         id: 'aliga',
         title: 'A Liga',
-        info: 'Lançamos A Liga: O mais novo torneio de futebol amador real dentro de uma plataforma virtual. <a href="https://play.google.com/store/apps/details?id=br.com.usabit.twelve.aliga" target="_blank">Android</a> e <a href="https://itunes.apple.com/br/app/a-liga/id1264066422?l=pt&ls=1&mt=8" target="_blank">IOS</a>',
+        info: 'We launched A Liga: The latest real amateur soccer tournament inside a virtual platform. <a href="https://play.google.com/store/apps/details?id=br.com.usabit.twelve.aliga" target="_blank">Android</a> and <a href="https://itunes.apple.com/br/app/a-liga/id1264066422?l=pt&ls=1&mt=8" target="_blank">IOS</a>',
         linkhref: 'https://www.behance.net/gallery/52838139/APP-A-Liga-By-Usabit'
       },
       {
         id: 'beluga',
         title: 'Beluga',
-        info: 'Criamos o site do beluga com foco total na apresentação do mais importante: as melhores batatas rostie.',
+        info: 'We created and developed the Beluga website with total focus on the display of their most important feature: The best rostie potatoes.',
         linkhref: 'https://www.behance.net/gallery/52859007/WEBSITE-Beluga-By-Usabit'
       },
       {
         id: 'genial',
         title: 'Geração Futuro/Genial',
-        info: 'Cuidamos do look and feel e desenvolvimento da interface da nova plataforma de investimentos.',
+        info: 'We take care of the development and look of this investments platform’s interface.',
         linkhref: null
       },
       {
         id: 'dufry',
         title: 'Duty Free Dufry',
-        info: 'Suportamos em design e implementação para manter os sites do Duty Free sempre atualizados.',
+        info: 'We support the Duty Free websites in design and implementation in order to keep them always updated.',
         linkhref: null
       },
       {
         id: 'bandeirantes',
         title: 'Rx Bandeirantes',
-        info: 'Criamos um site para desafogar a sobrecarregada equipe de atendentes telefonicos,  através da funcionalidade de agendamento online de exames.',
+        info: 'We created a website to unload the overloaded team of Rx Bandeirantes’s telephone supporters, through our online appointment feature.',
         linkhref: 'https://www.behance.net/gallery/52859583/WEBSITE-Rx-Bandeirantes-By-Usabit'
       },
       {
         id: 'tripco',
         title: 'Tripco',
-        info: 'O Tripco é um concierge virtual que auxilia a administração do hotel e cria uma experiência ainda mais incrível para o hóspede.',
+        info: 'Tripco is a virtual concierge that supports the hotel administration and creates an even more amazing experience for the guest.',
         linkhref: 'https://www.behance.net/gallery/52872235/APP-Tripco-By-Usabit'
       },
       {
         id: 'seleto',
         title: 'Grupo Seleto',
-        info: 'O novo site do Grupo Seleto em WordPress é totalmente otimizado para excelente desempenho orgânico em sites de busca.',
+        info: 'The new Grupo Seleto wordpress website is totally optimized to have an excellent organic performance in search websites.',
         linkhref: null
       }
     ]
+    contact:
+      title: "Let’s talk about yours?"
+      link: "Get in touch"
   contato:
     banner_text: Shall we continue this talk?
     podefalar: Go ahead and talk.

@@ -87,9 +87,9 @@ pages:
     blog:
       title: "Últimas do Nosso Blog"
   cases:
-    chamada: 
-      title: "Nossos Projetos"
-      text: "Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas"
+    title: "Nossos Projetos"
+    text: "Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas"
+    link: "Veja mais"
     listacases: [
       {
         id: 'aliga',
@@ -134,6 +134,9 @@ pages:
         linkhref: null
       }
     ]
+    contact:
+      title: "Vamos conversar sobre o seu?"
+      link: "Entre em contato"
   contato:
     banner_text: Vamos continuar esse assunto?
     podefalar: Pode falar agora.

@@ -6,8 +6,8 @@ permalink: /cases/
 ---
 <div class="cases">
   <section class="top wrapper">
-    <h1 class="top__title">{% t pages.cases.chamada.title %}</h1>
-    <h2 class="top__subtitle">{% t pages.cases.chamada.text %}</h2>
+    <h1 class="top__title">{% t pages.cases.title %}</h1>
+    <h2 class="top__subtitle">{% t pages.cases.text %}</h2>
   </section>
 
   <ul class="cases__list wrapper">
@@ -27,7 +27,7 @@ permalink: /cases/
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
               </span>
-              Veja mais
+              {% t pages.cases.link %}
             </a>
           </li>
           {% endif %}
@@ -39,8 +39,8 @@ permalink: /cases/
 
   <section class="cases__contact">
     <div class="wrapper">
-      <h1 class="cases__contact-title">Vamos conversar sobre o seu?</h1>
-      <a href="/contato" class="cases__contact-link">Entre em contato</a>
+      <h1 class="cases__contact-title">{% t pages.cases.contact.title %}</h1>
+      <a href="/contato" class="cases__contact-link">{% t pages.cases.contact.link %}</a>
     </div>
   </section>
 </div>
