@@ -40,7 +40,7 @@ hide_arrow: 1
                 <h2 class="bold mb-20">{% t pages.work.vemjogar %}</h2>
                 <ul class="oportunidades mt-30">
                     {% for job in site.translations[site.lang]["pages"]["work"]["joblist"] %}
-                    <li>
+                    <li class="accordion-item">
                         <a href="#" class="accordion-click">{{job.title}}</a>
                         <p>{{job.description}}</p>
                     </li>
