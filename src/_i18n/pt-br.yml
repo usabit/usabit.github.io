@@ -87,9 +87,9 @@ pages:
     blog:
       title: "Últimas do Nosso Blog"
   cases:
-    title: "Nossos Projetos"
-    text: "Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas"
-    link: "Veja mais"
+    title: Nossos Projetos
+    subtitle: Uma parte do que temos feito para grandes clientes, startups<br /> ou em parceria com agências e outras empresas
+    link: Veja mais
     listacases: [
       {
         id: 'aliga',
@@ -135,8 +135,8 @@ pages:
       }
     ]
     contact:
-      title: "Vamos conversar sobre o seu?"
-      link: "Entre em contato"
+      title: Vamos conversar sobre o seu?
+      link: Entre em contato
   contato:
     banner_text: Vamos continuar esse assunto?
     podefalar: Pode falar agora.
@@ -273,11 +273,6 @@ pages:
     homeoffice: Fazemos home office
     atecnologia: A tecnologia está no ar e um escritório não nos prende. Isso nos permite trabalhar de um café, na praia ou de casa. Qualquer lugar que estimule o prazer é uma parte da Usabit. Acordar sem vontade de encarar o caos do trânsito carioca não é um problema para nós. É uma solução.
     vemjogar: Vem jogar?
-    vaga1: Desenvolvedor PHP
-    vaga2: Desenvolvedor Front-end
-    vaga2brief: "(Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré processador css. Automatizar tarefas com gulp - diferencial: node)"
-    vaga3: Analista de Redes Sociais
-    vaga4: Designer
     msgenviada: Mensagem enviada com <span class="success">sucesso</span>!
     vamosanalisar: Vamos analisar seus dados e entraremos em contato com você.
     deixeseucontato: "Ou deixe seu contato:"
@@ -287,3 +282,13 @@ pages:
     deuerrado: Algo deu errado
     tentenovamente: Tente novamente mais tarde
     enviar: Enviar
+    joblist: [
+      {
+        title: 'Desenvolvedor Front-end',
+        description: 'Html, CSS, JavaScript, Angular ou outro framework. Trabalhar com Stylus ou outro pré-processador CSS. Automatizar tarefas com Gulp - diferencial: Node'
+      },
+      {
+        title: 'Desenvolvedor PHP',
+        description: 'Dominar algum framework PHP como Zend ou Symphony, MySQL e JavaScript'
+      }
+    ]

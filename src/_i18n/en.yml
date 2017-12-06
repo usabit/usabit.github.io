@@ -87,9 +87,9 @@ pages:
     blog:
       title: "Latest news on our Blog"
   cases:
-    title: "Our Projects"
-    text: "A little of what we have been doing for big clients, startups<br /> or in partnership with agencies and other companies."
-    link: "See more"
+    title: Our Projects
+    subtitle: A little of what we have been doing for big clients, startups<br /> or in partnership with agencies and other companies.
+    link: See more
     listacases: [
       {
         id: 'aliga',
@@ -135,8 +135,8 @@ pages:
       }
     ]
     contact:
-      title: "Let’s talk about yours?"
-      link: "Get in touch"
+      title: Let’s talk about yours?
+      link: Get in touch
   contato:
     banner_text: Shall we continue this talk?
     podefalar: Go ahead and talk.
@@ -273,11 +273,6 @@ pages:
     homeoffice: Home Office System
     atecnologia: Technology is in the air and office can't lock us. That allows us to work on a Cafe, on the beach or at home. Anywhere que stimulates the pleasure to do our jobs is a part of Usabit. Not waking up in the mood for Rio's traffic chaos isn't a problem for us. It's a solution.
     vemjogar: Come and play?
-    vaga1: PHP Developer
-    vaga2: Front-end Developer
-    vaga2brief: "(Html, CSS, JavaScript and other framework. Working with Stylus or other CSS pre processor. Automate tasks with gulp - differential: node)"
-    vaga3: Social Media Analyst
-    vaga4: Designer
     msgenviada: Message sent <span class="success">successfully</span>
     vamosanalisar: We'll analyze your information and get in touch with you.
     deixeseucontato: "Or leave your contact:"
@@ -287,3 +282,13 @@ pages:
     deuerrado: Something went wrong
     tentenovamente: Try again later
     enviar: Send
+    joblist: [
+      {
+        title: 'Front-end Developer',
+        description: 'Html, CSS, JavaScript, Angular or other framework. Working with Stylus or other CSS pre-processor. Automate tasks with Gulp - differential: Node'
+      },
+      {
+        title: 'PHP Developer',
+        description: 'Master some PHP framework like Zend or Symphony, MySQL and JavaScript'
+      }
+    ]
