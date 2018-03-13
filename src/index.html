@@ -5,37 +5,29 @@ permalink: /
 ---
 <div id="home" class="home">
     <section class="main-banner">
-        <div class="wrapper">
-            <div class="main-banner__texts">
-                <h1 class="main-banner__title">
-                    {% t pages.index.title %}
-                </h1>
-                <h2 class="main-banner__sub-title">
-                    {% t pages.index.subtitle %}
-                </h2>
-                <a href="{% tl about %}" class="main-banner__btn btn-default">{% t pages.index.link %}</a>
+        <div class="banner-content">
+            <div class="wrapper">
+                <div class="main-banner__texts">
+                    <h1 class="main-banner__title">
+                        {% t pages.index.title %}
+                    </h1>
+                    <!-- <h2 class="main-banner__sub-title">
+                        {% t pages.index.subtitle %}
+                    </h2> -->
+                    <a href="{% tl about %}" class="main-banner__btn btn-default">{% t pages.index.link %}</a>
+                </div>
             </div>
-            <img src="/assets/img/img-banner-devices.png" alt="" class="main-banner__img" />
         </div>
 
-        <svg class="main-banner__waves" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2546.000000 440.000000" preserveAspectRatio="xMidYMid meet">
-            <g transform="translate(0.000000,440.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
-                <path d="M23735 4394 c-672 -33 -1306 -178 -2000 -457 -291 -117 -418 -175
-                -815 -373 -373 -187 -515 -264 -915 -497 -239 -139 -444 -262 -1325 -794 -892
-                -539 -1505 -871 -2130 -1153 -1038 -470 -1967 -716 -2995 -792 -232 -17 -1306
-                -17 -1555 0 -668 46 -1188 114 -1760 228 -684 137 -1200 275 -2260 604 -753
-                234 -995 307 -1335 401 -1413 393 -2509 498 -3570 343 -748 -109 -1533 -363
-                -2205 -711 -298 -155 -556 -306 -765 -450 l-100 -69 -3 -337 -2 -337 12730 0
-                12730 0 0 1974 0 1975 -107 64 c-328 197 -670 314 -1051 361 -123 16 -437 27
-                -567 20z"/>
-            </g>
-        </svg>
     </section>
 
-    <section class="services wrapper">
-        <h1>{% t pages.index.services.title %}</h1>
+    <!-- Customers list -->
+    {% include customers.html %}
+    <!-- / Customers list -->
 
-        <nav class="services__navigation">
+    <section class="services">
+        <!-- <h1>{% t pages.index.services.title %}</h1> -->
+        <nav class="services__navigation wrapper">
             <ul class="services__list">
                 <li class="services__item">
                     <a href="#sites" class="services__link services__link--monitor anchor">{% t pages.index.services.sites %}</a>
@@ -53,73 +45,77 @@ permalink: /
         </nav>
     </section>
 
-    <section id="sites" class="service sites wrapper">
-        <div class="service__texts">
-            <h1>{% t pages.index.sites.title %}</h1>
-            <p>
-                {% t pages.index.sites.text %}
-            </p>
-            <div class="service__action">
-                <p class="service__action-text">
-                    {% t pages.index.sites.action %}
+    <section id="sites" class="service sites">
+        <div class="wrapper">
+            <div class="service__texts">
+                <h1>{% t pages.index.sites.title %}</h1>
+                <p>
+                    {% t pages.index.sites.text %}
                 </p>
-                <a href="https://testmysite.thinkwithgoogle.com/intl/pt-br" target="_target" class="service__btn btn-default">{% t pages.index.sites.button1 %}</a>
-                <a href="#" class="service__btn btn-secondary" style="display: none">{% t pages.index.sites.button2 %}</a>
+                <div class="service__action">
+                    <a href="https://campanhas.usabit.com.br/provenientes-do-e-mail" target="_target" class="service__btn btn-default">{% t pages.index.sites.button2 %}</a>
+                </div>
             </div>
-        </div>
-        <div class="service__img">
-            <img src="/assets/img/img-devices.png" alt="" />
-        </div>
-    </section>
-
-    <section id="apps" class="service apps wrapper">
-        <div class="service__img">
-            <img src="/assets/img/img-apps.png" alt="" />
-        </div>
-        <div class="service__texts">
-            <h1>{% t pages.index.apps.title %}</h1>
-            <p>
-                {% t pages.index.apps.text %}
-            </p>
-            <div class="service__action">
-                <a href="{% tl cases %}" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
-                <a href="#" class="service__related" style="display: none">{% t pages.index.apps.related %}</a>
+            <div class="service__img">
+                <img src="/assets/img/CircleImg1.png" alt="" />
             </div>
         </div>
     </section>
 
-    <section id="products" class="service products wrapper">
-        <div class="service__texts">
-            <h1>{% t pages.index.products.title %}</h1>
-            <p>
-                {% t pages.index.products.text %}
-            </p>
-            <div class="service__action" style="display: none">
-                <p class="service__action-text">
-                    {% t pages.index.products.action %}
+    <section id="apps" class="service apps">
+        <div class="wrapper">
+            <div class="service__img">
+                <img src="/assets/img/CircleImg2.png" alt="" />
+            </div>
+            <div class="service__texts">
+                <h1>{% t pages.index.apps.title %}</h1>
+                <p>
+                    {% t pages.index.apps.text %}
                 </p>
-                <a href="#" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
+                <div class="service__action">
+                    <a href="{% tl cases %}" class="service__btn btn-default">{% t pages.index.apps.button1 %}</a>
+                    <a href="#" class="service__related" style="display: none">{% t pages.index.apps.related %}</a>
+                </div>
             </div>
-            <a href="#" class="service__related" style="display: none">{% t pages.index.products.related %}</a>
-        </div>
-        <div class="service__img">
-            <img src="/assets/img/img-solutions.png" alt="" />
         </div>
     </section>
 
-    <section id="marketing" class="service marketing wrapper">
-        <div class="service__img">
-            <img src="/assets/img/img-marketing.png" alt="" />
-        </div>
-        <div class="service__texts">
-            <h1>{% t pages.index.marketing.title %}</h1>
-            <p>
-               {% t pages.index.marketing.text %}
-            </p>
-            <div class="service__action">
-                <a href="{% tl marketing %}" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
+    <section id="products" class="service products">
+        <div class="wrapper">
+            <div class="service__texts">
+                <h1>{% t pages.index.products.title %}</h1>
+                <p>
+                    {% t pages.index.products.text %}
+                </p>
+                <div class="service__action" style="display: none">
+                    <p class="service__action-text">
+                        {% t pages.index.products.action %}
+                    </p>
+                    <a href="#" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
+                </div>
+                <a href="#" class="service__related" style="display: none">{% t pages.index.products.related %}</a>
             </div>
-            <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a>
+            <div class="service__img">
+                <img src="/assets/img/CircleImg3.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="marketing" class="service marketing">
+        <div class="wrapper">
+            <div class="service__img">
+                <img src="/assets/img/CircleImg4.png" alt="" />
+            </div>
+            <div class="service__texts">
+                <h1>{% t pages.index.marketing.title %}</h1>
+                <p>
+                   {% t pages.index.marketing.text %}
+                </p>
+                <div class="service__action">
+                    <a href="{% tl marketing %}" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
+                </div>
+                <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a>
+            </div>
         </div>
     </section>
 
@@ -133,65 +129,63 @@ permalink: /
         <a href="#" class="projects__link">{% t pages.index.projects.link %}</a>
     </section>
 
-    <section class="differentials wrapper">
-        <h1 class="differentials__title">{% t pages.index.differentials.title %}</h1>
-        <h2 class="differentials__sub-title">{% t pages.index.differentials.subtitle %}</h2>
-
-        <div class="differentials__content">
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box1.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box1.text %}
-                </p>
-            </div>
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box2.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box2.text %}
-                </p>
-            </div>
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box3.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box3.text %}
-                </p>
-            </div>
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box4.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box4.text %}
-                </p>
-            </div>
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box5.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box5.text %}
-                </p>
-            </div>
-            <div class="differentials__box">
-                <h3 class="differentials__box-title">
-                    {% t pages.index.differentials.box6.title %}
-                </h3>
-                <p class="differentials__box-text">
-                    {% t pages.index.differentials.box6.text %}
-                </p>
+    <section class="differentials">
+        <div class="wrapper">
+            <h1 class="differentials__title">{% t pages.index.differentials.title %}</h1>
+            <h2 class="differentials__sub-title">{% t pages.index.differentials.subtitle %}</h2>
+    
+            <div class="differentials__content">
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box1.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box1.text %}
+                    </p>
+                </div>
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box2.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box2.text %}
+                    </p>
+                </div>
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box3.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box3.text %}
+                    </p>
+                </div>
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box4.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box4.text %}
+                    </p>
+                </div>
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box5.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box5.text %}
+                    </p>
+                </div>
+                <div class="differentials__box">
+                    <h3 class="differentials__box-title">
+                        {% t pages.index.differentials.box6.title %}
+                    </h3>
+                    <p class="differentials__box-text">
+                        {% t pages.index.differentials.box6.text %}
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Customers list -->
-    {% include customers.html %}
-    <!-- / Customers list -->
 
     <section class="blog-news wrapper">
         <div class="wrapper">

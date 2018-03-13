@@ -25,9 +25,9 @@ sidenav:
     contact: "Contato"
 pages:
   index:
-    title: "Produtividade e<br /> Inteligência"
+    title: "Construímos, integramos e gerenciamos<br> interfaces impecáveis com foco na melhor<br> experiência do usuário."
     subtitle: "Para desenvolver seu lado digital"
-    link: "Mais sobre nós"
+    link: "Conheça a Usabit"
     services:
       title: "Há mais de 10 anos aperfeiçoamos a web<br> e criamos produtos digitais simples e fáceis de usar."
       sites: "Sites, Portais,<br> Lojas Virtuais"
@@ -35,25 +35,25 @@ pages:
       products: "Produtos, sistemas,<br> intranets"
       marketing: "Marketing<br> e SEO"
     sites:
-      title: "Experiências incríveis em qualquer tamanho de tela"
+      title: "Conte com experiências incríveis em qualquer tamanho de tela"
       text: "Essa é a era em que as pessoas não se limitam mais a computadores. Telas sim são o que realmente atraem olhares, trabalho ou entretenimento."
       button1: "Testar meu site"
       button2: "Preciso de um site"
       action: "Teste se seu site está<br> funcionando corretamente:"
     apps:
-      title: "Funcionalidades que apenas especialistas podem fazer"
-      text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas antes feitas por uma pessoa."
+      title: "Adicione funcionalidades que apenas especialistas de software podem fazer"
+      text: "Você pode reduzir custos significantes da sua empresa ao automatizar através de um aplicativo tarefas repetitivas feitas por uma pessoa."
       button1: "Veja alguns exemplos"
       related: "Quanto custa fazer um aplicativo?"
     products:
-      title: "Potencializamos negócios através de soluções de software"
-      text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, nós dominamos o mundo das linguagens de programação."
+      title: "Reinvente seus negócios através de automações de software"
+      text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, expanda seus negócios com a Usabit."
       button1: "Agende um chat"
-      action: "Marque um papo online com um consultor<br> para resolver o seu problema"
+      action: "Marque um papo online com um consultor para resolver o seu problema"
       related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
     marketing:
-      title: "Resultados reais através do marketing digital"
-      text: "Nós colocamos Google e Facebook para trabalhar por você. E também te ajudamos em alguns processos importantes para alavancar seus resultados digitais."
+      title: "Engaje seus clientes, mensure, otimize e gere resultados"
+      text: "Entenda o comportamento dos usuários e os conduza para o resultado esperado, fazendo-os interagir de forma personalizada com sua tela."
       button1: "Saiba mais"
       related: "<strong>Relacionado:</strong> Por que investir em marketing digital?"
     letstalk: "Vamos conversar sobre o seu projeto!"

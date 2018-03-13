@@ -3,9 +3,14 @@
     top 0
     left 0
     right 0
-    padding 30px 0
-    background rgba($white, 0.9)
+    background #1c1c1c
     z-index 100
+
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
 
     +below('mobile') {
         padding 15px 0
@@ -32,9 +37,8 @@
         }
         svg {
             width 84px
-            margin-top 4px
             path {
-                fill $gray10
+                fill $white
             }
             +below('small-tablet') {
                 width 65px
@@ -77,7 +81,7 @@
         border 1px solid $gray12
         border-radius 50%
         font-family Roboto
-        color $black
+        color $white
         font-size 11px
         font-weight 400
         text-align center
@@ -90,6 +94,8 @@
         }
         &:hover {
             text-decoration none
+            color $white
+            opacity .8
         }
     }
     &__messenger, &__open-menu {
@@ -137,8 +143,10 @@
         }
     }
     &__open-menu {
+        display: inline-flex;
+        align-items: center;
         +below('mobile') {
-            margin 0
+            margin: 0 0 0 30px;
             zoom 0.7
         }
     }
@@ -271,7 +279,7 @@
     &__right {
         flex 3
         padding 55px
-        background $blue9
+        background #1c1c1c
 
         +below('desktop') {
             overflow auto
