@@ -4,8 +4,8 @@ namespace: marketing
 title: pagetitle.marketing
 permalink: /produtos/marketing-digital/
 permalink_en: /products/digital-marketing/
-banner_class: texto-escuro
-banner_img: /assets/img/banner-mkt.jpg
+banner_class: texto-branco
+banner_img: /assets/img/banner-mkt-2.jpg
 banner_title_text: pages.marketing.banner_title_text
 banner_text: pages.marketing.banner_text
 hide_arrow: 1
@@ -13,7 +13,7 @@ hide_arrow: 1
 
 <div class="divider-marker n-mt-60">
     <div class="wrapper">
-        <h2 class="white mtb-60">{% t pages.marketing.chamada.title %}</h2>
+        <h2 class="white light mtb-60">{% t pages.marketing.chamada.title %}</h2>
     </div>
 </div>
 
@@ -58,7 +58,7 @@ hide_arrow: 1
                 <div class="text-wrapper">
                     <h3>{% t pages.marketing.marcarpresenca %}</h3>
                     <p>{% t pages.marketing.caminhos %}</p>
-                    <a class="cta p-15" href="{{ '/contato' | prepend:site.baseurl }}">{% t pages.marketing.facaagora %}</a>
+                    <a class="cta" href="{{ '/contato' | prepend:site.baseurl }}">{% t pages.marketing.facaagora %}</a>
                 </div>
                 <div class="img-wrapper">
                     <img src="{{'/assets/img/marketing-presenca.png' | prepend: site.baseurl_root }}">
@@ -84,9 +84,12 @@ hide_arrow: 1
 
 </div>
 
-<div class="divider-marker">
+<div class="divider-marker my-60 py-60">
     <div class="wrapper">
-        <a href="{{ '/contato' | prepend:site.baseurl }}" class="center uppercase mtb-50">{% t pages.marketing.conectese %}</a>
+        <h2 class="white light">{% t pages.marketing.conectese %}</h2>
+        <a href="{{ '/contato' | prepend:site.baseurl }}" class="cta center uppercase py-16 text-white ml-50">
+            {% t pages.marketing.clickaqui %}
+        </a>
     </div>
 </div>
 

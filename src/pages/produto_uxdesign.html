@@ -23,7 +23,7 @@ hide_arrow: 1
 </div>
 
 <div class="divider-marker golden-bg mt-60 center">
-    <div class="wrapper">
+    <div class="wrapper flex-direction-column">
         <h2 class="white mt-60">{% t pages.ux.focodesempenho %}</h2>
         <p class="white mb-60 mt-20 custom-paragrath">{% t pages.ux.desempenhosimples %}</p>
     </div>
@@ -73,8 +73,11 @@ hide_arrow: 1
   </div>
 
 </div>
-<div class="divider-marker">
+<div class="divider-marker my-60 py-60">
     <div class="wrapper">
-        <p class="center uppercase mtb-30">{% t pages.ux.conectese %}</p>
+        <h2 class="white light">{% t pages.marketing.conectese %}</h2>
+        <a href="{{ '/contato' | prepend:site.baseurl }}" class="cta center uppercase py-16 text-white ml-50">
+            {% t pages.marketing.clickaqui %}
+        </a>
     </div>
 </div>

@@ -16,65 +16,63 @@
         padding 55px 0
         border-top 1px solid rgba($gray7, 0.3)
 
-        +below('small-tablet') {
-            flex-direction column
-        }
-        +below('mobile') {
-            padding 55px 0 20px
-        }
+        +below('small-tablet') { flex-direction: column; }
     }
     &__logo {
         display inline-flex
-        align-items flex-start
+        align-items center
 
-        +below('small-tablet') {
-            display block
+        #usabit-logotipo {
+            height: 18px;
+            margin-right: 15px;
         }
 
         &:hover {
             text-decoration none
         }
 
-        img {
-            width 29px
-            margin 3px 24px 0 0
-
-            +below('small-tablet') {
-                margin 0 0 20px 0
-            }
-        }
-    }
-    &__logo-text {
-        margin 0
-        font-family $lato
-        color $gray9
-        line-height 100%
-        font-size 16px
-        font-weight 400
-
-        +below('mobile') {
-            font-size 12px
-        }
-
-        small {
-            display block
-            margin-top 3px
-            font-size 12px
+        &-text {
+            margin 0
+            font-family $lato
+            color $gray9
+            line-height 100%
+            font-size 14px
+            font-weight 400
 
             +below('mobile') {
-                margin-top 8px
-                font-size 9px
+                font-size 12px
+            }
+
+            small {
+                display block
+                margin-top 3px
+                font-size 12px
+
+                +below('mobile') {
+                    margin-top 8px
+                    font-size 9px
+                }
+            }
+        }
+
+        +below('small-tablet') {
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            #usabit-logotipo {
+                margin-right: 0;
+                margin-bottom: 15px;
             }
         }
     }
+
     &__menu-list, &__social-list {
         display flex
         align-items center
     }
     &__menu-list {
         +below('small-tablet') {
-            display block
-            margin 50px 0
+            display none
         }
     }
     &__menu-item {

@@ -49,7 +49,7 @@ pages:
       title: "We potentiate business through software solutions"
       text: "For computers, IPhones, IPads, Androids, SmartTv's or Smart Watches, we own the world of programing language."
       button1: "Schedule a chat"
-      action: "Schedule an online chat with a consultant that can<br> solve your problem"
+      action: "Schedule an online chat with a consultant<br> that can solve your problem"
       related: "<strong>Blog:</strong> How do smartphones and GPS can help you control your team?"
     marketing:
       title: "Real results through Digital Marketing"
@@ -188,7 +188,7 @@ pages:
     android: Android and <br> iOS Design
   marketing: 
     banner_text: Focus your investments to gain online admirers.
-    banner_title_text: Digital Marketing <br> SEO and social media
+    banner_title_text: SEO and Analytics
     chamada:
       title: "Count on Usabit to:"
     darvoz: Listen and give voice to your clients
@@ -201,7 +201,8 @@ pages:
     facaagora: DO IT NOW!
     monitorarconcorrentes: Monitoring competitors closer <br> and being always one step ahead
     estaratento: Being alert to to innovation and changing <br> your market is crucial to standing out. <br> That's why we also take care of that for you. 
-    conectese: connect with usabit today
+    conectese: Connect with Usabit today
+    clickaqui: Click here
   ux:
     title: "UX Design + Front End"
     somosumaequipe: We are an integrated team that <br> brings to life perfect interfaces. 

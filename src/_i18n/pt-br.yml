@@ -49,7 +49,7 @@ pages:
       title: "Reinvente seus negócios através de automações de software"
       text: "Para computadores, iPhones, iPads, Androids, SmartTv’s ou Smart Watches, expanda seus negócios com a Usabit."
       button1: "Agende um chat"
-      action: "Marque um papo online com um consultor para resolver o seu problema"
+      action: "Marque um papo online com um consultor<br> para resolver o seu problema"
       related: "<strong>Blog:</strong> Como os smartphones e o GPS podem ajudar a controlar sua equipe?"
     marketing:
       title: "Engaje seus clientes, mensure, otimize e gere resultados"
@@ -188,20 +188,21 @@ pages:
     android: Android e <br> iOS Design
   marketing: 
     banner_text: Concentre seus investimentos para conquistar admiradores online.
-    banner_title_text: Marketing Digital <br> SEO e Redes Sociais
+    banner_title_text: SEO e Analytics
     chamada:
       title: "Conte com a Usabit para:"
-    darvoz: Dar voz e ouvir seus clientes
+    darvoz: Dados inteligentes com <strong>Google Analytics</strong>
     espacoecletico: A internet é um espaco eclético e liberal. É onde ganhamos espaço e autoridade para expor pensamentos, opiniões e principalmente insatisfações. Aqui você precisa investir em transparência e atendimento de qualidade.
     casoantigobrastemp: "Caso antigo da Brastemp: cliente insatisfeito usando a força das redes sociais"
-    engajar: Engajar e incentivar a interação com sua marca, produtos e filosofia
+    engajar: Monitoramento SEO
     acrescentarconteudo: Acrescente conteúdos relevantes à vida das pessoas e seja lembrado diariamente. Promova seus produtos e cative clientes através de promoções online.
-    marcarpresenca: Marcar presença e ser encontrado por todos os caminhos
+    marcarpresenca: Mais conversão com o adwords
     caminhos: Tenha certeza que todos os caminhos levam a você e seja a primeira opção dos seus clientes. Monitoramos dados, acessos, fluxos de navegação e menções referentes ao seu negócio.
     facaagora: FAÇA ISSO AGORA!
     monitorarconcorrentes: Monitorar concorrentes de perto e estar sempre na frente
     estaratento: Estar atento à inovação e transformação do seu mercado é crucial para se destacar. É por isso que nós também cuidamos disso para você. 
-    conectese: conecte-se com a usabit hoje
+    conectese: Conecte-se com a Usabit hoje
+    clickaqui: Clique aqui
   ux:
     title: "UX Design + Front End"
     somosumaequipe: Somos uma equipe integrada <br> que dá vida a interfaces perfeitas

@@ -131,6 +131,7 @@
 }
 .services {
     text-align center
+    overflow: hidden;
 
     &__navigation {
         margin-top 100px
@@ -228,44 +229,29 @@
         }
     }
 }
-.service {
 
+.service {
+    overflow: hidden;
     .wrapper {
         display flex
-        justify-content space-around
+        justify-content space-between
         align-items center
         padding 70px 0
-    }
-
-    +below('small-tablet') {
-        flex-direction column
-        margin-top 50px
+        // border: red;
     }
 
     &:nth-child(odd) {
         background: alpha(black, .05);
     }
 
-    &__texts {
-        max-width 580px
-
-        +below('small-tablet') {
-            order 1
-        }
+    .service__texts {
+        max-width: 580px;
 
         h1 {
             color $black
             font-size 36px
             font-weight 300
-
-            +below('small-tablet') {
-                font-size 28px
-                line-height 120%
-            }
-            +below('mobile') {
-                font-size 20px
-                text-align center
-            }
+            line-height: 1.5;
         }
         & > p {
             margin-top 50px
@@ -273,38 +259,25 @@
             color $gray4
             font-size 20px
             font-weight 300
-
-            +below('small-tablet') {
-                margin 35px 0 0
-                font-size 16px
-                text-align center
-            }
         }
         & + .service__btn {
             margin-left 20px
         }
     }
-    &__action, &__action + .service__related {
-        margin-top 50px
-    }
-    &__action {
+
+    .service__action,
+    .service__action + .service__related { margin-top: 50px; }
+
+    .service__action {
         display flex
         align-items center
 
         & + .service__related {
             margin-top 50px
         }
-
-        +below('small-tablet') {
-            flex-direction column
-            margin-top 0
-            text-align center
-        }
-        +below('mobile') {
-            display none
-        }
     }
-    &__btn {
+
+    .service__btn {
         & + .service__btn {
             margin-left 10px
         }
@@ -312,7 +285,8 @@
             margin-left 20px
         }
     }
-    &__action-text {
+
+    .service__action-text {
         font-family $roboto
         color $gray4
         font-size 16px
@@ -320,14 +294,10 @@
 
         & + .service__btn {
             margin-left 20px
-
-            +below('small-tablet') {
-              margin-left 0
-              margin-bottom 15px
-            }
         }
     }
-    &__related {
+
+    .service__related {
         font-family $roboto
         color  #548ab4
         font-size 15px
@@ -337,28 +307,49 @@
             font-weight 700
         }
     }
-    &__img {
-        +below('small-tablet') {
-            order 2
-            margin-top 20px
-        }
-        img {
-            max-width 100%
 
-            +below('small-tablet') {
-                zoom 0.6
-            }
-            +below('mobile') {
-                zoom 0.4
-            }
+    .service__img {
+        text-align: center;
+        
+        img { max-width: 90%; }
+    }
+
+    +below('tablet'){
+        .wrapper {
+            padding: 50px 0;
+            // border: orange;
+        }
+
+        .service__texts {
+            h1 { font-size: 30px; }
+        }
+    }
+
+    +below('small-tablet'){
+        // .wrapper { border: pink; }
+        .service__action {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 0;
+            br { display: none; }
+            .service__btn { margin-left: 0; margin-top: 20px; }
+        }
+
+        .service__img { margin-left: -25%; }
+        .service__texts + .service__img { margin-left: 0; margin-right: -30%; }
+
+        .service__texts {
+            h1 { font-size: 20px; }
+            p { font-size: 14px; margin-top: 20px; margin-bottom: 0; }
         }
     }
 }
+
 .projects {
     display none
-    margin-top 60px
     padding 30px
-    background $lilac
+    // background $lilac
+    background #9269b7
     text-align center
 
     &__title {
@@ -380,13 +371,6 @@
 .differentials {
     padding-top: 70px;
     background-color #1c1c1c;
-
-    +below('small-tablet') {
-        margin-top 100px
-    }
-    +below('mobile') {
-        margin-top 50px
-    }
 
     &__title, &__sub-title {
         color $gray13
@@ -494,7 +478,7 @@
 
         &.active {
             +below('mobile') {
-                top 55px
+                top 50px
                 transition top 1000ms
             }
         }

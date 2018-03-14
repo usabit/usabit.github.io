@@ -1,64 +1,59 @@
-sizes = 0 5 8 10 15 16 20 25 30 35 40 45 50 55 60 65 70 75 80
+sizes = 0 5 8 10 15 16 20 24 25 30 32 35 40 45 50 55 60 65 70 75 80 100
 for num in sizes
   .m-{num}
-    margin: unit(num, px)
+    margin: unit(num, px) !important
   .mb-{num}
-    margin-bottom: unit(num, px)
+    margin-bottom: unit(num, px) !important
   .mt-{num}
-    margin-top: unit(num, px)
+    margin-top: unit(num, px) !important
   .ml-{num}
-    margin-left: unit(num, px)
+    margin-left: unit(num, px) !important
   .mr-{num}
-    margin-right: unit(num, px)
-  .mtb-{num}
-    margin-top: unit(num, px)
-    margin-bottom: unit(num, px)
-  .mlr-{num}
-    margin-left: unit(num, px)
-    margin-right: unit(num, px)
+    margin-right: unit(num, px) !important
+  .mtb-{num},
+  .my-{num}
+    margin-top: unit(num, px) !important
+    margin-bottom: unit(num, px) !important
+  .mlr-{num},
+  ,mx-{num}
+    margin-left: unit(num, px) !important
+    margin-right: unit(num, px) !important
 
   .n-m-{num}
-    margin: unit(num * -1, px)
+    margin: unit(num * -1, px) !important
   .n-mb-{num}
-    margin-bottom: unit(num * -1, px)
+    margin-bottom: unit(num * -1, px) !important
   .n-mt-{num}
-    margin-top: unit(num * -1, px)
+    margin-top: unit(num * -1, px) !important
   .n-ml-{num}
-    margin-left: unit(num * -1, px)
+    margin-left: unit(num * -1, px) !important
   .n-mr-{num}
-    margin-right: unit(num * -1, px)
-    
-  +below('mobile')
-    .mobile-n-m-{num}
-      margin: unit(num * -1, px)
-    .mobile-n-mb-{num}
-      margin-bottom: unit(num * -1, px)
-    .mobile-n-mt-{num}
-      margin-top: unit(num * -1, px)
-    .mobile-n-ml-{num}
-      margin-left: unit(num * -1, px)
-    .mobile-n-mr-{num}
-      margin-right: unit(num * -1, px)
+    margin-right: unit(num * -1, px) !important
+  .n-mtb-{num},
+  .n-my-{num}
+    margin-top: unit(num * -1, px) !important
+    margin-bottom: unit(num * -1, px) !important
 
-  
+  .n-mlr-{num},
+  .n-mx-{num}
+    margin-left: unit(num * -1, px) !important
+    margin-right: unit(num * -1, px) !important
+
   .p-{num}
-    padding: unit(num, px)
+    padding: unit(num, px) !important
   .pb-{num}
-    padding-bottom: unit(num, px)
+    padding-bottom: unit(num, px) !important
   .pt-{num}
-    padding-top: unit(num, px)
+    padding-top: unit(num, px) !important
   .pl-{num}
-    padding-left: unit(num, px)
+    padding-left: unit(num, px) !important
   .pr-{num}
-    padding-right: unit(num, px)
+    padding-right: unit(num, px) !important
   .ptb-{num},
   .py-{num}
-    padding-top: unit(num, px)
-    padding-bottom: unit(num, px)
-  .plr-{num}
-    padding-left: unit(num, px)
-    padding-right: unit(num, px)
-    
-.flex-spacer {
-  flex 1
-}
+    padding-top: unit(num, px) !important
+    padding-bottom: unit(num, px) !important
+  .plr-{num},
+  .px-{num}
+    padding-left: unit(num, px) !important
+    padding-right: unit(num, px) !important

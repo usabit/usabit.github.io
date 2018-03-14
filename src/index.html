@@ -25,24 +25,27 @@ permalink: /
     {% include customers.html %}
     <!-- / Customers list -->
 
-    <section class="services">
-        <!-- <h1>{% t pages.index.services.title %}</h1> -->
-        <nav class="services__navigation wrapper">
-            <ul class="services__list">
-                <li class="services__item">
-                    <a href="#sites" class="services__link services__link--monitor anchor">{% t pages.index.services.sites %}</a>
-                </li>
-                <li class="services__item">
-                    <a href="#apps" class="services__link services__link--smartphone anchor">{% t pages.index.services.apps %}</a>
-                </li>
-                <li class="services__item">
-                    <a href="#products" class="services__link services__link--product anchor">{% t pages.index.services.products %}</a>
-                </li>
-                <li class="services__item">
-                    <a href="#marketing" class="services__link services__link--notebook anchor">{% t pages.index.services.marketing %}</a>
-                </li>
+    <section class="services-black">
+        <div class="wrapper">
+            <nav class="services-list">
+                <a href="#sites" class="services-list-item anchor">
+                    {% include img/iconComputer.svg %}
+                    {% t pages.index.services.sites %}
+                </a>
+                <a href="#apps" class="services-list-item anchor">
+                    {% include img/iconPhone.svg %}
+                    {% t pages.index.services.apps %}
+                </a>
+                <a href="#products" class="services-list-item anchor">
+                    {% include img/iconBox.svg %}
+                    {% t pages.index.services.products %}
+                </a>
+                <a href="#marketing" class="services-list-item anchor">
+                    {% include img/iconComputerSEO.svg %}
+                    {% t pages.index.services.marketing %}
+                </a>
             </ul>
-        </nav>
+        </div>
     </section>
 
     <section id="sites" class="service sites">
@@ -87,13 +90,13 @@ permalink: /
                 <p>
                     {% t pages.index.products.text %}
                 </p>
-                <div class="service__action" style="display: none">
+                <div class="service__action">
                     <p class="service__action-text">
                         {% t pages.index.products.action %}
                     </p>
-                    <a href="#" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
+                    <a href="https://campanhas.usabit.com.br/provenientes-do-e-mail" target="_blank" class="service__btn btn-default">{% t pages.index.products.button1 %}</a>
                 </div>
-                <a href="#" class="service__related" style="display: none">{% t pages.index.products.related %}</a>
+                <a href="#" class="service__related" style="display: none;">{% t pages.index.products.related %}</a>
             </div>
             <div class="service__img">
                 <img src="/assets/img/CircleImg3.png" alt="" />
@@ -111,10 +114,10 @@ permalink: /
                 <p>
                    {% t pages.index.marketing.text %}
                 </p>
-                <div class="service__action">
+                <!-- <div class="service__action">
                     <a href="{% tl marketing %}" class="service__btn btn-default">{% t pages.index.marketing.button1 %}</a>
-                </div>
-                <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a>
+                </div> -->
+                <!-- <a href="#" class="service__related" style="display: none">{% t pages.index.marketing.related %}</a> -->
             </div>
         </div>
     </section>
