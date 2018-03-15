@@ -33,7 +33,6 @@ $(document).ready(function() {
     $("form#infraEstrutura input").focusout(function(){
     // $("form#infraEstrutura .erro input").focusout(function(){
         $(this).parent().parent().removeClass('erro');
-        console.log('asd');
     });
 
     $('#formInfraSend').on('click', function(e) {
