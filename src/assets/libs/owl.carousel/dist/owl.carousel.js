@@ -1,11 +1,11 @@
 /**
- * Owl Carousel v2.3.2
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
  */
 /**
  * Owl carousel
- * @version 2.3.2
+ * @version 2.1.6
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -57,7 +57,7 @@
 		this._plugins = {};
 
 		/**
-		 * Currently suppressed events to prevent them from being retriggered.
+		 * Currently suppressed events to prevent them from beeing retriggered.
 		 * @protected
 		 */
 		this._supress = {};
@@ -335,13 +335,12 @@
 
 			repeat /= 2;
 
-			while (repeat > 0) {
+			while (repeat--) {
 				// Switch to only using appended clones
 				clones.push(this.normalize(clones.length / 2, true));
 				append = append + items[clones[clones.length - 1]][0].outerHTML;
 				clones.push(this.normalize(items.length - 1 - (clones.length - 1) / 2, true));
 				prepend = items[clones[clones.length - 1]][0].outerHTML + prepend;
-				repeat -= 1;
 			}
 
 			this._clones = clones;
@@ -436,71 +435,12 @@
 			this.$stage.children('.active').removeClass('active');
 			this.$stage.children(':eq(' + matches.join('), :eq(') + ')').addClass('active');
 
-			this.$stage.children('.center').removeClass('center');
 			if (this.settings.center) {
+				this.$stage.children('.center').removeClass('center');
 				this.$stage.children().eq(this.current()).addClass('center');
 			}
 		}
 	} ];
-
-	/**
-	 * Create the stage DOM element
-	 */
-	Owl.prototype.initializeStage = function() {
-		this.$stage = this.$element.find('.' + this.settings.stageClass);
-
-		// if the stage is already in the DOM, grab it and skip stage initialization
-		if (this.$stage.length) {
-			return;
-		}
-
-		this.$element.addClass(this.options.loadingClass);
-
-		// create stage
-		this.$stage = $('<' + this.settings.stageElement + ' class="' + this.settings.stageClass + '"/>')
-			.wrap('<div class="' + this.settings.stageOuterClass + '"/>');
-
-		// append stage
-		this.$element.append(this.$stage.parent());
-	};
-
-	/**
-	 * Create item DOM elements
-	 */
-	Owl.prototype.initializeItems = function() {
-		var $items = this.$element.find('.owl-item');
-
-		// if the items are already in the DOM, grab them and skip item initialization
-		if ($items.length) {
-			this._items = $items.get().map(function(item) {
-				return $(item);
-			});
-
-			this._mergers = this._items.map(function() {
-				return 1;
-			});
-
-			this.refresh();
-
-			return;
-		}
-
-		// append content
-		this.replace(this.$element.children().not(this.$stage.parent()));
-
-		// check visibility
-		if (this.isVisible()) {
-			// update view
-			this.refresh();
-		} else {
-			// invalidate width
-			this.invalidate('width');
-		}
-
-		this.$element
-			.removeClass(this.options.loadingClass)
-			.addClass(this.options.loadedClass);
-	};
 
 	/**
 	 * Initializes the carousel.
@@ -523,25 +463,36 @@
 			}
 		}
 
-		this.initializeStage();
-		this.initializeItems();
+		this.$element.addClass(this.options.loadingClass);
+
+		// create stage
+		this.$stage = $('<' + this.settings.stageElement + ' class="' + this.settings.stageClass + '"/>')
+			.wrap('<div class="' + this.settings.stageOuterClass + '"/>');
+
+		// append stage
+		this.$element.append(this.$stage.parent());
+
+		// append content
+		this.replace(this.$element.children().not(this.$stage.parent()));
+
+		// check visibility
+		if (this.$element.is(':visible')) {
+			// update view
+			this.refresh();
+		} else {
+			// invalidate width
+			this.invalidate('width');
+		}
+
+		this.$element
+			.removeClass(this.options.loadingClass)
+			.addClass(this.options.loadedClass);
 
 		// register event handlers
 		this.registerEventHandlers();
 
 		this.leave('initializing');
 		this.trigger('initialized');
-	};
-
-	/**
-	 * @returns {Boolean} visibility of $element
-	 *                    if you know the carousel will always be visible you can set `checkVisibility` to `false` to
-	 *                    prevent the expensive browser layout forced reflow the $element.is(':visible') does
-	 */
-	Owl.prototype.isVisible = function() {
-		return this.settings.checkVisibility
-			? this.$element.is(':visible')
-			: true;
 	};
 
 	/**
@@ -699,7 +650,7 @@
 			return false;
 		}
 
-		if (!this.isVisible()) {
+		if (!this.$element.is(':visible')) {
 			return false;
 		}
 
@@ -905,7 +856,7 @@
 				} else if (direction === 'right' && coordinate > value - width - pull && coordinate < value - width + pull) {
 					position = index + 1;
 				} else if (this.op(coordinate, '<', value)
-					&& this.op(coordinate, '>', coordinates[index + 1] !== undefined ? coordinates[index + 1] : value - width)) {
+					&& this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
 					position = direction === 'left' ? index + 1 : index;
 				}
 				return position === -1;
@@ -1082,14 +1033,12 @@
 			maximum = this._clones.length / 2 + this._items.length - 1;
 		} else if (settings.autoWidth || settings.merge) {
 			iterator = this._items.length;
-			if (iterator) {
-				reciprocalItemsWidth = this._items[--iterator].width();
-				elementWidth = this.$element.width();
-				while (iterator--) {
-					reciprocalItemsWidth += this._items[iterator].width() + this.settings.margin;
-					if (reciprocalItemsWidth > elementWidth) {
-						break;
-					}
+			reciprocalItemsWidth = this._items[--iterator].width();
+			elementWidth = this.$element.width();
+			while (iterator--) {
+				reciprocalItemsWidth += this._items[iterator].width() + this.settings.margin;
+				if (reciprocalItemsWidth > elementWidth) {
+					break;
 				}
 			}
 			maximum = iterator + 1;
@@ -1267,7 +1216,7 @@
 		this.speed(this.duration(current, position, speed));
 		this.current(position);
 
-		if (this.isVisible()) {
+		if (this.$element.is(':visible')) {
 			this.update();
 		}
 	};
@@ -1464,7 +1413,7 @@
 		this.$stage.unwrap();
 		this.$stage.children().contents().unwrap();
 		this.$stage.children().unwrap();
-		this.$stage.remove();
+
 		this.$element
 			.removeClass(this.options.refreshClass)
 			.removeClass(this.options.loadingClass)
@@ -1749,7 +1698,7 @@
 
 /**
  * AutoRefresh Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Artus Kolanowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -1820,7 +1769,7 @@
 			return;
 		}
 
-		this._visible = this._core.isVisible();
+		this._visible = this._core.$element.is(':visible');
 		this._interval = window.setInterval($.proxy(this.refresh, this), this._core.settings.autoRefreshInterval);
 	};
 
@@ -1828,7 +1777,7 @@
 	 * Refreshes the element.
 	 */
 	AutoRefresh.prototype.refresh = function() {
-		if (this._core.isVisible() === this._visible) {
+		if (this._core.$element.is(':visible') === this._visible) {
 			return;
 		}
 
@@ -1861,7 +1810,7 @@
 
 /**
  * Lazy Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -1951,7 +1900,7 @@
 
 		$elements.each($.proxy(function(index, element) {
 			var $element = $(element), image,
-                url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src') || $element.attr('data-srcset');
+				url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src');
 
 			this._core.trigger('load', { element: $element, url: url }, 'lazy');
 
@@ -1960,10 +1909,6 @@
 					$element.css('opacity', 1);
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
 				}, this)).attr('src', url);
-            } else if ($element.is('source')) {
-                $element.one('load.owl.lazy', $.proxy(function() {
-                    this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
-                }, this)).attr('srcset', url);
 			} else {
 				image = new Image();
 				image.onload = $.proxy(function() {
@@ -2001,7 +1946,7 @@
 
 /**
  * AutoHeight Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -2033,8 +1978,7 @@
 				}
 			}, this),
 			'changed.owl.carousel': $.proxy(function(e) {
-				if (e.namespace && this._core.settings.autoHeight && e.property.name === 'position'){
-					console.log('update called');
+				if (e.namespace && this._core.settings.autoHeight && e.property.name == 'position'){
 					this.update();
 				}
 			}, this),
@@ -2051,32 +1995,6 @@
 
 		// register event handlers
 		this._core.$element.on(this._handlers);
-		this._intervalId = null;
-		var refThis = this;
-
-		// These changes have been taken from a PR by gavrochelegnou proposed in #1575
-		// and have been made compatible with the latest jQuery version
-		$(window).on('load', function() {
-			if (refThis._core.settings.autoHeight) {
-				refThis.update();
-			}
-		});
-
-		// Autoresize the height of the carousel when window is resized
-		// When carousel has images, the height is dependent on the width
-		// and should also change on resize
-		$(window).resize(function() {
-			if (refThis._core.settings.autoHeight) {
-				if (refThis._intervalId != null) {
-					clearTimeout(refThis._intervalId);
-				}
-
-				refThis._intervalId = setTimeout(function() {
-					refThis.update();
-				}, 250);
-			}
-		});
-
 	};
 
 	/**
@@ -2116,7 +2034,7 @@
 			this._core.$element.off(handler, this._handlers[handler]);
 		}
 		for (property in Object.getOwnPropertyNames(this)) {
-			typeof this[property] !== 'function' && (this[property] = null);
+			typeof this[property] != 'function' && (this[property] = null);
 		}
 	};
 
@@ -2126,7 +2044,7 @@
 
 /**
  * Video Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -2446,7 +2364,7 @@
 
 /**
  * Animate Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -2568,11 +2486,10 @@
 
 /**
  * Autoplay Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Bartosz Wojciechowski
  * @author Artus Kolanowski
  * @author David Deutsch
- * @author Tom De Caluwé
  * @license The MIT License (MIT)
  */
 ;(function($, window, document, undefined) {
@@ -2591,31 +2508,16 @@
 		this._core = carousel;
 
 		/**
-		 * The autoplay timeout id.
-		 * @type {Number}
+		 * The autoplay timeout.
+		 * @type {Timeout}
 		 */
-		this._call = null;
-
-		/**
-		 * Depending on the state of the plugin, this variable contains either
-		 * the start time of the timer or the current timer value if it's
-		 * paused. Since we start in a paused state we initialize the timer
-		 * value.
-		 * @type {Number}
-		 */
-		this._time = 0;
-
-		/**
-		 * Stores the timeout currently used.
-		 * @type {Number}
-		 */
-		this._timeout = 0;
+		this._timeout = null;
 
 		/**
 		 * Indicates whenever the autoplay is paused.
 		 * @type {Boolean}
 		 */
-		this._paused = true;
+		this._paused = false;
 
 		/**
 		 * All event handlers.
@@ -2630,10 +2532,11 @@
 					} else {
 						this.stop();
 					}
-				} else if (e.namespace && e.property.name === 'position' && this._paused) {
-					// Reset the timer. This code is triggered when the position
-					// of the carousel was changed through user interaction.
-					this._time = 0;
+				} else if (e.namespace && e.property.name === 'position') {
+					//console.log('play?', e);
+					if (this._core.settings.autoplay) {
+						this._setAutoPlayInterval();
+					}
 				}
 			}, this),
 			'initialized.owl.carousel': $.proxy(function(e) {
@@ -2692,63 +2595,48 @@
 	};
 
 	/**
-	 * Transition to the next slide and set a timeout for the next transition.
-	 * @private
-	 * @param {Number} [speed] - The animation speed for the animations.
-	 */
-	Autoplay.prototype._next = function(speed) {
-		this._call = window.setTimeout(
-			$.proxy(this._next, this, speed),
-			this._timeout * (Math.round(this.read() / this._timeout) + 1) - this.read()
-		);
-
-		if (this._core.is('busy') || this._core.is('interacting') || document.hidden) {
-			return;
-		}
-		this._core.next(speed || this._core.settings.autoplaySpeed);
-	}
-
-	/**
-	 * Reads the current timer value when the timer is playing.
-	 * @public
-	 */
-	Autoplay.prototype.read = function() {
-		return new Date().getTime() - this._time;
-	};
-
-	/**
 	 * Starts the autoplay.
 	 * @public
 	 * @param {Number} [timeout] - The interval before the next animation starts.
 	 * @param {Number} [speed] - The animation speed for the animations.
 	 */
 	Autoplay.prototype.play = function(timeout, speed) {
-		var elapsed;
+		this._paused = false;
 
-		if (!this._core.is('rotating')) {
-			this._core.enter('rotating');
+		if (this._core.is('rotating')) {
+			return;
 		}
 
-		timeout = timeout || this._core.settings.autoplayTimeout;
+		this._core.enter('rotating');
 
-		// Calculate the elapsed time since the last transition. If the carousel
-		// wasn't playing this calculation will yield zero.
-		elapsed = Math.min(this._time % (this._timeout || timeout), timeout);
+		this._setAutoPlayInterval();
+	};
 
-		if (this._paused) {
-			// Start the clock.
-			this._time = this.read();
-			this._paused = false;
-		} else {
-			// Clear the active timeout to allow replacement.
-			window.clearTimeout(this._call);
+	/**
+	 * Gets a new timeout
+	 * @private
+	 * @param {Number} [timeout] - The interval before the next animation starts.
+	 * @param {Number} [speed] - The animation speed for the animations.
+	 * @return {Timeout}
+	 */
+	Autoplay.prototype._getNextTimeout = function(timeout, speed) {
+		if ( this._timeout ) {
+			window.clearTimeout(this._timeout);
 		}
+		return window.setTimeout($.proxy(function() {
+			if (this._paused || this._core.is('busy') || this._core.is('interacting') || document.hidden) {
+				return;
+			}
+			this._core.next(speed || this._core.settings.autoplaySpeed);
+		}, this), timeout || this._core.settings.autoplayTimeout);
+	};
 
-		// Adjust the origin of the timer to match the new timeout value.
-		this._time += this.read() % timeout - elapsed;
-
-		this._timeout = timeout;
-		this._call = window.setTimeout($.proxy(this._next, this, speed), timeout - elapsed);
+	/**
+	 * Sets autoplay in motion.
+	 * @private
+	 */
+	Autoplay.prototype._setAutoPlayInterval = function() {
+		this._timeout = this._getNextTimeout();
 	};
 
 	/**
@@ -2756,28 +2644,24 @@
 	 * @public
 	 */
 	Autoplay.prototype.stop = function() {
-		if (this._core.is('rotating')) {
-			// Reset the clock.
-			this._time = 0;
-			this._paused = true;
-
-			window.clearTimeout(this._call);
-			this._core.leave('rotating');
+		if (!this._core.is('rotating')) {
+			return;
 		}
+
+		window.clearTimeout(this._timeout);
+		this._core.leave('rotating');
 	};
 
 	/**
-	 * Pauses the autoplay.
+	 * Stops the autoplay.
 	 * @public
 	 */
 	Autoplay.prototype.pause = function() {
-		if (this._core.is('rotating') && !this._paused) {
-			// Pause the clock.
-			this._time = this.read();
-			this._paused = true;
-
-			window.clearTimeout(this._call);
+		if (!this._core.is('rotating')) {
+			return;
 		}
+
+		this._paused = true;
 	};
 
 	/**
@@ -2802,7 +2686,7 @@
 
 /**
  * Navigation Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Artus Kolanowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -2929,18 +2813,12 @@
 	 */
 	Navigation.Defaults = {
 		nav: false,
-		navText: [
-			'<span aria-label="' + 'Previous' + '">&#x2039;</span>',
-			'<span aria-label="' + 'Next' + '">&#x203a;</span>'
-		],
+		navText: [ 'prev', 'next' ],
 		navSpeed: false,
-		navElement: 'button type="button" role="presentation"',
+		navElement: 'div',
 		navContainer: false,
 		navContainerClass: 'owl-nav',
-		navClass: [
-			'owl-prev',
-			'owl-next'
-		],
+		navClass: [ 'owl-prev', 'owl-next' ],
 		slideBy: 1,
 		dotClass: 'owl-dot',
 		dotsClass: 'owl-dots',
@@ -2980,7 +2858,7 @@
 
 		// create DOM structure for absolute navigation
 		if (!settings.dotsData) {
-			this._templates = [ $('<button role="button">')
+			this._templates = [ $('<div>')
 				.addClass(settings.dotClass)
 				.append($('<span>'))
 				.prop('outerHTML') ];
@@ -2989,7 +2867,7 @@
 		this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer)
 			: $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');
 
-		this._controls.$absolute.on('click', 'button', $.proxy(function(e) {
+		this._controls.$absolute.on('click', 'div', $.proxy(function(e) {
 			var index = $(e.target).parent().is(this._controls.$absolute)
 				? $(e.target).index() : $(e.target).parent().index();
 
@@ -2997,19 +2875,6 @@
 
 			this.to(index, settings.dotsSpeed);
 		}, this));
-
-		/*$el.on('focusin', function() {
-			$(document).off(".carousel");
-
-			$(document).on('keydown.carousel', function(e) {
-				if(e.keyCode == 37) {
-					$el.trigger('prev.owl')
-				}
-				if(e.keyCode == 39) {
-					$el.trigger('next.owl')
-				}
-			});
-		});*/
 
 		// override public methods of the carousel
 		for (override in this._overrides) {
@@ -3022,18 +2887,13 @@
 	 * @protected
 	 */
 	Navigation.prototype.destroy = function() {
-		var handler, control, property, override, settings;
-		settings = this._core.settings;
+		var handler, control, property, override;
 
 		for (handler in this._handlers) {
 			this.$element.off(handler, this._handlers[handler]);
 		}
 		for (control in this._controls) {
-			if (control === '$relative' && settings.navContainer) {
-				this._controls[control].html('');
-			} else {
-				this._controls[control].remove();
-			}
+			this._controls[control].remove();
 		}
 		for (override in this.overides) {
 			this._core[override] = this._overrides[override];
@@ -3209,7 +3069,7 @@
 
 /**
  * Hash Plugin
- * @version 2.3.2
+ * @version 2.1.0
  * @author Artus Kolanowski
  * @author David Deutsch
  * @license The MIT License (MIT)
@@ -3333,7 +3193,7 @@
 /**
  * Support Plugin
  *
- * @version 2.3.2
+ * @version 2.1.0
  * @author Vivid Planet Software GmbH
  * @author Artus Kolanowski
  * @author David Deutsch
